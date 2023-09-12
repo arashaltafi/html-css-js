@@ -1,0 +1,24 @@
+{
+    "configurations": [
+
+        
+        {
+            "type": "chrome",
+            "name": "index",
+            "request": "launch",
+            "url": "file:///C:/Users/Arash/Desktop/1/js/index.html"
+        },
+        {
+            "type": "chrome",
+            "name": "http://localhost:3000/test",
+            "request": "launch",
+            "url": "http://localhost:3000/test"
+        },
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/111",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/111"
+        }
+    ]
+}
