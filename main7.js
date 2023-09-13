@@ -34,6 +34,15 @@ for (key in user) {
 
 
 let arrayName = ["aaa", "bbb", "ccc", "ddd"];
+
+
+//get key
 for (key in arrayName) {
     console.log("arrayName key: " + key + " ||| arrayName value: " + arrayName[key])
+}
+
+
+//get value
+for (item of arrayName) {
+    console.log("item " + item)
 }
