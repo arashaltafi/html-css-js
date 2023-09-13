@@ -42,3 +42,14 @@ console.log(f);
 var g = 12;
 // g = 12.5  ;
 console.log(g);
+
+
+let firstName = "arassh"; //string
+let age = 25; //number
+let isSelectedItem = false //boolean
+
+let la; //undefined
+console.log(la)
+
+let username = null
+console.log(username)
