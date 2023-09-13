@@ -4,6 +4,7 @@
     //console.log("i is : " + i);
 // }
 
+
 //while
 
 // let j = 0;
@@ -13,17 +14,26 @@
 // }
 
 
+
 // let x = 0;
 // do {
 //     x++;
 //     console.log("x is : " + x);
 // } while (x < 10);
 
+
+
 let user = {
     "name": "arash",
     "family": "altafi"
 }
-
 for (key in user) {
     console.log("user key: " + key + " ||| user value: " + user[key])
+}
+
+
+
+let arrayName = ["aaa", "bbb", "ccc", "ddd"];
+for (key in arrayName) {
+    console.log("arrayName key: " + key + " ||| arrayName value: " + arrayName[key])
 }
