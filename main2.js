@@ -27,3 +27,18 @@ console.log(c++);
 let d = 10;
 console.log("++10");
 console.log(++d);
+
+
+let e = 15;
+e = 16.5;
+console.log(e);
+
+
+const f = 5;
+// f = 7.5;
+console.log(f);
+
+
+var g = 12;
+// g = 12.5  ;
+console.log(g);
