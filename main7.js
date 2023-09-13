@@ -46,3 +46,8 @@ for (key in arrayName) {
 for (item of arrayName) {
     console.log("item " + item)
 }
+
+
+arrayName.forEach(element => {
+    console.log("element forEach " + element)
+});
