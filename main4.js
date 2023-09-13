@@ -1,4 +1,4 @@
-//&&   ||     !=
+//AND = (&&)   OR = (||)     NOT = (!=)  EQULE = (==)
 
 let isLogin = false;
 let isRegister = true;
@@ -26,3 +26,5 @@ if (isLogin == isRegister) {
 } else {
     console.log(false);
 }
+
+console.log("!isRegister " + !isRegister);
