@@ -1,28 +1,3 @@
-<<<<<<< HEAD
-
-let a = 2
-let b = 5
-
-console.log(a + b);
-console.log(a - b);
-console.log(a * b);
-console.log(a / b);
-
-console.log(a ** b);
-console.log(b % a);
-
-
-console.log(a--);
-console.log(--a);
-
-
-console.log(b--);
-console.log(--b);
-
-=======
-console.log("main 2 js");
-
-
 let a = 2;
 let b = 7;
 
@@ -74,5 +49,4 @@ let la; //undefined
 console.log(la)
 
 let username = null
-console.log(username)
->>>>>>> 993f755be0f5c0f760027f59826ef37ab5a36762
+console.log(username);
