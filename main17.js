@@ -22,3 +22,15 @@ console.log(points2.indexOf(2))
 console.log(points2.indexOf(2, 4))
 console.log(points2.includes(3))
 console.log(points2.includes(4))
+
+
+console.log(points2.find(element => element > 35))
+
+
+const users = [
+    {name: "arash", id: 1},
+    {name: "altafi", id: 2}
+]
+
+console.log(users.find(element => element.id === 1))
+console.log(users.find(element => element.name === "arash"))
