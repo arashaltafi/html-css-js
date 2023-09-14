@@ -43,12 +43,35 @@ function add(a, b) {
     return a + b
 }
 
-const add = function add(a, b) {
+const add1 = function add(a, b) {
     return a + b
 }
 
-const add = (a, b) => a + b
+const add2 = (a, b) => a + b
 
-const add = (a, b) => {
+const add3 = (a, b) => {
     return a + b
 }
+
+
+///////////////
+//remove 
+
+const points3 = [1, 2, 4, 5, 6, 4, 2, 35, 73, 6];
+
+//remove from end
+const popEnd = points3.pop()
+console.log(popEnd);
+console.log(points3);
+
+
+//remove from first
+const shiftFirst = points3.shift()
+console.log(shiftFirst);
+console.log(points3);
+
+
+//remove from middle
+const middleDelete = points3.splice(3, 2)
+console.log(middleDelete);
+console.log(points3);
