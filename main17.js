@@ -37,7 +37,7 @@ console.log(users.find(element => element.name === "arash"))
 
 
 /////////
-//arrow function
+//arrow function     () => {}
 
 function add(a, b) {
     return a + b
