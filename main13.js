@@ -28,3 +28,14 @@ users3.age = 30
 console.log("users3", users3)
 console.log("users2", users2)
 console.log("users", users)
+
+
+console.log("--------------------")
+
+//way 3
+const users4 = { ... users }; 
+users4.age = 50
+console.log("users4", users4)
+console.log("users3", users3)
+console.log("users2", users2)
+console.log("users", users)
