@@ -8,9 +8,14 @@ const circle = {
         y: 3
     },
     isVisible: true,
-    move: function draw() {
+    move: function() {
         console.log("move function")
     }
 }
 
 circle.move()
+
+
+
+//factory function
+//constructor function
