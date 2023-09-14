@@ -75,3 +75,11 @@ console.log(points3);
 const middleDelete = points3.splice(3, 2)
 console.log(middleDelete);
 console.log(points3);
+
+
+
+// concat  => add new array
+const first = [1,2,3]
+const second = [4,5,6]
+const concatItems = first.concat(second)
+console.log(concatItems);
