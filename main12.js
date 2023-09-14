@@ -32,3 +32,11 @@ for (key in users) {
 for (key of Object.keys(users)) {
     console.log(key, users[key])
 }
+
+///////////
+
+if ("name" in users) {
+    console.log("users have name")
+} else {
+    console.log("users have not name")
+}
