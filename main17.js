@@ -78,12 +78,15 @@ console.log(points3);
 
 
 
-// concat  => add new array
+// way 1  concat  => add new array
 const first = [1, 2, 3]
 const second = [4, 5, 6]
 const concatItems = first.concat(second)
 console.log(concatItems);
 
+// way 2  concat  => add new array
+const concatItems2 = [... first, "arash", ... second]
+console.log(concatItems2);
 
 
 //slice   => crop some items from array
