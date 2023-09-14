@@ -55,3 +55,27 @@ const map = numbers2.map(e => {
     return e * 2
 })
 console.log("map", map)
+
+
+
+
+console.log("/////////////////////////")
+
+
+//reduce
+const total = numbers2.reduce((acc, curr) => {
+    return (acc + curr)
+}, 0)
+console.log("reduce total", total)
+
+
+const cartItem = [
+    {id: 1, item: "iphone 15", price: 1000, count: 5},
+    {id: 2, item: "tv", price: 6000, count: 1},
+    {id: 3, item: "apple watch", price: 4000, count: 3},
+    {id: 4, item: "mac", price: 2000, count: 2},
+]
+const totalPrice = cartItem.reduce((acc, curr) => {
+    return (acc + curr.price * curr.count)
+}, 0)
+console.log("reduce totalPrice", totalPrice)
