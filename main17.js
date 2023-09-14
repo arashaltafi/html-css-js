@@ -28,9 +28,27 @@ console.log(points2.find(element => element > 35))
 
 
 const users = [
-    {name: "arash", id: 1},
-    {name: "altafi", id: 2}
+    { name: "arash", id: 1 },
+    { name: "altafi", id: 2 }
 ]
 
 console.log(users.find(element => element.id === 1))
 console.log(users.find(element => element.name === "arash"))
+
+
+/////////
+//arrow function
+
+function add(a, b) {
+    return a + b
+}
+
+const add = function add(a, b) {
+    return a + b
+}
+
+const add = (a, b) => a + b
+
+const add = (a, b) => {
+    return a + b
+}
