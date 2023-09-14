@@ -43,3 +43,15 @@ const activedUser = users.filter(name => {
 activedUser.forEach(element => {
     console.log(element.name)
 });
+
+
+
+console.log("/////////////////////////")
+
+
+//map
+const numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const map = numbers2.map(e => {
+    return e * 2
+})
+console.log("map", map)
