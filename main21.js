@@ -20,3 +20,31 @@ const add3 = add3 => {
 }
 
 add3();
+
+
+
+
+function add4() {
+    let sum = 0
+    for (nums of arguments) {
+        sum += nums
+        console.log(nums)
+    }
+    console.log(sum)
+}
+
+add4(1, 2, 3, 4, 5)
+
+
+
+
+function add5(... args) {
+    // let sum = 0
+    // for (nums of args) {
+    //     sum += nums
+    //     console.log(nums)
+    // }
+    console.log(args.reduce((acc, curr) => acc + curr))
+}
+
+add5(1, 2, 3, 4, 5)
