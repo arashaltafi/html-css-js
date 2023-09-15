@@ -38,13 +38,14 @@ add4(1, 2, 3, 4, 5)
 
 
 
-function add5(... args) {
+function add5(takhfif, ... args) {
     // let sum = 0
     // for (nums of args) {
     //     sum += nums
     //     console.log(nums)
     // }
-    console.log(args.reduce((acc, curr) => acc + curr))
+    const total = args.reduce((acc, curr) => acc + curr)
+    console.log(total * (1 - takhfif))
 }
 
-add5(1, 2, 3, 4, 5)
+add5(0.1, 1, 2, 3, 4, 5)
