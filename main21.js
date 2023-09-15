@@ -24,6 +24,7 @@ add3();
 
 
 
+//set multi parameter like vararg in kotlin!
 function add4() {
     let sum = 0
     for (nums of arguments) {
@@ -38,7 +39,8 @@ add4(1, 2, 3, 4, 5)
 
 
 
-function add5(takhfif, ... args) {
+//set multi parameter like vararg in kotlin!
+function add5(takhfif, ...args) {
     // let sum = 0
     // for (nums of args) {
     //     sum += nums
@@ -49,3 +51,13 @@ function add5(takhfif, ... args) {
 }
 
 add5(0.1, 1, 2, 3, 4, 5)
+
+
+
+
+//set default value
+function add6(a = 1, b = 25, c = 13, d = 9) {
+    console.log(a, b, c, d)
+}
+
+add6();
