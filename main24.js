@@ -6,11 +6,16 @@ function users(name) {
     }
 
     let parts = name.split(" ");
+
+    if (parts.length !== 2) {
+        throw new Error("Name Is Not Valid, Please Enter Correct Name!")
+    }
+
     console.log(`${parts[0]} ${parts[1]}`)
 }
 
 try {
-    users(123)
+    users("arash")
 } catch (error) {
     alert(error)
 }
