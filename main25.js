@@ -12,7 +12,7 @@ console.log(h2)
 //get first tag p
 const p1 = document.querySelector("p");
 console.log(p1)
-//update text
+//update text   => textContent = ""
 p1.textContent = "add new text from js";
 
 //get tag with class name root
@@ -24,7 +24,7 @@ console.log(root)
 //get tag p with class name p-1 in tag root with class name root
 const p2 = document.querySelector(".root .p-2");
 console.log(p2);
-//remove
+//remove   => remove();
 p2.remove();
 
 //get all tags p (in array)
@@ -35,7 +35,7 @@ pAll.forEach((item) => {
     console.log(item.textContent)
 })
 
-//add element to dom
+//add element to dom  =>  appendChild(const HTMLParagraphElement)
 //if you have class name in html => querySelector(".root")
 //if you have id name in html => querySelector("#root")
 const pNew = document.createElement("p");
