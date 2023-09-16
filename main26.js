@@ -8,11 +8,11 @@ const courses = [
 ]
 const existCourse = courses.filter(element => element.isExist)
 
-const root = document.querySelector("body");
+const body = document.querySelector("body");
 
 existCourse.forEach((items) => {
     const p = document.createElement("h2")
     p.textContent = items.title
 
-    root.appendChild(p)
+    body.appendChild(p)
 })
