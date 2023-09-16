@@ -44,6 +44,7 @@ function renderProduct(p, f) {
     filterdProducts.forEach(items => {
         const h3 = document.createElement("h4")
         h3.textContent = items.title
+        // h3.innerText = items.title
         root.appendChild(h3)
     });
 }
