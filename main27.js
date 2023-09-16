@@ -14,12 +14,14 @@ const products = [
 //event click => on click listener
 btnAdd.addEventListener("click", (event) => {
     console.log("click", event.target.textContent)
+    renderProduct(products, input.value)
 });
 
 
 //event change => run after change input and change focus
 input.addEventListener("change", (event) => {
     console.log("change", event.target.value)
+    renderProduct(products, event.target.value)
 });
 
 
