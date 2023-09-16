@@ -26,3 +26,7 @@ p2.remove();
 //get all tags p
 const pAll = document.querySelectorAll("p");
 console.log(pAll)
+
+pAll.forEach((item) => {
+    console.log(item.textContent)
+})
