@@ -11,6 +11,8 @@ const products = [
     { title: "JavaScript is a versatile and widely-used programming language for creating dynamic and interactive web applications." }
 ]
 
+renderProduct(products, "")
+
 //event click => on click listener
 btnAdd.addEventListener("click", (event) => {
     console.log("click", event.target.textContent)
@@ -44,5 +46,8 @@ function renderProduct(p, f) {
         h3.textContent = items.title
         // h3.innerText = items.title
         productRoot.appendChild(h3)
+
+        const hr = document.createElement("hr")
+        productRoot.appendChild(hr)
     });
 }
