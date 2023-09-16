@@ -1,27 +1,26 @@
 //Counter
-
-const incrementBtn = document.querySelector(".increment")
-const deccrementBtn = document.querySelector(".deccrement")
-const resetBtn = document.querySelector(".reset")
+const allBtns = document.querySelectorAll(".btn")
 const counterValue = document.querySelector(".counter span")
-
+const counter = document.querySelector(".counter")
 let count = 0
 
-incrementBtn.addEventListener("click", (event) => {
-    count ++
-    setTextCounter(count)
+allBtns.forEach(btn => {
+    btn.addEventListener("click", (event) => {
+        if (btn.classList.contains("increment")) count++
+        else if (btn.classList.contains("deccrement")) count--
+        else count = 0
+
+        setTextCounter(count)
+    })
 })
 
-deccrementBtn.addEventListener("click", (event) => {
-    count --
-    setTextCounter(count)
-})
+function setTextCounter(_count) {
+    if (_count <= 0) {
+        count = 0
+        counter.style.color = "red"
+    } else {
+        counter.style.color = "green"
+    }
 
-resetBtn.addEventListener("click", (event) => {
-    count = 0
-    setTextCounter(count)
-})
-
-function setTextCounter(count) {
     counterValue.textContent = count
 }
