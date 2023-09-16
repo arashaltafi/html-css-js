@@ -1,7 +1,7 @@
 const btnAdd = document.querySelector("#button-add");
 const input = document.querySelector("#search-product");
 const body = document.querySelector("body");
-let root = document.createElement("root")
+const productRoot = document.querySelector("#product-root")
 
 const products = [
     { title: "React.js is a JavaScript library developed by Facebook for building user interfaces, particularly single-page applications where UI components update dynamically." },
@@ -36,15 +36,13 @@ function renderProduct(p, f) {
         return element.title.toLowerCase().includes(f.toLowerCase())
     });
 
-    root.remove()
-    root = document.createElement("root")
-
-    body.appendChild(root)
+    //empty div root
+    productRoot.innerHTML = ""
 
     filterdProducts.forEach(items => {
         const h3 = document.createElement("h4")
         h3.textContent = items.title
         // h3.innerText = items.title
-        root.appendChild(h3)
+        productRoot.appendChild(h3)
     });
 }
