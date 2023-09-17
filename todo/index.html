@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="darkreader-lock" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" value="notranslate" />
+    <title>To Do List</title>
+
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+    <header>
+        <h1>todo list</h1>
+    </header>
+
+    <section class="containter">
+        <div class="form-container">
+            <form>
+                <input type="text" class="todo-input" />
+                <button class="todo-button" type="submit">
+                    <i class="fas fa-plus-circle"></i>
+                </button>
+            </form>
+            
+            <div class="select">
+                <select class="filter-todos" name="todos">
+                    <option class="all">all</option>
+                    <option class="completed">completed</option>
+                    <option class="uncompleted">uncompleted</option>
+                </select>
+            </div>
+        </div>
+    
+        <div class="todo-container">
+            <div class="todo">
+                <li>task 1</li>
+                <span><i class="far fa-trash-alt"></i></span>
+                <span><i class="far fa-circle-check"></i></span>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "shabnamR";
+    src: url("/fonts/font_normal.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "shabnamL";
+    src: url("/fonts/font_light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "shabnamM";
+    src: url("/fonts/font_medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "shabnamB";
+    src: url("/fonts/font_bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "shabnamLatin";
+    src: url("/fonts/font_normal_latin_digits.ttf") format("truetype");
+}
