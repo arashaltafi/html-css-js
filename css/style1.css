@@ -15,11 +15,16 @@
 }
 
 /*  1. flex-direction == row => main is row and cross is column
-/*  2. flex-direction == row => main is column and cross is row
-/*  3. justify-content = main  */ 
-/*  4. align-items = cross  */ 
+/*  2. flex-direction == column => main is column and cross is row
+
+/*  3. justify-items, justify-content = main  */ 
+/*  4. align-items, content = cross  */ 
+
 /*  5. align-content = rows or column */
-/*  5. align-items = items */
+/*  6. align-items = items */
+
+/*  7. justify-content = rows or column */
+/*  8. justify-items = items */
 
 .item1 {
     width: 200px;
