@@ -29,36 +29,42 @@
 /*  9. order => above to last */
 
 /*  10. flex-grow => weight to fill maxiumm */
-/*  10. flex-shrink => weight to fill minumm */
+/*  11. flex-shrink => weight to fill minumm */
+
+/*  12. flex-basis => like that min-width */
 
 .item1 {
-    width: 200px;
+    /* width: 200px; */
     height: 200px;
     background-color: violet;
     order: 1;
     flex-grow: 1;
     flex-shrink: 1;
+    flex-basis: 200px;
 }
 
 .item2 {
-    width: 200px;
+    /* width: 200px; */
     height: 200px;
     background-color: yellow;
     order: 2;
     flex-grow: 3;
     flex-shrink: 5;
+    flex-basis: 200px;
 }
 
 .item3 {
-    width: 200px;
+    /* width: 200px; */
     height: 200px;
     background-color: red;
     order: 1;
+    flex-basis: 200px;
 }
 
 .item4 {
-    width: 200px;
+    /* width: 200px; */
     height: 200px;
     background-color: green;
     order: 4;
+    flex-basis: 200px;
 }
