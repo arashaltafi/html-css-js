@@ -33,14 +33,16 @@
 
 /*  12. flex-basis => like that min-width */
 
-/*  13. flex => flex-grow flex-shrink flex-basis => 0 1 auto*/
+/*  13. flex => flex-grow flex-shrink flex-basis => flex: 0 1 auto*/
 
 .item1 {
     width: 200px;
     height: 200px;
     background-color: violet;
     order: 1;
-    flex: 1 1 auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 200px;
 }
 
 .item2 {
@@ -48,7 +50,9 @@
     height: 200px;
     background-color: yellow;
     order: 2;
-    flex: 3 5 auto;
+    flex-grow: 3;
+    flex-shrink: 5;
+    flex-basis: 200px;
 }
 
 .item3 {
@@ -56,7 +60,8 @@
     height: 200px;
     background-color: red;
     order: 1;
-    flex: 0 1 auto;
+    flex-grow: 0;
+    flex-shrink: 1;
 }
 
 .item4 {
@@ -64,5 +69,6 @@
     height: 200px;
     background-color: green;
     order: 4;
-    flex: 0 1 auto;
+    flex-grow: 0;
+    flex-shrink: 1;
 }
