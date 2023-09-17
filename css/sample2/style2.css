@@ -33,12 +33,14 @@
 }
 
 .item2 {
+    margin-right: 4px;
     background-color: blue;
     flex-grow: 1;
     flex-shrink: 1;
 }
 
 .item3 {
+    margin-left: 4px;
     background-color: forestgreen;
     flex-grow: 1;
     flex-shrink: 1;
