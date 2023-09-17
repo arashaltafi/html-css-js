@@ -9,7 +9,7 @@
     background-color: cyan;
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -26,26 +26,39 @@
 /*  7. justify-content = rows or column */
 /*  8. justify-items = items */
 
+/*  9. order => above to last */
+
+/*  10. flex-grow => weight to fill maxiumm */
+/*  10. flex-shrink => weight to fill minumm */
+
 .item1 {
     width: 200px;
     height: 200px;
     background-color: violet;
+    order: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 .item2 {
     width: 200px;
     height: 200px;
     background-color: yellow;
+    order: 2;
+    flex-grow: 3;
+    flex-shrink: 5;
 }
 
 .item3 {
     width: 200px;
     height: 200px;
     background-color: red;
+    order: 1;
 }
 
 .item4 {
     width: 200px;
     height: 200px;
     background-color: green;
+    order: 4;
 }
