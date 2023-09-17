@@ -92,9 +92,22 @@ form button :hover {
 }
 
 .todo li {
+    color: var(--primaryColor);
+    font-weight: bold;
     flex: 1;
 }
 
 .todo span {
-    
+    display: block;
+    font-size: 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.fa-trash-alt {
+    color: var(--mainRed);
+}
+
+.fa-circle-check {
+    color: var(--primaryColor);
 }
