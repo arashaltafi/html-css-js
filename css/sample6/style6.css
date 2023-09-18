@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 1. grid-template-columns: 1fr 1fr === 50% 50%  or  300px 300px */
+/* 1. grid-template-columns: 1fr 2fr === 34% 66%  or  300px 300px */
+
+.parent {
+    height: 100vh;
+    background-color: #ccc;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+}
+
+.item1 {
+    height: 100%;
+    background-color: green;
+}
+
+.item2 {
+    height: 100%;
+    background-color: blue;
+}
+
+.item3 {
+    height: 100%;
+    background-color: red;
+}
