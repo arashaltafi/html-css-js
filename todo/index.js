@@ -13,7 +13,7 @@ function addTodo(e) {
     e.preventDefault();
     console.log(e);  
 
-    const todoDiv = document.querySelector("div");
+    const todoDiv = document.createElement("div");
     todoDiv.classList.add("todo");
     const newTodo = `
     <li>${todoInput.value}</li>
@@ -34,7 +34,8 @@ function checkRemove(e) {
         const todo = item.parentElement.parentElement;
         todo.remove()
      } else if (classList[1] === "fa-circle-check") {
-        alert("check")
+        const todo = item.parentElement.parentElement;
+        todo.classList.toggle("completed")
      }
 }
 

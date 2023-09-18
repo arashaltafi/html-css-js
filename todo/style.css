@@ -8,7 +8,7 @@
     list-style: none;
 }
 
-/*   VARIABLES   */ 
+/*   VARIABLES   */
 :root {
     --primaryColor: #6d28d9;
     --secondaryColor: #ede9fe;
@@ -35,6 +35,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 24px;
 }
 
 .containter {
@@ -47,7 +48,6 @@ header {
     display: flex;
     justify-content: center;
     justify-items: center;
-    align-items: center;
 }
 
 .todo-container {
@@ -58,7 +58,6 @@ header {
 }
 
 .filter-todos {
-    margin: 8px;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -73,10 +72,10 @@ form {
 }
 
 form input {
-    flex: 1;
+    flex-grow: 1;
 }
 
-form input, 
+form input,
 form button {
     border: none;
     outline: none;
@@ -88,7 +87,7 @@ form button {
 form button {
     color: var(--primaryColor);
     cursor: pointer;
-    transform: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 form button :hover {
@@ -125,4 +124,37 @@ form button :hover {
 
 .fa-circle-check {
     color: var(--primaryColor);
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+select {
+    appearance: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 1rem;
+    color: var(--primaryColor);
+}
+
+.select {
+    margin-left: 1rem;
+    background-color: var(--mainWhite);
+    cursor: pointer;
+    width: 10rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    color: var(--primaryColor);
+    pointer-events: none;
 }
