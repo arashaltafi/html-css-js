@@ -1,31 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sample 3</title>
 </head>
+
 <body>
-    
+
     <h2>Sample Form</h2>
-    <form action="#" method="POST">
+    <form action="#" method="GET">
         <label>Title :</label>
         <input type="text" name="title" value="your name">
 
-        <br/><br/>
+
+
+        <br /><br />
         <label>body :</label>
         <textarea name="body" cols="40" rows="20"></textarea>
 
-        <br/><br/>
+
+
+        <br /><br />
         <label><strong>Date :</strong></label>
         <input type="date" name="date">
-    
-        <br/><br/>
+
+
+
+        <br /><br />
+        <label>category :</label>
+        <select name="category">
+            <option value="item1">Item 1</option>
+            <option value="item2">Item 2</option>
+            <option value="item3">Item 3</option>
+            <option value="item4">Item 4</option>
+        </select>
+
+
+
+
+        <br /><br />
+        <label>
+            red
+            <input type="radio" name="color">
+        </label>
+
+        <label>
+            blue
+            <input type="radio" name="color">
+        </label>
+
+        <label>
+            green
+            <input type="radio" name="color">
+        </label>
+
+
+        <br /><br />
         <input type="submit" value="send data">
 
-        <br/><br/>
+        <br /><br />
         <button type="submit">Send Data</button>
+
+    </form>
+
+    <hr />
+
+    <h2>Login Form</h2>
+    <form>
+        <label>FullName :</label>
+        <input type="text" name="fullname">
+        <br /><br />
+
+        <label>Email :</label>
+        <input type="email" name="email">
+        <br /><br />
+
+        <label>Password :</label>
+        <input type="password" name="password">
+        <br /><br />
+
+        <label>
+            Remember Me :
+            <input type="checkbox" name="remember">
+        </label>
+        <br /><br />
+
+
+        <label>Upload Avatar :</label>
+        <input type="file" name="avatar">
+        <br /><br />
+
+        <button type="submit">Login</button>
+
     </form>
 
 </body>
+
 </html>
