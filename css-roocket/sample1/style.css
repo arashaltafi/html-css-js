@@ -11,6 +11,11 @@ h1.color-red {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+div .color-yellow {
+    background-color: greenyellow;
+    color: sienna;
+}
+
 .color-red {
     color: red;
 }
