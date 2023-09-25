@@ -9,3 +9,8 @@
 .class2 {
     color: blue;
 }
+
+.class1.class2 {
+    font-weight: bold;
+    font-size: 28px;
+}
