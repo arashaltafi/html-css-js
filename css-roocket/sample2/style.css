@@ -8,6 +8,11 @@ a[href*=".com"] {
     color: cadetblue;
 }
 
+/* <a href="…com"> */
+a[href$="com"] {
+    color: chocolate;
+}
+
 /* <a href="https://facebook.com"> */
 a[href="https://facebook.com"] {
     color: red;
