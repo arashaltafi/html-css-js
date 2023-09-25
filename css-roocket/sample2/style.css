@@ -21,3 +21,22 @@ a[href="https://facebook.com"] {
 h1[class="class1"] {
     color: teal;
 }
+
+li > span {
+    background-color: red;
+}
+
+/* psudo class */
+.class1:hover {
+    color: green;
+    font-size: 30px;
+}
+
+.class1:hover p {
+    color: red;
+}
+
+/* psudo element */
+.class1::first-letter {
+    color: blueviolet;
+}
