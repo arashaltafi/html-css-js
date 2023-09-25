@@ -17,3 +17,7 @@ a[href$="com"] {
 a[href="https://facebook.com"] {
     color: red;
 }
+
+h1[class="class1"] {
+    color: teal;
+}
