@@ -1,8 +1,14 @@
-
+/* <a href> */
 a[href] {
     color: yellow;
 }
 
+/* <a href="….com…"> */
+a[href*=".com"] {
+    color: cadetblue;
+}
+
+/* <a href="https://facebook.com"> */
 a[href="https://facebook.com"] {
     color: red;
 }
