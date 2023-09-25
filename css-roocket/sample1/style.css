@@ -2,23 +2,39 @@
     color: red;
 } */
 
-.class1#p1 {
+.color-red#p1 {
     color: red;
     background-color: aquamarine;
 }
 
-.class2 {
-    background-color: cyan;
-    color: red;
-    font-size: 1.5rem;
+h1.color-red {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.class3 {
+.color-red {
+    color: red;
+}
+
+.color-blue {
     color: blue;
 }
 
-.class2.class3 {
-    font-weight: bold;
-    font-size: 28px;
+.color-yellow {
     color: yellow;
+}
+
+.background-green {
+    background-color: greenyellow;
+}
+
+.font-size-30 {
+    font-size: 30px;
+}
+
+.font-size-30 {
+    font-size: 25px;
+}
+
+.font-bold {
+    font-weight: bold;
 }
