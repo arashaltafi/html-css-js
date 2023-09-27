@@ -60,3 +60,10 @@ li>span {
 
     /* border: 3px dashed yellow; */
 }
+
+.background-image {
+    width: 100%;
+    height: 100px;
+    background-image: url("https://arashaltafi.ir/arash.jpg");
+    background-size: 50px 100px;
+}
