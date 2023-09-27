@@ -22,7 +22,7 @@ h1[class="class1"] {
     color: teal;
 }
 
-li > span {
+li>span {
     background-color: red;
 }
 
@@ -39,4 +39,24 @@ li > span {
 /* psudo element */
 .class1::first-letter {
     color: blueviolet;
+}
+
+.background-red {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.padding-margin {
+    padding: 16px;
+    margin: 8px;
+}
+
+.border {
+    border-width: 3px;
+    border-style: dashed;
+    border-color: yellow;
+
+    /* border: 3px dashed yellow; */
 }
