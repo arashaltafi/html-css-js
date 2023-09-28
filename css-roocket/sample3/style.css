@@ -72,5 +72,8 @@
 
 /* background */
 .class21 {
-    background: linear-gradient(160deg, #d6303199, #0984e377), url("https://arashaltafi.ir/arash.jpg"), fixed;
+    background:
+        linear-gradient(160deg, #00000055, #ffffff99),
+        linear-gradient(160deg, #d6303199, #0984e377),
+        url("https://arashaltafi.ir/arash.jpg"), fixed;
 }
