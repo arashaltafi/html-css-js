@@ -14,7 +14,7 @@ div {
     height: 400px;
     background-image: url("https://arashaltafi.ir/arash.jpg");
     background-position: center center;
-    background-size: 100% 100%;
+    background-size: 100% 100%; /* FITXY */
     background-repeat: no-repeat;
 }
 
@@ -23,7 +23,7 @@ div {
     height: 400px;
     background-image: url("https://arashaltafi.ir/arash.jpg");
     background-position: center center;
-    background-size: cover;
+    background-size: cover; /* center crop */
     background-repeat: no-repeat;
 }
 
@@ -32,6 +32,6 @@ div {
     height: 400px;
     background-image: url("https://arashaltafi.ir/arash.jpg");
     background-position: center center;
-    background-size: contain;
+    background-size: contain; /* center */
     background-repeat: no-repeat;
 }
