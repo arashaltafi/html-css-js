@@ -129,3 +129,16 @@
 .class25:hover {
     filter: opacity(1.0);
 }
+
+.class26 {
+    background-image: url("https://arashaltafi.ir/arash.jpg");
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: cover;
+    background-attachment: scroll;
+    filter: opacity(0.8) contrast(150%) brightness(150%) blur(2px)
+}
+
+.class26:hover {
+    filter: opacity(1.0) contrast(100%) brightness(100%) blur(0px);
+}
