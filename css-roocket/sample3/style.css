@@ -16,6 +16,7 @@
     border-radius: 10px;
 }
 
+/* linear-gradient */
 .class1 {
     background: linear-gradient(#d63031, #0984e3, #fdcb6e, #00b894);
 }
@@ -40,6 +41,31 @@
     background: linear-gradient(200deg, #d63031, #0984e3 70%, #fdcb6e, #00b894);
 }
 
-.class7 {
+/* radial-gradient */
+.class11 {
     background: radial-gradient(red, blue, yellow, green)
+}
+
+.class12 {
+    background: radial-gradient(circle at center, red, blue, yellow, green)
+}
+
+.class13 {
+    background: radial-gradient(closest-side, red, blue, yellow, green)
+}
+
+.class14 {
+    background: radial-gradient(ellipse at top, red, blue, yellow, green)
+}
+
+.class15 {
+    background: radial-gradient(ellipse at bottom, red, blue, yellow, green)
+}
+
+.class16 {
+    background: radial-gradient(ellipse at left, red, blue, yellow, green)
+}
+
+.class17 {
+    background: radial-gradient(ellipse at right, red, blue, yellow, green)
 }
