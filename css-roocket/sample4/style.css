@@ -65,7 +65,7 @@ div {
 .h1 {
     font-family: "custom-font-bold", Yekan, Nazanin, Vazirmatn, sans-serif;
     font-size: 24px;
-    text-decoration: line-through solid red;
+    text-decoration: line-through double red;
     /* font: 24px "custom-font-bold" bold italic; */
 }
 
@@ -93,4 +93,5 @@ div {
 p {
     font: 18px "custom-font-light";
     line-height: 1.8;
+    text-shadow: 1px 2px 10px red;
 }
