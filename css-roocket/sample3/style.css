@@ -17,27 +17,27 @@
 }
 
 .class1 {
-    background: linear-gradient(red, blue, yellow, green);
+    background: linear-gradient(#d63031, #0984e3, #fdcb6e, #00b894);
 }
 
 .class2 {
-    background: linear-gradient(to left, red, blue, yellow, green);
+    background: linear-gradient(to left, #d63031, #0984e3, #fdcb6e, #00b894);
 }
 
 .class3 {
-    background: linear-gradient(to top, red, blue, yellow, green);
+    background: linear-gradient(to top, #d63031, #0984e3, #fdcb6e, #00b894);
 }
 
 .class4 {
-    background: linear-gradient(to right, red, blue, yellow, green);
+    background: linear-gradient(to right, #d63031, #0984e3, #fdcb6e, #00b894);
 }
 
 .class5 {
-    background: linear-gradient(to bottom, red, blue, yellow, green);
+    background: linear-gradient(to bottom, #d63031, #0984e3, #fdcb6e, #00b894);
 }
 
 .class6 {
-    background: linear-gradient(200deg, red, blue 70%, yellow, green);
+    background: linear-gradient(200deg, #d63031, #0984e3 70%, #fdcb6e, #00b894);
 }
 
 .class7 {
