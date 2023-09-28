@@ -97,7 +97,7 @@
     background-origin: border-box;
     background-size: cover;
     background-attachment: scroll;
-    filter: brightness(150%)
+    filter: brightness(200%)
 }
 
 .class23:hover {
@@ -110,7 +110,7 @@
     background-origin: border-box;
     background-size: cover;
     background-attachment: scroll;
-    filter: contrast(150%)
+    filter: contrast(200%)
 }
 
 .class24:hover {
@@ -131,14 +131,33 @@
 }
 
 .class26 {
+    width: 80%;
+    margin-top: 46px;
+    margin-bottom: 46px;
     background-image: url("https://arashaltafi.ir/arash.jpg");
     background-repeat: no-repeat;
     background-origin: border-box;
     background-size: cover;
     background-attachment: scroll;
-    filter: opacity(0.8) contrast(150%) brightness(150%) blur(2px)
+    filter: drop-shadow(5px 10px 10px red)
 }
 
 .class26:hover {
-    filter: opacity(1.0) contrast(100%) brightness(100%) blur(0px);
+    filter: drop-shadow(0px 0px 0px);
+}
+
+.class27 {
+    width: 90%;
+    margin-top: 46px;
+    margin-bottom: 46px;
+    background-image: url("https://arashaltafi.ir/arash.jpg");
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: cover;
+    background-attachment: scroll;
+    filter: opacity(0.8) contrast(150%) brightness(150%) blur(2px) drop-shadow(5px 10px 10px blue)
+}
+
+.class27:hover {
+    filter: opacity(1.0) contrast(100%) brightness(100%) blur(0px) drop-shadow(0px 0px 0px);
 }
