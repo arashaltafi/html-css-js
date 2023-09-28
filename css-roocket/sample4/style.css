@@ -14,8 +14,10 @@ div {
     height: 400px;
     background-image: url("https://arashaltafi.ir/arash.jpg");
     background-position: center center;
-    background-size: 100% 100%; /* FITXY */
+    background-size: 100% 100%;
+    /* FITXY */
     background-repeat: no-repeat;
+    font-family: sans-serif;
 }
 
 .class2 {
@@ -23,8 +25,10 @@ div {
     height: 400px;
     background-image: url("https://arashaltafi.ir/arash.jpg");
     background-position: center center;
-    background-size: cover; /* center crop */
+    background-size: cover;
+    /* center crop */
     background-repeat: no-repeat;
+    font-family: monospace;
 }
 
 .class3 {
@@ -32,6 +36,8 @@ div {
     height: 400px;
     background-image: url("https://arashaltafi.ir/arash.jpg");
     background-position: center center;
-    background-size: contain; /* center */
+    background-size: contain;
+    /* center */
     background-repeat: no-repeat;
+    font-family: sans-serif;
 }
