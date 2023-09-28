@@ -77,3 +77,55 @@
         linear-gradient(160deg, #d6303199, #0984e377),
         url("https://arashaltafi.ir/arash.jpg"), fixed;
 }
+
+.class22 {
+    background-image: url("https://arashaltafi.ir/arash.jpg");
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: cover;
+    background-attachment: scroll;
+    filter: blur(2px);
+}
+
+.class22:hover {
+    filter: blur(0px);
+}
+
+.class23 {
+    background-image: url("https://arashaltafi.ir/arash.jpg");
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: cover;
+    background-attachment: scroll;
+    filter: brightness(150%)
+}
+
+.class23:hover {
+    filter: brightness(100%);
+}
+
+.class24 {
+    background-image: url("https://arashaltafi.ir/arash.jpg");
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: cover;
+    background-attachment: scroll;
+    filter: contrast(150%)
+}
+
+.class24:hover {
+    filter: contrast(100%);
+}
+
+.class25 {
+    background-image: url("https://arashaltafi.ir/arash.jpg");
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: cover;
+    background-attachment: scroll;
+    filter: opacity(0.8)
+}
+
+.class25:hover {
+    filter: opacity(1.0);
+}
