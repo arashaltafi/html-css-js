@@ -62,9 +62,31 @@ div {
     font-family: sans-serif;
 }
 
-h1 {
+.h1 {
     font-family: "custom-font-bold", Yekan, Nazanin, Vazirmatn, sans-serif;
     font-size: 24px;
+    text-decoration: line-through solid red;
+    /* font: 24px "custom-font-bold" bold italic; */
+}
+
+.h2 {
+    font-family: "custom-font-bold", Yekan, Nazanin, Vazirmatn, sans-serif;
+    font-size: 24px;
+    text-decoration: underline solid yellow;
+    /* font: 24px "custom-font-bold" bold italic; */
+}
+
+.h3 {
+    font-family: "custom-font-bold", Yekan, Nazanin, Vazirmatn, sans-serif;
+    font-size: 24px;
+    text-decoration: overline dashed green;
+    /* font: 24px "custom-font-bold" bold italic; */
+}
+
+.h4 {
+    font-family: "custom-font-bold", Yekan, Nazanin, Vazirmatn, sans-serif;
+    font-size: 24px;
+    text-decoration: line-through dotted blue
     /* font: 24px "custom-font-bold" bold italic; */
 }
 
