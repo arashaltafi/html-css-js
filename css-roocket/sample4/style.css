@@ -67,3 +67,8 @@ h1 {
     font-size: 24px;
     /* font: 24px "custom-font-bold" bold italic; */
 }
+
+p {
+    font: 18px "custom-font-light";
+    line-height: 40px;
+}
