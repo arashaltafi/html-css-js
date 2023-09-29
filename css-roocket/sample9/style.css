@@ -1,0 +1,89 @@
+html {
+    font-size: 100%;
+    font-family: "custom-font-medium", serif;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.form {
+    margin-top: 2rem;
+}
+
+.form .form-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: brown;
+    margin-bottom: 1rem;
+}
+
+.form label,
+.form input:not([type="checkbox"]) {
+    display: block;
+    margin-bottom: 0.8rem;
+    font-family: inherit;
+}
+
+.form label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #00000088;
+    border-radius: 8px;
+}
+
+.form-control::placeholder {
+    font-size: 1rem;
+    color: gray;
+}
+
+.checkbox input {
+    display: none;
+}
+
+.checkbox {
+    margin-top: 2rem;
+    position: relative;
+    padding-top: 0.5rem;
+    padding-right: 2.2rem;
+}
+
+.checkbox .check-mark {
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 6px;
+}
+
+.checkbox:hover .check-mark {
+    background-color: #ccc;
+}
+
+.checkbox input:checked ~ .check-mark {
+    background-color: #2196f3;
+}
+
+.check-mark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    top: 5px;
+    right: 7px;
+    border-width: 0 4px 4px 0;
+    transform: rotate(40deg);
+}
+
+.checkbox input:checked ~ .check-mark::after {
+    display: block;
+}

@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "custom-font-bold";
+    src: url(/fonts/font_bold.ttf);
+}
+
+@font-face {
+    font-family: "custom-font-light";
+    src: url(/fonts/font_light.ttf);
+}
+
+@font-face {
+    font-family: "custom-font-medium";
+    src: url(/fonts/font_medium.ttf);
+}
+
+@font-face {
+    font-family: "custom-font-normal";
+    src: url(/fonts/font_normal.ttf);
+}
