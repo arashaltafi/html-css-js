@@ -23,21 +23,21 @@ h2 {
 }
 
 .class1 {
-    width: 90%;
+    width: 90vw;
     background-color: red;
 }
 
 .class2 {
-    width: 70%;
+    width: 100vw;
     background-color: blue;
 }
 
 .class3 {
-    width: 60%;
+    width: 80vw;
     background-color: green;
 }
 
 .class4 {
-    width: 50%;
+    width: 90vw;
     background-color: purple;
 }
