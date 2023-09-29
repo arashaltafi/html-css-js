@@ -1,0 +1,29 @@
+p {
+    font-size: 1.5rem;
+    color: white;
+    font-family: vazir;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.class1 {
+    width: 90%;
+    background-color: red;
+}
+
+.class2 {
+    width: 70%;
+    background-color: blue;
+}
+
+.class3 {
+    width: 60%;
+    background-color: green;
+}
+
+.class4 {
+    width: 50%;
+    background-color: purple;
+}
