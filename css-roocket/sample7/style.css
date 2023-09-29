@@ -1,0 +1,44 @@
+hr {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+html {
+    font-size: 16px;
+}
+
+p {
+    font-family: vazir;
+}
+
+.classEm {
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.class1 {
+    font-size: 1em; /* used parent font => 1 * classEm font size */
+}
+
+.class2 {
+    font-size: 0.5em; /* used parent font => 0.5 * classEm font size */
+}
+
+.classRem {
+    font-size: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.class11 {
+    font-size: 1rem; /* used html font => 1 * html font size */
+}
+
+.class12 {
+    font-size: 0.5rem; /* used html font => 0.5 * html font size */
+}
