@@ -39,7 +39,14 @@ html {
 
 .form-control::placeholder {
     font-size: 1rem;
-    color: gray;
+    color: #2196f3;
+}
+
+.form-control:focus {
+    color: green;
+    outline: none;
+    background-color: #ddf0ff;
+    border: 1px dashed #fd7d6c !important;
 }
 
 .checkbox input {
@@ -67,7 +74,7 @@ html {
     background-color: #ccc;
 }
 
-.checkbox input:checked ~ .check-mark {
+.checkbox input:checked~.check-mark {
     background-color: #2196f3;
 }
 
@@ -84,6 +91,11 @@ html {
     transform: rotate(40deg);
 }
 
-.checkbox input:checked ~ .check-mark::after {
+.checkbox input:checked~.check-mark::after {
     display: block;
+}
+
+.form-control:invalid {
+    background-color: #fcb9b9;
+    border: 1px solid #ff5555 !important;
 }
