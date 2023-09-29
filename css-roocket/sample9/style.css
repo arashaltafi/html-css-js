@@ -4,7 +4,7 @@ html {
 }
 
 .container {
-    width: 800px;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -98,4 +98,26 @@ html {
 .form-control:invalid {
     background-color: #fcb9b9;
     border: 1px solid #ff5555 !important;
+}
+
+.btn {
+    margin-top: 4rem;
+    border: none;
+    font-family: inherit;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 4px;
+    color: white;
+}
+
+.btn-login {
+    background-color: crimson;
+    border: 1px solid rgb(131, 2, 28);
+}
+
+.btn-register {
+    background-color: green;
+    border: 1px solid rgb(0, 90, 0);
 }
