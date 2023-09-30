@@ -54,10 +54,17 @@ aside {
     border-radius: 50%;
     width: 32px;
     height: 32px;
-    position: relative;
+    position: absolute;
     top: 50px;
     right: 20px;
     background-color: red;
     border: 5px dashed blue;
     margin: 1rem;
 }
+
+/*
+    Absolute : موقعیت ثابت به نسبت عنصر پدرش
+    Fixed : موقعیت فیکس در صفحه در همه حال
+    Relative : موقعیت نسبی نسبت به محل اولیه عنصر
+    Sticky : موقعیت چسبیده
+*/
