@@ -113,6 +113,10 @@ html {
 }
 
 .btn-login {
+    max-width: 80%;
+    min-width: 40%;
+    max-height: 30%;
+    min-height: 50px;
     background-color: crimson;
     border: 1px solid rgb(131, 2, 28);
     filter: drop-shadow(2px 1px 3px crimson)
@@ -123,6 +127,10 @@ html {
 }
 
 .btn-register {
+    max-width: 80%;
+    min-width: 40%;
+    max-height: 30%;
+    min-height: 50px;
     background-color: green;
     border: 1px solid rgb(0, 90, 0);
     filter: drop-shadow(2px 1px 3px green)
@@ -152,7 +160,7 @@ html {
 
 @media screen and (max-width: 768px) {
     body {
-        background-color: red;
+        background-color: pink;
     }
 }
 
