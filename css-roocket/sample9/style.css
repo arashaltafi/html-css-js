@@ -169,3 +169,12 @@ html {
         background-color: blue;
     }
 }
+
+/* worked in print screen (ctrl + p) */
+@media print {
+    body {
+      font-size: 12pt;
+      line-height: 1.6;
+      color: red;
+    }
+}
