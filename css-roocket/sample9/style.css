@@ -173,8 +173,13 @@ html {
 /* worked in print screen (ctrl + p) */
 @media print {
     body {
-      font-size: 12pt;
-      line-height: 1.6;
       color: red;
+    }
+}
+
+/* show in all devices have screen */
+@media screen {
+    body {
+        filter: blur(0.3px);
     }
 }
