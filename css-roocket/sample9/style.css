@@ -183,3 +183,15 @@ html {
         filter: blur(0.3px);
     }
 }
+
+@media (orientation: portrait) {
+    body {
+        background-color: red;
+    }
+}
+
+@media (orientation: landscape) {
+    body {
+        background-color: blue;
+    }
+}
