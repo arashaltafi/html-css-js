@@ -19,6 +19,15 @@ body {
     height: 100%;
     position: relative;
     transform-style: preserve-3d;
+    transition-property: transform, border;
+    transition-duration: 2s, 1s;
+    transition-delay: 500ms, 500ms;
+    transition-timing-function: ease-in, ease-out;
+}
+
+.cube:hover {
+    transform: rotateY(160deg);
+    border: 5px dashed blue;
 }
 
 .cube-face {
