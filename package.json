@@ -1,0 +1,22 @@
+{
+  "name": "arash.test.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arashaltafi/js.git"
+  },
+  "author": "arashaltafi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arashaltafi/js/issues"
+  },
+  "homepage": "https://github.com/arashaltafi/js#readme",
+  "dependencies": {
+    "sass": "^1.69.0"
+  }
+}
