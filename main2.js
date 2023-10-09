@@ -50,3 +50,8 @@ console.log(la)
 
 let username = null
 console.log(username);
+
+let name = "arash"
+let family = "altafi"
+
+export {name, family}
