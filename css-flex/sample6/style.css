@@ -24,11 +24,52 @@ html {
 
 * {
     --white: white;
+    --black: black;
     --paddingLarge: 2rem;
     --paddingMedium: 1rem;
     --paddingSmall: 0.5rem;
-    color: var(--white);
     font-family: "vazir-medium" serif sans-serif Georgia, 'Times New Roman', Times, serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    line-height: 0px;
     box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.featureListItem {
+    display: flex;
+    flex-direction: row;
+    padding: var(--paddingMedium);
+    max-width: 500px;
+    align-items: center;
+}
+
+.featureListItem+.featureListItem {
+    border-top: 1px solid #d7dbdd;
+}
+
+.reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.icon,
+.description {
+    padding: 5px 10px;
+    opacity: 0.9;
+}
+
+.icon {
+    color: #bcd2da;
+}
+
+.description {
+    color: #86969c;
 }
