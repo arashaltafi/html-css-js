@@ -5,17 +5,18 @@
     background-color: yellowgreen;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-content: center;
     justify-content: center;
     border: 10px dashed red;
     box-sizing: border-box;
+    align-content: center;
 }
 
 .items {
-    height: 50vh;
+    height: 20vh;
     font-size: 2rem;
     padding: 20px;
     background-color: white;
