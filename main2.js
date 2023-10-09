@@ -54,8 +54,8 @@ console.log(username);
 let name = "arash"
 let family = "altafi"
 
-function sum(a, b) {
+export function sum(a, b) {
     return a + b
 }
 
-export {name, family, sum}
+export {name, family}
