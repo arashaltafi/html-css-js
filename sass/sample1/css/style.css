@@ -5,6 +5,11 @@ p {
   color: black;
   font-size: 1rem; }
 
+.paragraph, .banner p, .footer p {
+  color: black;
+  background-color: whitesmoke;
+  font-size: 1rem; }
+
 .nav {
   background-color: orange;
   padding: 5px 10px; }
@@ -22,6 +27,10 @@ p {
   text-align: center;
   font-size: 2rem; }
 
+.banner p:hover {
+  color: royalBlue;
+  transition: color 1s; }
+
 .footer h3 {
   color: red;
   text-align: center;
@@ -31,3 +40,7 @@ p {
     color: orange;
     background-color: royalBlue;
     transition: color 2s, background-color 3s; }
+
+.footer p:hover {
+  color: orange;
+  transition: color 1s; }

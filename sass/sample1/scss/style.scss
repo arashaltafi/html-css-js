@@ -28,6 +28,12 @@ p {
     font-size: $fontSmall;
 }
 
+.paragraph {
+    color: $blackColor;
+    background-color: whitesmoke;
+    font-size: $fontSmall;
+}
+
 .nav {
     background-color: $orangeColor;
     padding: 5px 10px;
@@ -38,6 +44,7 @@ p {
         a {
             color: $royalBlueColor;
             text-decoration: none;
+
             &:hover {
                 color: $blueColor;
                 font-size: $fontSmall;
@@ -46,17 +53,39 @@ p {
     }
 }
 
-.banner h1 {
-    @include headerStyle();
+.banner {
+    h1 {
+        @include headerStyle();
+    }
+
+    p {
+        @extend .paragraph;
+
+        &:hover {
+            color: $royalBlueColor;
+            transition: color 1s;
+        }
+    }
 }
 
-.footer h3 {
-    @include headerStyle($fontSmall);
-    color: $blueColor;
+.footer {
+    h3 {
+        @include headerStyle($fontSmall);
+        color: $blueColor;
 
-    &:hover {
-        color: $orangeColor;
-        background-color: $royalBlueColor;
-        @include transition(color 2s, background-color 3s);
+        &:hover {
+            color: $orangeColor;
+            background-color: $royalBlueColor;
+            @include transition(color 2s, background-color 3s);
+        }
+    }
+
+    p {
+        @extend .paragraph;
+
+        &:hover {
+            color: $orangeColor;
+            transition: color 1s;
+        }
     }
 }
