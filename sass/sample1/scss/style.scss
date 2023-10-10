@@ -1,8 +1,10 @@
+$red : blue;
+
 body {
-    background-color: red;
+    background-color: $red;
 }
 
 p {
-    color: yellow;
+    color: yellowgreen;
     font-size: larger;
 }
