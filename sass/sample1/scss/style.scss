@@ -17,12 +17,14 @@ a {
 }
 
 p {
-    color: $blackColor;
+    $black: black;
+    color: $black;
     font-size: $fontSmall;
 }
 
 .nav {
     background-color: $orangeColor;
+    padding: 5px 10px;
 }
 
 .banner h1 {
