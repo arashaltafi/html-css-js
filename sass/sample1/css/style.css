@@ -4,10 +4,19 @@ body {
 a {
   color: royalBlue; }
 
-h1,
-h3 {
-  color: red; }
-
 p {
   color: black;
-  font-size: larger; }
+  font-size: 1rem; }
+
+.nav {
+  background-color: orange; }
+
+.banner h1 {
+  color: red;
+  font-size: 2rem;
+  text-align: center; }
+
+.footer h3 {
+  color: blue;
+  font-size: 1rem;
+  text-align: start; }
