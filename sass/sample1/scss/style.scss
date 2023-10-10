@@ -18,7 +18,7 @@ $fontSmall: 1rem;
     transition: $params;
 }
 
-@function doubleFontSize($fontSize) {
+@function doubleFontSize($fontSize: 10px) {
     @return $fontSize * 2;
 }
 
@@ -39,7 +39,7 @@ p {
 }
 
 .nav {
-    background-color: $orangeColor;
+    background-color: lighten($color: $orangeColor, $amount: 10%);
     padding: 5px 10px;
 
     ul li {
@@ -60,6 +60,7 @@ p {
 .banner {
     h1 {
         @include headerStyle();
+        color: darken($color: $redColor, $amount: 10)
     }
 
     p {
@@ -75,7 +76,7 @@ p {
 .footer {
     h3 {
         @include headerStyle($fontSmall);
-        font-size: doubleFontSize(1rem);
+        font-size: doubleFontSize();
         color: $blueColor;
 
         &:hover {

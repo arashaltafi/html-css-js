@@ -11,7 +11,7 @@ p {
   font-size: 1rem; }
 
 .nav {
-  background-color: orange;
+  background-color: #ffb733;
   padding: 5px 10px; }
   .nav ul li {
     color: red; }
@@ -25,7 +25,8 @@ p {
 .banner h1 {
   color: red;
   text-align: center;
-  font-size: 2rem; }
+  font-size: 2rem;
+  color: #cc0000; }
 
 .banner p:hover {
   color: royalBlue;
@@ -35,7 +36,7 @@ p {
   color: red;
   text-align: center;
   font-size: 1rem;
-  font-size: 2rem;
+  font-size: 20px;
   color: blue; }
   .footer h3:hover {
     color: orange;
