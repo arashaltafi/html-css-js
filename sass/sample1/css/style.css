@@ -27,3 +27,7 @@ p {
   text-align: center;
   font-size: 1rem;
   color: blue; }
+  .footer h3:hover {
+    color: orange;
+    background-color: royalBlue;
+    transition: color 2s, background-color 3s; }

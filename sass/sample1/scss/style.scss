@@ -14,6 +14,10 @@ $fontSmall: 1rem;
     font-size: $fontSize;
 }
 
+@mixin transition($params...) {
+    transition: $params;
+}
+
 body {
     background-color: $whiteColor;
 }
@@ -49,4 +53,10 @@ p {
 .footer h3 {
     @include headerStyle($fontSmall);
     color: $blueColor;
+
+    &:hover {
+        color: $orangeColor;
+        background-color: $royalBlueColor;
+        @include transition(color 2s, background-color 3s);
+    }
 }
