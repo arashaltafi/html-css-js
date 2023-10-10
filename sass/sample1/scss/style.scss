@@ -8,9 +8,10 @@ $fontLarge: 4rem;
 $fontMedium: 2rem;
 $fontSmall: 1rem;
 
-@mixin headerStyle {
+@mixin headerStyle($fontSize: $fontMedium) {
     color: $redColor;
     text-align: center;
+    font-size: $fontSize;
 }
 
 body {
@@ -43,11 +44,9 @@ p {
 
 .banner h1 {
     @include headerStyle();
-    font-size: $fontMedium;
 }
 
 .footer h3 {
-    @include headerStyle();
+    @include headerStyle($fontSmall);
     color: $blueColor;
-    font-size: $fontSmall;
 }
