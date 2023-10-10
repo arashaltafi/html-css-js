@@ -18,6 +18,10 @@ $fontSmall: 1rem;
     transition: $params;
 }
 
+@function doubleFontSize($fontSize) {
+    @return $fontSize * 2;
+}
+
 body {
     background-color: $whiteColor;
 }
@@ -71,6 +75,7 @@ p {
 .footer {
     h3 {
         @include headerStyle($fontSmall);
+        font-size: doubleFontSize(1rem);
         color: $blueColor;
 
         &:hover {
