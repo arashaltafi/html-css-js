@@ -8,6 +8,11 @@ $fontLarge: 4rem;
 $fontMedium: 2rem;
 $fontSmall: 1rem;
 
+@mixin headerStyle {
+    color: $redColor;
+    text-align: center;
+}
+
 body {
     background-color: $whiteColor;
 }
@@ -28,18 +33,21 @@ p {
         a {
             color: $royalBlueColor;
             text-decoration: none;
+            &:hover {
+                color: $blueColor;
+                font-size: $fontSmall;
+            }
         }
     }
 }
 
 .banner h1 {
-    color: $redColor;
+    @include headerStyle();
     font-size: $fontMedium;
-    text-align: center;
 }
 
 .footer h3 {
+    @include headerStyle();
     color: $blueColor;
     font-size: $fontSmall;
-    text-align: start;
 }

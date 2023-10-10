@@ -1,34 +1,29 @@
 body {
-  background-color: white;
-}
+  background-color: white; }
 
 p {
   color: black;
-  font-size: 1rem;
-}
+  font-size: 1rem; }
 
 .nav {
   background-color: orange;
-  padding: 5px 10px;
-}
-
-.nav ul li {
-  color: red;
-}
-
-.nav ul li a {
-  color: royalBlue;
-  text-decoration: none;
-}
+  padding: 5px 10px; }
+  .nav ul li {
+    color: red; }
+    .nav ul li a {
+      color: royalBlue;
+      text-decoration: none; }
+      .nav ul li a:hover {
+        color: blue;
+        font-size: 1rem; }
 
 .banner h1 {
   color: red;
-  font-size: 2rem;
   text-align: center;
-}
+  font-size: 2rem; }
 
 .footer h3 {
+  color: red;
+  text-align: center;
   color: blue;
-  font-size: 1rem;
-  text-align: start;
-}
+  font-size: 1rem; }
