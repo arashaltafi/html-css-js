@@ -25,6 +25,14 @@ p {
 .nav {
     background-color: $orangeColor;
     padding: 5px 10px;
+
+    ul li {
+        color: $redColor;
+
+        a {
+            text-decoration: none;
+        }
+    }
 }
 
 .banner h1 {

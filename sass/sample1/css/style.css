@@ -11,6 +11,10 @@ p {
 .nav {
   background-color: orange;
   padding: 5px 10px; }
+  .nav ul li {
+    color: red; }
+    .nav ul li a {
+      text-decoration: none; }
 
 .banner h1 {
   color: red;
