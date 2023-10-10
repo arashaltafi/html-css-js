@@ -12,10 +12,6 @@ body {
     background-color: $whiteColor;
 }
 
-a {
-    color: $royalBlueColor;
-}
-
 p {
     $black: black;
     color: $black;
@@ -30,6 +26,7 @@ p {
         color: $redColor;
 
         a {
+            color: $royalBlueColor;
             text-decoration: none;
         }
     }
