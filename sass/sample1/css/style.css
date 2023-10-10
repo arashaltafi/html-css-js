@@ -1,6 +1,13 @@
 body {
-  background-color: blue; }
+  background-color: white; }
+
+a {
+  color: royalBlue; }
+
+h1,
+h3 {
+  color: red; }
 
 p {
-  color: yellowgreen;
+  color: black;
   font-size: larger; }

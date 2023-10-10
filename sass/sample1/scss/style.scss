@@ -1,10 +1,23 @@
-$red : blue;
+$redColor : red;
+$blueColor: blue;
+$whiteColor: white;
+$blackColor: black;
+$royalBlueColor: royalBlue;
 
 body {
-    background-color: $red;
+    background-color: $whiteColor;
+}
+
+a {
+    color: $royalBlueColor;
+}
+
+h1,
+h3 {
+    color: $redColor;
 }
 
 p {
-    color: yellowgreen;
+    color: $blackColor;
     font-size: larger;
 }
