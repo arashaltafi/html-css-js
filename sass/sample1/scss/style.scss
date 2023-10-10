@@ -32,7 +32,7 @@ p {
     font-size: $fontSmall;
 }
 
-.paragraph {
+%paragraph {
     color: $blackColor;
     background-color: whitesmoke;
     font-size: $fontSmall;
@@ -64,7 +64,7 @@ p {
     }
 
     p {
-        @extend .paragraph;
+        @extend %paragraph;
 
         &:hover {
             color: $royalBlueColor;
@@ -77,7 +77,7 @@ p {
     h3 {
         @include headerStyle($fontSmall);
         font-size: doubleFontSize();
-        color: $blueColor;
+        color: transparentize($color: $blueColor, $amount: 0.3);
 
         &:hover {
             color: $orangeColor;
@@ -87,7 +87,7 @@ p {
     }
 
     p {
-        @extend .paragraph;
+        @extend %paragraph;
 
         &:hover {
             color: $orangeColor;
