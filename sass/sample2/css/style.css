@@ -11,7 +11,7 @@
   src: url(../fonts/IranNastaliq.ttf);
   font-weight: normal; }
 
-.card-overlay, .card-img {
+.hamburger-menu .menu, .card-overlay, .card-img {
   width: 100%;
   height: 100%; }
 
@@ -22,6 +22,26 @@
 
 body {
   background-color: #262626; }
+
+.hamburger-menu {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 10%;
+  right: 5%;
+  z-index: 300; }
+  .hamburger-menu .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: transform 0.5s; }
+    .hamburger-menu .menu-line {
+      width: 100%;
+      height: 4px;
+      background-color: #d3ab55;
+      transition: all 0.5s 0.5s;
+      transform-origin: right; }
 
 .logo {
   display: flex;
@@ -149,7 +169,8 @@ body {
       position: fixed;
       width: 50vw;
       height: 100vh;
-      background-color: #262626; }
+      background-color: #262626;
+      transition: left 0.8s cubic-bezier(1, 0, 0, 1); }
       .navbar-navigation-left .left-img {
         width: 50%;
         position: absolute;
@@ -174,7 +195,8 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      transition: right 0.8s cubic-bezier(1, 0, 0, 1); }
       .navbar-navigation-right-list-item {
         display: flex;
         flex-direction: column;
@@ -195,6 +217,24 @@ body {
           .navbar-navigation-right-list-item-link:hover {
             color: #d3ab55;
             letter-spacing: 4px; }
+
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-left {
+  left: 0; }
+
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-right {
+  right: 0; }
+
+.checkbox:checked ~ .hamburger-menu .menu {
+  transform: rotateZ(90deg); }
+
+.checkbox:checked ~ .hamburger-menu .menu-line-1 {
+  transform: rotateZ(-40deg); }
+
+.checkbox:checked ~ .hamburger-menu .menu-line-2 {
+  opacity: 0; }
+
+.checkbox:checked ~ .hamburger-menu .menu-line-3 {
+  transform: rotateZ(40deg); }
 
 .header {
   width: 100%;
