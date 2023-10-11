@@ -10,7 +10,7 @@
     "convert": "tsc test.ts -w",
     "watchsass": "node-sass -o sass/sample1/css sass/sample1/scss/style.scss -w",
     "watchAll": "node-sass -o sass/sample1/css sass/sample1/scss -w",
-    "watchAll2": "node-sass -o sass/sample2/css sass/sample2/scss -w"
+    "watchAll2": "node-sass -o sass/sample2/css sass/sample2/sass -w"
   },
   "repository": {
     "type": "git",
