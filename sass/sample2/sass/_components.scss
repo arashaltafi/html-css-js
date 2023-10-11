@@ -25,6 +25,8 @@
 }
 
 .main-heading {
+    direction: rtl;
+    text-align: center;
     font-family: $font-nastaliq;
     font-size: 100px;
     font-weight: 300;
@@ -33,6 +35,8 @@
 }
 
 .sub-heading {
+    direction: rtl;
+    text-align: center;
     font-family: $font-sahel;
     font-size: 60px;
     font-weight: 300;
@@ -53,6 +57,7 @@
     cursor: pointer;
     border-radius: 8px;
     transition: all 400ms;
+    font-weight: bold;
 
     &:hover {
         background-color: $color-primary;

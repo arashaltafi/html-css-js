@@ -50,6 +50,8 @@ body {
   text-transform: uppercase; }
 
 .main-heading {
+  direction: rtl;
+  text-align: center;
   font-family: Nastaliq, Tahoma;
   font-size: 100px;
   font-weight: 300;
@@ -57,6 +59,8 @@ body {
   margin-bottom: 40px; }
 
 .sub-heading {
+  direction: rtl;
+  text-align: center;
   font-family: Sahel, Tahoma;
   font-size: 60px;
   font-weight: 300;
@@ -75,7 +79,8 @@ body {
   border: 1px solid #d3ab55;
   cursor: pointer;
   border-radius: 8px;
-  transition: all 400ms; }
+  transition: all 400ms;
+  font-weight: bold; }
   .main-btn:hover {
     background-color: #d3ab55;
     color: #ffffff; }
@@ -100,3 +105,39 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.about-us {
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .about-us-left {
+    width: 40%; }
+    .about-us-left img {
+      width: 100%;
+      opacity: 0.7; }
+  .about-us-right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 80px;
+    box-sizing: border-box; }
+    .about-us-right .main-heading {
+      font-size: 60px;
+      margin-bottom: 20px; }
+    .about-us-right .sub-heading {
+      font-size: 40px;
+      margin-bottom: 20px; }
+    .about-us-right .stars {
+      margin: 30px 0px; }
+    .about-us-right .star {
+      font-size: 15px;
+      color: #d3ab55;
+      margin-left: 10px; }
+    .about-us-right .description {
+      font-family: Nastaliq, Tahoma;
+      font-size: 25px;
+      color: #bbbbbb;
+      direction: rtl;
+      text-align: justify; }
