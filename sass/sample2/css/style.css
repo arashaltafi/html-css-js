@@ -11,6 +11,10 @@
   src: url(../fonts/IranNastaliq.ttf);
   font-weight: normal; }
 
+.card-overlay, .card-img {
+  width: 100%;
+  height: 100%; }
+
 * {
   padding: 0;
   margin: 0;
@@ -87,7 +91,52 @@ body {
 
 .card {
   width: 33.3333%;
-  height: 30vw; }
+  height: 30vw;
+  position: relative;
+  overflow: hidden; }
+  .card:hover .card-overlay {
+    left: 0;
+    top: 0; }
+  .card-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    color: #ffffff;
+    background-color: rgba(211, 171, 85, 0.6);
+    z-index: 10;
+    transition: all 500ms; }
+    .card-overlay-heading {
+      font-weight: 300;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-family: Nastaliq, Tahoma;
+      font-size: 50px; }
+    .card-overlay-paragraph {
+      font-weight: 300;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-family: Sahel, Tahoma;
+      font-size: 20px;
+      margin-top: 10px; }
+    .card-overlay-btn {
+      width: 150px;
+      height: 40px;
+      color: #d3ab55;
+      background-color: #ffffff;
+      font-family: Sahel, Tahoma;
+      font-size: 14px;
+      border: 1px solid #d3ab55;
+      border-radius: 30px;
+      outline: none;
+      cursor: pointer;
+      margin-top: 20px; }
+  .card-img {
+    object-fit: cover;
+    opacity: 0.5; }
 
 .header {
   width: 100%;
