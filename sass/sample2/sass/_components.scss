@@ -52,4 +52,10 @@
     border: 1px solid $color-primary;
     cursor: pointer;
     border-radius: 8px;
+    transition: all 400ms;
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+    }
 }

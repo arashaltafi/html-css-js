@@ -15,6 +15,5 @@
     &-banner { //.header.banner {
         @include centering(50%);
         text-align: center;
-        color: $color-white;
     }
 }

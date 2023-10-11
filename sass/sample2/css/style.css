@@ -61,7 +61,11 @@ body {
   background-color: transparent;
   border: 1px solid #d3ab55;
   cursor: pointer;
-  border-radius: 8px; }
+  border-radius: 8px;
+  transition: all 400ms; }
+  .main-btn:hover {
+    background-color: #d3ab55;
+    color: #ffffff; }
 
 .header {
   width: 100%;
@@ -82,5 +86,4 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
-    color: #ffffff; }
+    text-align: center; }
