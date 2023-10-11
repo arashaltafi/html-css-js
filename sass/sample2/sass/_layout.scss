@@ -67,6 +67,10 @@
             color: $color-secondary;
             direction: rtl;
             text-align: justify;
+
+            &::first-letter {
+                padding-right: 30px;
+            }
         }
     }
 }
