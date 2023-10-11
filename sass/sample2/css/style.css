@@ -200,3 +200,35 @@ body {
 .gallery .cards-wrapper {
   display: flex;
   flex-wrap: wrap; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0px; }
+  .footer-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 70px; }
+  .footer .social-media {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 70px; }
+    .footer .social-media-item {
+      list-style: none; }
+    .footer .social-media-link {
+      text-decoration: none;
+      font-size: 50px;
+      color: #bbbbbb;
+      transition: color 600ms; }
+      .footer .social-media-link:hover {
+        color: #d3ab55; }
+  .footer-copyright-paragraph {
+    font-family: Sahel, Tahoma;
+    font-size: 20px;
+    color: #bbbbbb;
+    direction: rtl; }

@@ -81,3 +81,45 @@
         flex-wrap: wrap;
     }
 }
+
+.footer {
+    @include flexLayout;
+    padding: 70px 0px;
+
+    &-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+
+    .social-media {
+        width: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 70px;
+    
+        &-item {
+            list-style: none;
+        }
+
+        &-link {
+            text-decoration: none;
+            font-size: 50px;
+            color: $color-secondary;
+            transition: color 600ms;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+
+    &-copyright-paragraph {
+        font-family: $font-sahel;
+        font-size: 20px;
+        color: $color-secondary;
+        direction: rtl;
+    }
+}
