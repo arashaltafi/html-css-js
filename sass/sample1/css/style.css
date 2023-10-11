@@ -1,3 +1,6 @@
+h1 {
+  color: pink; }
+
 body {
   background-color: white; }
 
@@ -46,3 +49,6 @@ p {
 .footer p:hover {
   color: orange;
   transition: color 1s; }
+
+.banner p, .footer p {
+  color: green; }

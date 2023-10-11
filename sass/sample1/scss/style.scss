@@ -1,3 +1,5 @@
+@import "test";
+
 $redColor : red;
 $blueColor: blue;
 $whiteColor: white;
@@ -94,4 +96,15 @@ p {
             transition: color 1s;
         }
     }
+}
+
+//map
+$colors: (
+    primary: red,
+    secondary: blue,
+    tertiary: green
+);
+
+.banner p, .footer p {
+    color: map-get($map: $colors, $key: tertiary)
 }
