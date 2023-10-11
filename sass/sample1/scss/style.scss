@@ -108,3 +108,15 @@ $colors: (
 .banner p, .footer p {
     color: map-get($map: $colors, $key: tertiary)
 }
+
+
+//interpolation
+$b: "border";
+$c: "color";
+
+.banner h1 {
+    box-sizing: #{$b}-box;
+    #{$b}: 2px solid black;
+    #{$c}: $royalBlueColor;
+    background-#{$c}: pink;
+}
