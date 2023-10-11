@@ -13,7 +13,7 @@
     font-family: $font-sahel;
     font-size: 50px;
     color: $color-secondary;
-    @include testStyles;
+    @include textStyles;
 }
 
 .sub-name {
@@ -21,7 +21,7 @@
     font-size: 18px;
     color: $color-secondary;
     text-align: center;
-    @include testStyles
+    @include textStyles
 }
 
 .main-heading {
@@ -88,13 +88,13 @@
         transition: all 500ms;
 
         &-heading {
-            @include testStyles;
+            @include textStyles;
             font-family: $font-nastaliq;
             font-size: 50px;
         }
 
         &-paragraph {
-            @include testStyles;
+            @include textStyles;
             font-family: $font-sahel;
             font-size: 20px;
             margin-top: 10px;
