@@ -6,13 +6,15 @@
     background-size: cover;
 
     .brand {
-        position: absolute;
-        top: 15%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: $color-white;
+        @include centering(15%);
         display: flex;
         flex-direction: row;
         align-items: center;
+    }
+
+    &-banner { //.header.banner {
+        @include centering(50%);
+        text-align: center;
+        color: $color-white;
     }
 }

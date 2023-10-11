@@ -21,6 +21,13 @@ $font-nunito: "Nunito", sans-serif;
     text-transform: uppercase;
 }
 
+@mixin centering($topValue, $leftValue: 50%) {
+    position: absolute;
+    top: $topValue;
+    left: $leftValue;
+    transform: translate(-50%, -50%);
+}
+
 * {
     padding: 0;
     margin: 0;
