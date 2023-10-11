@@ -1,9 +1,19 @@
 $color-dark: #262626;
+$color-black: #000000;
+$color-white: #ffffff;
+$color-primary: #d3ab55;
 
+@mixin flexLayout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 * {
     padding: 0;
     margin: 0;
+    direction: ltr;
 }
 
 body {
