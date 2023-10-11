@@ -1,3 +1,16 @@
+@font-face {
+  font-family: Sahel;
+  src: url(../fonts/Sahel.eot);
+  src: url(../fonts/Sahel.ttf) format(ttf);
+  src: url(../fonts/Sahel.woff) format(woff);
+  src: url(../fonts/Sahel.woff2) format(woff2);
+  font-weight: normal; }
+
+@font-face {
+  font-family: Nastaliq;
+  src: url(../fonts/IranNastaliq.ttf);
+  font-weight: normal; }
+
 * {
   padding: 0;
   margin: 0;
@@ -20,7 +33,7 @@ body {
   margin-right: 20px; }
 
 .main-name {
-  font-family: "Nunito", sans-serif;
+  font-family: Sahel, Tahoma;
   font-size: 50px;
   color: #bbbbbb;
   font-weight: 300;
@@ -28,7 +41,7 @@ body {
   text-transform: uppercase; }
 
 .sub-name {
-  font-family: "Dancing Script", cursive;
+  font-family: Sahel, Tahoma;
   font-size: 18px;
   color: #bbbbbb;
   text-align: center;
@@ -37,14 +50,14 @@ body {
   text-transform: uppercase; }
 
 .main-heading {
-  font-family: "Dancing Script", cursive;
+  font-family: Nastaliq, Tahoma;
   font-size: 100px;
   font-weight: 300;
   color: #d3ab55;
   margin-bottom: 40px; }
 
 .sub-heading {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: Sahel, Tahoma;
   font-size: 60px;
   font-weight: 300;
   color: #bbbbbb;
@@ -53,7 +66,7 @@ body {
 .main-btn {
   width: 170px;
   height: 45px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: Sahel, Tahoma;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
