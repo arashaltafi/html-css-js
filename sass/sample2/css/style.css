@@ -29,4 +29,7 @@ body {
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #ffffff; }
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
