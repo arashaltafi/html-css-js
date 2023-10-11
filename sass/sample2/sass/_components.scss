@@ -7,3 +7,18 @@
     border: 3px solid $color-primary;
     border-radius: 50%;
 }
+
+.main-name {
+    font-family: $font-nunito;
+    font-size: 50px;
+    color: $color-secondary;
+    @include testStyles;
+}
+
+.sub-name {
+    font-family: $font-josefinSans;
+    font-size: 18px;
+    color: $color-secondary;
+    text-align: center;
+    @include testStyles
+}
