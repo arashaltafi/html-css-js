@@ -8,7 +8,8 @@
     "arash": "arash altafi",
     "main3": "node main3.js",
     "convert": "tsc test.ts -w",
-    "watchsass": "node-sass -o sass/sample1/css sass/sample1/scss/style.scss -w"
+    "watchsass": "node-sass -o sass/sample1/css sass/sample1/scss/style.scss -w",
+    "watchAll": "node-sass -o sass/sample1/css sass/sample1/scss -w"
   },
   "repository": {
     "type": "git",
