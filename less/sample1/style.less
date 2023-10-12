@@ -10,6 +10,11 @@
 @color-green: green;
 @color-yellow: yellow;
 
+.colorsMap() {
+    error: @color-red;
+    success: @color-green;
+}
+
 .border-1 {
     border: 1px solid @color-green;
 }
@@ -73,7 +78,7 @@ h2 {
     }
 
     p {
-        color: @color-yellow;
+        color: .colorsMap[error];
         font-size: 1.5rem;
     }
 }
