@@ -1,4 +1,4 @@
-*{ 
+* {
     direction: ltr;
 }
 
@@ -9,6 +9,46 @@
 @color-green: green;
 @color-yellow: yellow;
 
+.border-1 {
+    border: 1px solid @color-green;
+}
+
+.border-4 {
+    border: 4px solid @color-green;
+}
+
+#bg-color {
+    background-color: @color-yellow;
+}
+
+.border-color(@size, @color) {
+    border: @size dashed @color;
+
+    &:hover {
+        @finalSize: @size * 2;
+        border: @finalSize dashed @color;
+    }
+}
+
 h1 {
+    width: fit-content;
     color: @color-blue;
+    padding: 8px;
+    .border-1();
+    transition: border 0.1s;
+
+    &:hover {
+        .border-4();
+    }
+
+    #bg-color();
+}
+
+h2 {
+    width: fit-content;
+    padding: 8px;
+    color: @color-red;
+    .border-color(2px, @color-green);
+    #bg-color();
+    transition: border 0.3s;
 }
