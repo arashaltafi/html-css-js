@@ -7,10 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "arash": "arash altafi",
     "main3": "node main3.js",
-    "convert": "tsc test.ts -w",
-    "watchsass": "node-sass -o sass/sample1/css sass/sample1/scss/style.scss -w",
-    "watchAll": "node-sass -o sass/sample1/css sass/sample1/scss -w",
-    "watchAll2": "node-sass -o sass/sample2/css sass/sample2/sass -w"
+    "convertSass": "tsc test.ts -w",
+    "watchSass":"node-sass -o sass/sample1/css sass/sample1/scss/style.scss -w",
+    "watchAllSass1": "node-sass -o sass/sample1/css sass/sample1/scss -w",
+    "watchAllSass2": "node-sass -o sass/sample2/css sass/sample2/sass -w",
+    "convertLess": "lessc less/sample1/style.less less/sample1/style.css"
   },
   "repository": {
     "type": "git",
