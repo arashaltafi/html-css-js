@@ -2,6 +2,7 @@
     direction: ltr;
 }
 
+@image-url: 'https://arashaltafi.ir/arash.jpg';
 @color-red: red;
 @color-blue: blue;
 @color-black: black;
@@ -21,7 +22,7 @@
     background-color: @color-yellow;
 }
 
-.border-color(@size, @color) {
+.border-color(@size: 1px, @color: @color-red) {
     border: @size dashed @color;
 
     &:hover {
@@ -29,6 +30,12 @@
         border: @finalSize dashed @color;
     }
 }
+
+// body {
+//     background-image: url(@image-url);
+//     background-repeat: no-repeat;
+//     background-size: 100vw 100vh;
+// }
 
 h1 {
     width: fit-content;
