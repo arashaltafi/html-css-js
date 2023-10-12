@@ -13,6 +13,9 @@ p {
 #bg-color {
   background-color: yellow;
 }
+body {
+  background-color: #bbbbbb;
+}
 h1 {
   width: fit-content;
   color: blue;
