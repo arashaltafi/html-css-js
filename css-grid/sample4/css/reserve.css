@@ -1,5 +1,20 @@
 .reserve {
-    background-color: hotpink;
     grid-column: 1/-1;
+    background-image: linear-gradient(to left, #00000000, #ffffff00) url(../image/img9.jpeg);
+}
 
+.reserve-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.section-left {
+    background-color: red;
+    grid-area: 1/1/1/2;
+}
+
+.section-right {
+    background-color: blue;
+    grid-area: 1/2/1/4;
 }
