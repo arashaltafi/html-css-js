@@ -4,10 +4,12 @@
     font-family: "TTNorms";
     src: url("../fonts/TTNorms-Regular.otf") format("openType");
 }
+
 @font-face {
     font-family: "TTNorms Medium";
     src: url("../fonts/TTNorms-Medium.otf") format("openType");
 }
+
 @font-face {
     font-family: "TTNorms Light";
     src: url("../fonts/TTNorms-Light.otf") format("openType");
@@ -23,6 +25,7 @@
 html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
+    direction: ltr;
 }
 
 body {
@@ -147,7 +150,8 @@ legend {
     color: inherit;
     display: table;
     max-width: 100%;
-    padding: 0; /* 3 */
+    padding: 0;
+    /* 3 */
     white-space: normal;
 }
 
