@@ -1,0 +1,97 @@
+.container {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.header {
+
+}
+
+.header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.header-link {
+    background-color: #0050c8;
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    margin-right: 1.5rem;
+}
+
+.nav-logo-img {
+
+}
+
+.menu {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu-item {
+
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #081d43;
+    padding: 0 1rem;
+}
+
+.header-bottom {
+
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-content-left {
+    flex-basis: 50%;
+}
+
+.header-content-right {
+    flex-basis: 50%;
+}
+
+.header-content-title {
+    color: #081d43;
+    font-family: 'TTNorms Medium';
+}
+
+.header-content-text {
+    color: #6c7890;
+    line-height: 2rem;
+}
+
+.header-content-link {
+    background-color: #0050c8;
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.5rem;
+    margin-right: 0.8rem;
+}
+
+.header-content-img {
+    width: 100%;
+}
