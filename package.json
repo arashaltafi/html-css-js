@@ -11,7 +11,9 @@
     "watchSass": "node-sass -o sass/sample1/css sass/sample1/scss/style.scss -w",
     "watchAllSass1": "node-sass -o sass/sample1/css sass/sample1/scss -w",
     "watchAllSass2": "node-sass -o sass/sample2/css sass/sample2/sass -w",
-    "convertLess": "lessc less/sample1/style.less less/sample1/style.css"
+    "convertLess": "lessc less/sample1/style.less less/sample1/style.css",
+    "convertTailwind": "npx tailwindcss -i ./tailwind/sample1/main.css -o ./tailwind/sample1/main-dist.css --watch",
+    "convertTailwindProduction": "cross-env NODE_ENV=production npx tailwindcss -i ./tailwind/sample1/main.css -o ./tailwind/sample1/main-dist.css --watch"
   },
   "repository": {
     "type": "git",
@@ -25,7 +27,13 @@
   "homepage": "https://github.com/arashaltafi/js#readme",
   "dependencies": {
     "bootstrap": "^5.3.2",
+    "cross-env": "^7.0.3",
     "sass": "^1.69.0",
     "tailwind": "^4.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.3"
   }
 }
