@@ -2,7 +2,18 @@
 module.exports = {
   content: ["./tailwind/**/*.{html,js}"],
   theme: {
-    extend: {},
+    container: {
+      center: true,
+      padding: '2rem'
+    },
+    extend: {
+      width: {
+        f: '100rem'
+      },
+      height: {
+        f: '100rem'
+      }
+    },
   },
   plugins: [],
 }
