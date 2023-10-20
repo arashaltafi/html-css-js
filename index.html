@@ -8,16 +8,37 @@
     <title>Sample Bootstrap SabzLearn</title>
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+
         body {
             background-color: #DC3545;
+            display: grid;
+            grid-template-rows: 1fr auto;
         }
 
         #root {
-            margin-top: 50px;
+            grid-row: 1 / 1;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+        }
+
+        footer {
+            grid-row: 2 / 2;
+            text-align: center;
+            margin-bottom: 2rem;
         }
 
         .links {
@@ -50,9 +71,13 @@
         <a class="links" href="./sass">Sass</a>
         <a class="links" href="./less">Less</a>
         <a class="links" href="./bootstrap">Bootstrap</a>
-        <a class="links" href="./tailwind">TailwindCss</a>
-        <a class="links" href="./js">Js</a>
+        <a class="links" href="./tailwindcss">TailwindCss</a>
+        <a class="links" href="./js-fronthook">Js FrontHook</a>
     </div>
+
+    <footer>
+        Arash Altafi
+    </footer>
 </body>
 
 </html>
