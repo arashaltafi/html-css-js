@@ -12,7 +12,8 @@
     "watchAllSass1": "node-sass -o sass/sample1/css sass/sample1/scss -w",
     "watchAllSass2": "node-sass -o sass/sample2/css sass/sample2/sass -w",
     "convertLess": "lessc less/sample1/style.less less/sample1/style.css",
-    "convertTailwind": "npx tailwindcss -i ./tailwindcss/main.css -o ./tailwindcss/sample1/main-dist.css --watch",
+    "convertTailwind1": "npx tailwindcss -i ./tailwindcss/main.css -o ./tailwindcss/sample1/main-dist.css --watch",
+    "convertTailwind2": "npx tailwindcss -i ./tailwindcss/main.css -o ./tailwindcss/sample2/main-dist.css --watch",
     "convertTailwindProduction": "cross-env NODE_ENV=production npx tailwindcss -i ./tailwindcss/main.css -o ./tailwind/sample1/main-dist.css --watch"
   },
   "repository": {
