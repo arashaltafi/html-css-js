@@ -117,3 +117,7 @@ a.dev-codecyan:hover {
 .anim-codecyan:hover img {
   transform: scale(1.05);
 }
+
+.dropshadow {
+  filter: drop-shadow(8px 8px 4px #000000aa);
+}
