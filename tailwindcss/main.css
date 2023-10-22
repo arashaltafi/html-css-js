@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .test1 {
+        @apply w-[50%] h-10 bg-red-500 m-auto p-5 shadow-md text-center text-white text-2xl flex justify-center items-center;
+    }
+
+    .test2 {
+        width: 50%;
+        height: 40px;
+        background-color: blue;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        box-shadow: 8px 8px 5px #00000033;
+        text-align: center;
+        color: white;
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
