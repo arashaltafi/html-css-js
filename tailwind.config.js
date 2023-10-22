@@ -5,9 +5,17 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        DEFAULT: '2rem',
-        sm: '3rem'
+        DEFAULT: '1rem',
+        sm: '5rem'
       }
+    },
+    screens: {
+      "mobile": '576px',
+      "tablet": '768px',
+      "laptop": '992px',
+      "desktop": '1280px',
+      "desktop-large": '1536px',
+      "desktop-2x-large": '1650px',
     },
     extend: {
       width: {
@@ -33,6 +41,10 @@ module.exports = {
           "lighter": "#B2DFDB",
           "darker": "#004D40",
         }
+      },
+      spacing: {
+        "27": "6.875rem",
+        "small": "32px"
       }
     },
   },

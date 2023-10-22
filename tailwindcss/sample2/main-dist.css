@@ -538,15 +538,13 @@ video {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 576px) {
   .container {
-    max-width: 640px;
-    padding-right: 3rem;
-    padding-left: 3rem;
+    max-width: 576px;
   }
 }
 
@@ -556,9 +554,9 @@ video {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .container {
-    max-width: 1024px;
+    max-width: 992px;
   }
 }
 
@@ -574,6 +572,12 @@ video {
   }
 }
 
+@media (min-width: 1650px) {
+  .container {
+    max-width: 1650px;
+  }
+}
+
 .m-5 {
   margin: 1.25rem;
 }
@@ -583,9 +587,14 @@ video {
   margin-bottom: 1rem;
 }
 
-.my-\[64px\] {
-  margin-top: 64px;
-  margin-bottom: 64px;
+.my-\[32px\] {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.my-small {
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .mt-5 {
@@ -622,6 +631,10 @@ video {
 
 .w-20 {
   width: 5rem;
+}
+
+.w-27 {
+  width: 6.875rem;
 }
 
 .w-\[110px\] {
@@ -896,48 +909,20 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 640px) {
-  .sm\:grid-cols-2 {
+@media (min-width: 576px) {
+  .mobile\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 768px) {
-  .md\:contents {
-    display: contents;
-  }
-
-  .md\:grid-cols-3 {
+  .tablet\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-
-  .md\:bg-blue-500 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(59 130 246 / var(--tw-bg-opacity));
-  }
 }
 
-@media (min-width: 1024px) {
-  .lg\:grid-cols-4 {
+@media (min-width: 992px) {
+  .laptop\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .lg\:bg-red-200 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(254 202 202 / var(--tw-bg-opacity));
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:bg-yellow-500 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(234 179 8 / var(--tw-bg-opacity));
-  }
-}
-
-@media (min-width: 1536px) {
-  .\32xl\:bg-pink-500 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(236 72 153 / var(--tw-bg-opacity));
   }
 }
