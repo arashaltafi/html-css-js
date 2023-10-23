@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    @font-face {
+        font-family: vazir;
+        src: url(/fonts/font_medium.ttf) format("truetype");
+    }
+
+    @font-face {
+        font-family: "vazir bold";
+        src: url(/fonts/font_bold.ttf) format("truetype");
+    }
+
+    @font-face {
+        font-family: "vazir light";
+        src: url(/fonts/font_light.ttf) format("truetype");
+    }
+}
+
 @layer components {
     .test1 {
         @apply w-[50%] h-10 bg-red-500 m-auto p-5 shadow-md text-center text-white text-2xl flex justify-center items-center;

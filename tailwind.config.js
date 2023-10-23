@@ -17,6 +17,11 @@ module.exports = {
       "desktop-large": '1536px',
       "desktop-2x-large": '1650px',
     },
+    fontFamily: {
+      "vazir": "vazir",
+      "vazir-bold": "vazir bold",
+      "vazir-light": "vazir light",
+    },
     extend: {
       width: {
         400: '100rem'
