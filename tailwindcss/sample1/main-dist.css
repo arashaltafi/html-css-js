@@ -437,7 +437,19 @@ video {
 @font-face {
   font-family: vazir;
 
-  src: url(../fonts/font_medium.ttf);
+  src: url(/fonts/font_medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "vazir bold";
+
+  src: url(/fonts/font_bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "vazir light";
+
+  src: url(/fonts/font_light.ttf) format("truetype");
 }
 
 *, ::before, ::after {
@@ -807,6 +819,11 @@ video {
 .my-small {
   margin-top: 32px;
   margin-bottom: 32px;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .mb-4 {
@@ -1349,8 +1366,8 @@ video {
   text-align: center;
 }
 
-.font-mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+.font-vazir {
+  font-family: vazir;
 }
 
 .text-2xl {
@@ -1390,6 +1407,10 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.leading-10 {
+  line-height: 2.5rem;
 }
 
 .text-\[\#fff\] {
