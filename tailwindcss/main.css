@@ -27,4 +27,19 @@
     .btn {
         @apply px-4 py-2 m-4 bg-red-500 hover:bg-red-400 text-white text-center w-auto rounded-md flex flex-row justify-center items-center;
     }
+
+    .flex-center {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .flex-center-tailwind {
+        @apply flex flex-row items-center justify-center text-white text-center mx-auto;
+    }
 }
