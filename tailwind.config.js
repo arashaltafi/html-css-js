@@ -4,6 +4,7 @@ module.exports = {
     "./tailwindcss/**/*.{html,js}",
     "./node_modules/flowbite/**/*.js"
   ],
+  darkMode : "class",
   theme: {
     container: {
       center: true,
