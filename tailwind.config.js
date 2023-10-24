@@ -25,6 +25,12 @@ module.exports = {
       "vazir": "vazir",
       "vazir-bold": "vazir bold",
       "vazir-light": "vazir light",
+      "Dana": "Dana",
+      "DanaMedium": "Dana Medium",
+      "DanaBold": "Dana Bold",
+      "MorabbaLight": "Morabba Light",
+      "MorabbaMedium": "Morabba Medium",
+      "MorabbaBold": "Morabba Bold",
     },
     extend: {
       width: {
@@ -59,6 +65,9 @@ module.exports = {
       },
       boxShadow: {
         "shadow-normal": "0px 1px 10px 0px rgba(0, 0, 0, 0.05)",
+      },
+      borderRadius: {
+        "4xl": "2rem"
       },
       spacing: {
         "27": "6.875rem",
