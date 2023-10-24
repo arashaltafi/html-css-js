@@ -13,9 +13,9 @@
     <link rel="icon" href="./images/app-logo.png" type="image/png">
 </head>
 
-<body class="font-Dana">
+<body class="font-Dana bg-gray-100 dark:bg-zinc-800">
     <!-- All Apps Icons -->
-    <svg>
+    <svg class="hidden">
         <symbol id="shopping-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -38,24 +38,25 @@
         </symbol>
 
     </svg>
-    <header>
-        <div>
+
+    <header class="fixed top-9 right-0 left-0 flex items-center w-[90%] h-24 px-10 py-5 mx-auto bg-black/50 rounded-3xl">
+        <div class="flex justify-between items-center w-full">
             <!-- Logo & Menu -->
-            <nav>
+            <nav class="flex items-center gap-x-9">
                 <!-- Logo -->
                 <div>
                     <img src="images/app-logo.png" alt="Golden Coffee">
                 </div>
                 <!-- Menu -->
-                <ul>
-                    <li>
+                <ul class="flex gap-x-9 text-xl text-gray-300">
+                    <li class="font-DanaMedium text-orange-200">
                         <a href="#">صفحه اصلی</a>
                     </li>
                     <!-- Has SubMenu -->
                     <li>
                         <a href="#">فروشگاه</a>
                         <!-- SubMenu -->
-                        <ul>
+                        <ul class="hidden">
                             <li>
                                 <a href="#">قهوه ویژه</a>
                             </li>
@@ -92,9 +93,9 @@
             </nav>
 
             <!-- Cart & Theme Toggle & Login Link -->
-            <div>
+            <div class="flex gap-x-10 items-center text-orange-200 text-xl">
                 <!-- Cart & Theme Toggle -->
-                <div>
+                <div class="flex gap-x-5">
                     <!-- Cart -->
                     <div>
                         <svg class="w-8 h-8">
@@ -108,12 +109,16 @@
                         </svg>
                     </div>
                 </div>
+
+                <!-- Divide Border -->
+                <span class="block w-px h-14 bg-white/20"></span>
+
                 <!-- Login Link -->
-                <a href="#">
+                <a href="#" class="flex items-center gap-x-2.5">
                     <svg class="w-8 h-8">
                         <use xlink:href="#arrow-right-on-rectangle"></use>
                     </svg>
-                    ورود | ثبت نام
+                    <span>ورود | ثبت نام</span>
                 </a>
             </div>
         </div>
