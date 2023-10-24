@@ -1,0 +1,15 @@
+{
+    "short_name": "آرش الطافی",
+    "name": "",
+    "start_url": "/",
+    "scope": "https://arash.nahad.ir",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff",
+    "orientation": "portrait",
+    "url_handlers": [
+        {
+            "origin": "https://arash.nahad.ir"
+        }
+    ]
+}
