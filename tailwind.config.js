@@ -49,7 +49,16 @@ module.exports = {
           "900": "#004D40",
           "lighter": "#B2DFDB",
           "darker": "#004D40",
+        },
+        "brown": {
+          "100": "#ECE0D1",
+          "300": "#DBC1AC",
+          "600": "#967259",
+          "900": "#634832"
         }
+      },
+      boxShadow: {
+        "shadow-normal": "0px 1px 10px 0px rgba(0, 0, 0, 0.05)",
       },
       spacing: {
         "27": "6.875rem",
@@ -68,7 +77,7 @@ module.exports = {
   },
   plugins: [
     require('flowbite/plugin'),
-    require("daisyui")
+    // require("daisyui")
   ]
 }
 
