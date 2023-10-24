@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./tailwindcss/**/*.{html,js}"],
+  content: [
+    "./tailwindcss/**/*.{html,js}",
+    "./node_modules/flowbite/**/*.js"
+  ],
   theme: {
     container: {
       center: true,
@@ -62,6 +65,8 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ]
 }
 
