@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa" dir="ltr" translate="no" id="html" class="dark">
+<html lang="fa" dir="ltr" translate="no" id="html">
 
 <head>
     <meta name="darkreader-lock" />
@@ -48,15 +48,52 @@
     </div>
 
     <script>
+        //toggle theme
         const btn = document.getElementById('changeTheme');
         const html = document.getElementById('html');
         btn.addEventListener('click', () => {
             if (html.classList.contains('dark')) {
                 html.classList.remove('dark');
+                localStorage.setItem("theme", "light")
             } else {
                 html.classList.add('dark');
+                localStorage.setItem("theme", "dark")
             }
         })
+
+        if (localStorage.getItem("theme") === null) {
+            console.log("if")
+            //get default theme
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+                const newColorScheme = event.matches ? "dark" : "light";
+                if (newColorScheme == "dark") {
+                    console.log("if add dark")
+                    html.classList.add('dark');
+                } else {
+                    console.log("if add dark")
+                    html.classList.remove('dark');
+                }
+            });
+
+            //change theme
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                console.log("change theme add dark")
+                html.classList.add('dark');
+            } else {
+                console.log("change theme remove dark")
+                html.classList.remove('dark');
+            }
+        } else {
+            console.log("else", localStorage.getItem("theme"))
+            if (localStorage.getItem("theme") === "dark") {
+                console.log("else add dark")
+                html.classList.add('dark');
+            } else {
+                console.log("else remove dark")
+                html.classList.remove('dark');
+            }
+        }
+
     </script>
 
 </body>
