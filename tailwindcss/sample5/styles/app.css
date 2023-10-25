@@ -1409,6 +1409,10 @@ body {
   height: 6rem;
 }
 
+.h-30 {
+  height: 120px;
+}
+
 .h-32 {
   height: 8rem;
 }
@@ -2676,6 +2680,10 @@ body {
 
 .font-Dana {
   font-family: Dana;
+}
+
+.font-DanaBold {
+  font-family: Dana Bold;
 }
 
 .font-DanaMedium {

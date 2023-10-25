@@ -35,9 +35,6 @@ module.exports = {
     extend: {
       width: {
         400: '100rem',
-        30: '120px',
-        90: '360px',
-        100: '400px'
       },
       height: {
         400: '100rem'
@@ -74,7 +71,10 @@ module.exports = {
       },
       spacing: {
         "27": "6.875rem",
-        "small": "32px"
+        "small": "32px",
+        "30": '120px',
+        "90": '360px',
+        "100": '400px'
       },
       letterSpacing: {
         "tightest": "-0.065em"
