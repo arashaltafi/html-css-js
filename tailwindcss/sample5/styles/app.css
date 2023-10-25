@@ -943,7 +943,7 @@ input:checked + .toggle-bg {
 body {
   background-size: cover;
   background-position: center center;
-  background-image: url(../images/headerBgDesktop.png);
+  background-image: url(../images/headerBgDesktop.webp);
   background-repeat: no-repeat;
 }
 
@@ -1541,12 +1541,12 @@ body {
   width: 2rem;
 }
 
-.w-\[110px\] {
-  width: 110px;
+.w-90 {
+  width: 360px;
 }
 
-.w-\[360px\] {
-  width: 360px;
+.w-\[110px\] {
+  width: 110px;
 }
 
 .w-\[90\%\] {
@@ -1559,10 +1559,6 @@ body {
 
 .w-px {
   width: 1px;
-}
-
-.w-90 {
-  width: 360px;
 }
 
 .max-w-\[382px\] {
@@ -2714,10 +2710,6 @@ body {
   line-height: 1;
 }
 
-.text-\[12px\] {
-  font-size: 12px;
-}
-
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -2799,12 +2791,12 @@ body {
   letter-spacing: 0em;
 }
 
-.tracking-tightest {
-  letter-spacing: -0.065em;
-}
-
 .tracking-tighter {
   letter-spacing: -0.05em;
+}
+
+.tracking-tightest {
+  letter-spacing: -0.065em;
 }
 
 .text-\[\#fff\] {
