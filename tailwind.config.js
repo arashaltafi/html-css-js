@@ -64,7 +64,7 @@ module.exports = {
         }
       },
       boxShadow: {
-        "shadow-normal": "0px 1px 10px 0px rgba(0, 0, 0, 0.05)",
+        "normal": "0px 1px 10px 0px rgba(0, 0, 0, 0.05)",
       },
       borderRadius: {
         "4xl": "2rem"
@@ -90,6 +90,10 @@ module.exports = {
   plugins: [
     require('flowbite/plugin'),
     // require("daisyui")
+    function ({addVariant}) {
+      addVariant("child", "& > *")
+      addVariant("child-hover", "& > *:hover")
+    }
   ]
 }
 

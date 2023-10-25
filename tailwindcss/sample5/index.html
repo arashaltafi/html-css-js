@@ -42,21 +42,21 @@
     <header class="fixed top-9 right-0 left-0 flex items-center w-[90%] h-24 px-10 py-5 mx-auto bg-black/50 rounded-3xl backdrop-blur-[6px]">
         <div class="flex justify-between items-center w-full">
             <!-- Logo & Menu -->
-            <nav class="flex items-center gap-x-9">
+            <nav class="h-14 flex items-center gap-x-9">
                 <!-- Logo -->
                 <div>
                     <img src="images/app-logo.png" alt="Golden Coffee">
                 </div>
                 <!-- Menu -->
-                <ul class="flex gap-x-9 text-xl text-gray-300 tracking-tightest">
+                <ul class="h-full flex gap-x-9 text-xl text-gray-300 tracking-tightest child:leading-[56px]">
                     <li class="font-DanaMedium text-orange-200">
                         <a id="test" href="#">صفحه اصلی</a>
                     </li>
                     <!-- Has SubMenu -->
-                    <li>
+                    <li class="relative group hover:text-orange-300 transition-colors">
                         <a href="#">فروشگاه</a>
                         <!-- SubMenu -->
-                        <ul class="hidden">
+                        <ul class="absolute top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all w-52 p-6 space-y-4 text-zinc-700 dark:text-white bg-white dark:bg-zinc-700 text-base rounded-2xl border-t-[3px] border-orange-300 tracking-normal shadow-normal child:inline-block child-hover:text-orange-300 child:transition-colors">
                             <li>
                                 <a href="#">قهوه ویژه</a>
                             </li>
@@ -99,13 +99,13 @@
                     <!-- Cart -->
                     <div>
                         <svg class="w-8 h-8 cursor-pointer">
-                            <use xlink:href="#shopping-cart"></use>
+                            <use href="#shopping-cart"></use>
                         </svg>
                     </div>
                     <!-- Theme Toggle -->
                     <div>
                         <svg id="changeTheme" class="w-8 h-8 cursor-pointer">
-                            <use id="iconTheme" xlink:href="#moon"></use>
+                            <use id="iconTheme" href="#moon"></use>
                         </svg>
                     </div>
                 </div>
@@ -116,7 +116,7 @@
                 <!-- Login Link -->
                 <a href="#" class="flex items-center gap-x-2.5 tracking-tightest">
                     <svg class="w-8 h-8">
-                        <use xlink:href="#arrow-right-on-rectangle"></use>
+                        <use href="#arrow-right-on-rectangle"></use>
                     </svg>
                     <span>ورود | ثبت نام</span>
                 </a>
