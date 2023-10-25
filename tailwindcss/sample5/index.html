@@ -112,9 +112,12 @@
                         </div>
                     </div>
                     <!-- Theme Toggle -->
-                    <div>
-                        <svg id="changeTheme" class="w-8 h-8 cursor-pointer">
-                            <use id="iconTheme" href="#moon"></use>
+                    <div id="toggle-theme" class="cursor-pointer">
+                        <svg class="w-8 h-8 inline-block dark:hidden">
+                            <use href="#moon"></use>
+                        </svg>
+                        <svg class="w-8 h-8 hidden dark:inline-block">
+                            <use href="#sun"></use>
                         </svg>
                     </div>
                 </div>
