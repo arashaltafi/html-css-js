@@ -73,6 +73,9 @@ module.exports = {
         "27": "6.875rem",
         "small": "32px"
       },
+      letterSpacing: {
+        "tightest": "-0.065em"
+      },
       animation: {
         'spin-slow': 'spin 3s linear infinite',
       },
