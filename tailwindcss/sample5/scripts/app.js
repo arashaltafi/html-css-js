@@ -1,6 +1,6 @@
 //toggle theme
 const btn = document.getElementById('changeTheme');
-const html = document.getElementById('html');
+const html = document.documentElement;
 const icon = document.getElementById('iconTheme');
 
 btn.addEventListener('click', () => {
