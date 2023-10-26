@@ -13,14 +13,6 @@ module.exports = {
         sm: '5rem'
       }
     },
-    screens: {
-      "mobile": '640px',
-      "tablet": '768px',
-      "laptop": '1024px',
-      "desktop": '1280px',
-      "desktop-large": '1536px',
-      "desktop-2x-large": '1650px',
-    },
     fontFamily: {
       "vazir": "vazir",
       "vazir-bold": "vazir bold",
