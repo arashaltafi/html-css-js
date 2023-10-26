@@ -408,7 +408,7 @@
             </div>
 
             <!-- Header Body -->
-            <ul class="flex flex-col gap-y-6 text-zinc-600 dark:text-white child:px-2.5">
+            <ul class="flex flex-col gap-y-6 text-zinc-700 dark:text-white child:px-2.5">
                 <li class="rounded-md -mb-2 py-2 bg-orange-200/20 text-orange-300">
                     <a href="#" class="flex gap-x-2 items-center">
                         <svg class="w-5 h-5">
@@ -417,18 +417,41 @@
                         صفحه اصلی
                     </a>
                 </li>
-                <li class="flex flex-row items-center justify-between text-orange-300">
-                    <a href="#" class="flex items-center">
-                        <svg class="w-5 h-5 ml-2">
-                            <use href="#shopping-cart"></use>
-                        </svg>
-                        فروشگاه
-                    </a>
-                    <span class="cursor-pointer">
-                        <svg class="w-4 h-4">
-                            <use href="#chevron-down"></use>
-                        </svg>
-                    </span>
+                <li>
+                    <div class="flex flex-row items-center justify-between ">
+                        <a href="#" class="flex items-center">
+                            <svg class="w-5 h-5 ml-2">
+                                <use href="#shopping-cart"></use>
+                            </svg>
+                            فروشگاه
+                        </a>
+                        <span class="cursor-pointer" id="submenu-open">
+                            <svg class="w-4 h-4">
+                                <use href="#chevron-down"></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <!-- sub menu shopping -->
+                    <div class="submenu">
+                        <a href="#">
+                            قهوه ویژه
+                        </a>
+                        <a href="#" class="submenu__item--active">
+                            ویژه در سطح جهانی
+                        </a>
+                        <a href="#">
+                            قهوه درجه یک
+                        </a>
+                        <a href="#">
+                            ترکیبات تجاری
+                        </a>
+                        <a href="#">
+                            کپسول قهوه
+                        </a>
+                        <a href="#">
+                            قهوه زینو برزیلی
+                        </a>
+                    </div>
                 </li>
                 <li>
                     <a href="#" class="flex items-center">
@@ -437,7 +460,7 @@
                         </svg>
                         دیکشنری
                     </a>
-                </liclass=>
+                    </liclass=>
                 <li>
                     <a href="#" class="flex items-center">
                         <svg class="w-5 h-5 ml-2">
