@@ -1493,6 +1493,18 @@ body {
   height: 100%;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
+.h-\[55px\] {
+  height: 55px;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
 .max-h-72 {
   max-height: 18rem;
 }
@@ -1595,6 +1607,14 @@ body {
 
 .w-px {
   width: 1px;
+}
+
+.w-\[138px\] {
+  width: 138px;
+}
+
+.w-\[100px\] {
+  width: 100px;
 }
 
 .max-w-\[382px\] {
@@ -4071,6 +4091,10 @@ body {
 
   .md\:contents {
     display: contents;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:w-48 {
