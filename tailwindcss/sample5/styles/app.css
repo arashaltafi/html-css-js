@@ -946,6 +946,33 @@ body {
   background-repeat: no-repeat;
 }
 
+/* scroll bar customization */
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -1470,6 +1497,10 @@ body {
   height: 100%;
 }
 
+.max-h-96 {
+  max-height: 24rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1862,6 +1893,10 @@ body {
 
 .overflow-scroll {
   overflow: scroll;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
 }
 
 .rounded-2xl {
@@ -3118,10 +3153,6 @@ body {
 
 .delay-100 {
   transition-delay: 100ms;
-}
-
-.delay-75 {
-  transition-delay: 75ms;
 }
 
 .delay-200 {
