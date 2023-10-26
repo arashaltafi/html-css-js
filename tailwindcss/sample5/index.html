@@ -44,16 +44,16 @@
     </svg>
 
     <header
-        class="fixed top-9 right-0 left-0 flex items-center w-[90%] h-24 px-10 py-5 mx-auto bg-black/50 rounded-3xl backdrop-blur-[6px]">
+        class="fixed top-9 right-0 left-0 hidden tablet:flex items-center w-[98%] laptop:w-[90%] h-24 px-5 laptop:px-10 py-5 mx-auto bg-black/50 rounded-3xl backdrop-blur-[6px]">
         <div class="flex justify-between items-center w-full">
             <!-- Logo & Menu -->
-            <nav class="h-14 flex items-center gap-x-9">
+            <nav class="h-14 flex items-center gap-x-5 laptop:gap-x-9">
                 <!-- Logo -->
-                <div>
+                <div class="flex shrink-0">
                     <img src="images/app-logo.png" alt="Golden Coffee">
                 </div>
                 <!-- Menu -->
-                <ul class="h-full flex gap-x-9 text-xl text-gray-300 tracking-tightest child:leading-[56px]">
+                <ul class="h-full flex gap-x-5 laptop:gap-x-9 text-xl text-gray-300 tracking-tightest child:leading-[56px]">
                     <li class="font-DanaMedium text-orange-200">
                         <a id="test" href="#">صفحه اصلی</a>
                     </li>
@@ -99,9 +99,9 @@
             </nav>
 
             <!-- Cart & Theme Toggle & Login Link -->
-            <div class="flex gap-x-10 items-center text-orange-200 text-xl">
+            <div class="flex gap-x-4 laptop:gap-x-5 desktop:gap-x-10 items-center text-orange-200 text-xl">
                 <!-- Cart & Theme Toggle -->
-                <div class="flex items-center gap-x-5">
+                <div class="flex items-center gap-x-4 laptop:gap-x-5">
                     <!-- Cart -->
                     <div class="relative group">
                         <!-- Cart Icon Hover -->
@@ -126,7 +126,7 @@
 
                             <!-- Cart Body -->
                             <div
-                                class="mt-2 max-h-96 overflow-y-auto  pb-1 border-b border-b-gray-200 dark:border-b-white/10 divide-y divide-gray-200 dark:divide-white/10 child:py-5">
+                                class="mt-2 max-h-72 laptop:max-h-80 desktop:max-h-96 overflow-y-auto  pb-1 border-b border-b-gray-200 dark:border-b-white/10 divide-y divide-gray-200 dark:divide-white/10 child:py-5">
                                 <div class="flex flex-row gap-x-2">
                                     <div class="w-30 h-30 cursor-pointer">
                                         <img src="./images/products/p2.png" alt="coffee">
@@ -297,7 +297,7 @@
                     <svg class="w-8 h-8">
                         <use href="#arrow-right-on-rectangle"></use>
                     </svg>
-                    <span>ورود | ثبت نام</span>
+                    <span class="hidden desktop:inline-block">ورود | ثبت نام</span>
                 </a>
             </div>
         </div>

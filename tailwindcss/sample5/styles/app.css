@@ -1081,9 +1081,9 @@ body {
   padding-left: 1rem;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .container {
-    max-width: 576px;
+    max-width: 640px;
   }
 }
 
@@ -1093,9 +1093,9 @@ body {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .container {
-    max-width: 992px;
+    max-width: 1024px;
   }
 }
 
@@ -1501,6 +1501,10 @@ body {
   max-height: 24rem;
 }
 
+.max-h-72 {
+  max-height: 18rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1599,6 +1603,14 @@ body {
 
 .w-px {
   width: 1px;
+}
+
+.w-\[98\] {
+  width: 98;
+}
+
+.w-\[98\%\] {
+  width: 98%;
 }
 
 .max-w-\[382px\] {
@@ -1791,11 +1803,6 @@ body {
   gap: 1.25rem;
 }
 
-.gap-x-10 {
-  -moz-column-gap: 2.5rem;
-       column-gap: 2.5rem;
-}
-
 .gap-x-2 {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
@@ -1819,6 +1826,11 @@ body {
 .gap-x-9 {
   -moz-column-gap: 2.25rem;
        column-gap: 2.25rem;
+}
+
+.gap-x-4 {
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
 }
 
 .space-x-10 > :not([hidden]) ~ :not([hidden]) {
@@ -4067,13 +4079,17 @@ body {
   --tw-ring-color: rgb(99 49 18 / var(--tw-ring-opacity));
 }
 
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .mobile\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 768px) {
+  .tablet\:flex {
+    display: flex;
+  }
+
   .tablet\:w-48 {
     width: 12rem;
   }
@@ -4087,7 +4103,7 @@ body {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .laptop\:col-start-1 {
     grid-column-start: 1;
   }
@@ -4112,6 +4128,22 @@ body {
     grid-column-end: 4;
   }
 
+  .laptop\:flex {
+    display: flex;
+  }
+
+  .laptop\:max-h-96 {
+    max-height: 24rem;
+  }
+
+  .laptop\:max-h-80 {
+    max-height: 20rem;
+  }
+
+  .laptop\:w-\[90\%\] {
+    width: 90%;
+  }
+
   .laptop\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -4122,5 +4154,35 @@ body {
 
   .laptop\:grid-rows-3 {
     grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
+
+  .laptop\:gap-x-9 {
+    -moz-column-gap: 2.25rem;
+         column-gap: 2.25rem;
+  }
+
+  .laptop\:gap-x-5 {
+    -moz-column-gap: 1.25rem;
+         column-gap: 1.25rem;
+  }
+
+  .laptop\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .desktop\:inline-block {
+    display: inline-block;
+  }
+
+  .desktop\:max-h-96 {
+    max-height: 24rem;
+  }
+
+  .desktop\:gap-x-10 {
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
   }
 }

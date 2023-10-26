@@ -14,9 +14,9 @@ module.exports = {
       }
     },
     screens: {
-      "mobile": '576px',
+      "mobile": '640px',
       "tablet": '768px',
-      "laptop": '992px',
+      "laptop": '1024px',
       "desktop": '1280px',
       "desktop-large": '1536px',
       "desktop-2x-large": '1650px',
