@@ -1,15 +1,17 @@
 //toggle theme
-const btn = document.getElementById('toggle-theme');
+const btns = document.querySelectorAll('.toggle-theme');
 const html = document.documentElement;
 
-btn.addEventListener('click', () => {
-    if (localStorage.theme === "dark"){
-        document.documentElement.classList.remove("dark");
-        localStorage.setItem("theme" , "light");
-    } else {
-        document.documentElement.classList.add("dark");
-        localStorage.setItem("theme" , "dark");
-    }
+btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        if (localStorage.theme === "dark"){
+            document.documentElement.classList.remove("dark");
+            localStorage.setItem("theme" , "light");
+        } else {
+            document.documentElement.classList.add("dark");
+            localStorage.setItem("theme" , "dark");
+        }
+    })
 })
 
 if (localStorage.getItem("theme") === null) {
