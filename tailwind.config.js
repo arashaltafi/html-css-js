@@ -18,6 +18,7 @@ module.exports = {
       "MorabbaBold": "Morabba Bold",
     },
     screens: {
+      'xs': '480px',
       'sm': '640px',
       'md': '768px',
       'lg': '1024px',
@@ -86,6 +87,10 @@ module.exports = {
           '0%, 100%': { transform: 'rotate(-3deg)' },
           '50%': { transform: 'rotate(3deg)' },
         }
+      },
+      backgroundImage: {
+        "home-mobile": "url(/tailwindcss/sample5/images/headerBgMobile.webp)",
+        "home-desktop": "url(/tailwindcss/sample5/images/headerBgDesktop.webp)",
       }
     },
   },
