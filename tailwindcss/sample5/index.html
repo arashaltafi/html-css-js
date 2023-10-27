@@ -382,14 +382,14 @@
     <!-- Mobile Header -->
     <div class="flex md:hidden items-center justify-between h-16 px-4 bg-white dark:bg-zinc-700">
         <!-- Menu Header Icon -->
-        <div class="cursor-pointer">
+        <div class="cursor-pointer nav-icon">
             <svg class="w-6 h-6 text-zinc-700 dark:text-white">
                 <use href="#bars-3"></use>
             </svg>
         </div>
 
         <!-- Menu Header Click -->
-        <div class="fixed top-0 bottom-0 right-0 w-64 min-h-screen pt-3 px-4 overflow-y-auto bg-white dark:bg-zinc-700 z-20">
+        <div class="nav">
             <!-- Header Menu -->
             <div class="flex items-center justify-between pb-5 mb-6 border-b border-b-gray-100 dark:border-b-white/10">
                 <!-- Logo And LogoType -->
@@ -402,9 +402,11 @@
                     </svg>
                 </div>
                 <!-- Close Button -->
-                <svg class="w-5 h-5 text-zinc-600 dark:text-white">
-                    <use href="#x-mark"></use>
-                </svg>
+                <div class="nav-close">
+                    <svg class=" w-5 h-5 text-zinc-600 dark:text-white">
+                        <use href="#x-mark"></use>
+                    </svg>
+                </div>
             </div>
 
             <!-- Header Body -->
@@ -489,7 +491,7 @@
 
             <!-- Header Footer -->
             <div
-                class="flex flex-col items-start gap-y-6 mt-8 pt-8 px-2.5 border-t border-t-gray-100 dark:border-t-white/10 text-orange-300">
+                class="flex flex-col items-start gap-y-6 mt-8 py-8 px-2.5 border-t border-t-gray-100 dark:border-t-white/10 text-orange-300">
                 <a href="#" class="inline-flex items-center gap-x-2">
                     <svg class="w-5 h-5">
                         <use href="#arrow-right-on-rectangle"></use>
@@ -538,7 +540,7 @@
     </div>
 
 
-    <div class="overlay md:hidden fixed inset-0 w-full h-full bg-black/40 z-10"></div>
+    <div class="overlay"></div>
     <script src="scripts/app.js"></script>
 </body>
 

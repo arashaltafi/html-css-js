@@ -97,4 +97,20 @@
         margin: auto;
         background-color: #FDBA74;
     }
+
+    .overlay {
+        @apply invisible opacity-0 md:hidden fixed inset-0 w-full h-full bg-black/40 z-10 transition-all;
+    }
+
+    .overlay--visible {
+        @apply visible opacity-100;
+    }
+
+    .nav {
+        @apply fixed top-0 bottom-0 -right-64 w-64 pt-3 px-4 overflow-y-auto bg-white dark:bg-zinc-700 z-20 transition-all;
+    }
+
+    .nav--open {
+        @apply right-0
+    }
 }

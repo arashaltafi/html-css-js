@@ -2,6 +2,10 @@
 const toggleTheme = document.querySelectorAll('.toggle-theme');
 const toggleOpenSubMenu = document.querySelector('#submenu-open');
 const submenu = document.querySelector('.submenu');
+const navOpenBtn = document.querySelector('.nav-icon');
+const navCloseBtn = document.querySelector('.nav-close');
+const nav = document.querySelector('.nav');
+const overlay = document.querySelector('.overlay');
 const html = document.documentElement;
 
 toggleTheme.forEach(btn => {
@@ -27,6 +31,21 @@ toggleOpenSubMenu.addEventListener('click', (e) => {
         e.currentTarget.parentElement.classList.add("text-orange-300")
         submenu.classList.add("submenu--open")
     }
+})
+
+navOpenBtn.addEventListener('click', () => {
+    nav.classList.add('nav--open');
+    overlay.classList.add('overlay--visible');
+})
+
+navCloseBtn.addEventListener('click', () => {
+    nav.classList.remove('nav--open');
+    overlay.classList.remove('overlay--visible');
+})
+
+overlay.addEventListener('click', () => {
+    nav.classList.remove('nav--open');
+    overlay.classList.remove('overlay--visible');
 })
 
 if (localStorage.getItem("theme") === null) {
