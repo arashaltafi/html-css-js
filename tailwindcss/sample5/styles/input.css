@@ -42,12 +42,6 @@
         font-display: swap;
     }
 
-    body {
-        background-size: cover;
-        background-image: url(../images/headerBgDesktop.webp);
-        background-repeat: no-repeat;
-    }
-
     /* scroll bar customization */
     /* width */
     ::-webkit-scrollbar {

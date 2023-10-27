@@ -940,12 +940,6 @@ input:checked + .toggle-bg {
   font-display: swap;
 }
 
-body {
-  background-size: cover;
-  background-image: url(../images/headerBgDesktop.webp);
-  background-repeat: no-repeat;
-}
-
 /* scroll bar customization */
 
 /* width */
@@ -1418,6 +1412,11 @@ body {
   margin-right: auto;
 }
 
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -1445,6 +1444,14 @@ body {
 
 .-mb-2 {
   margin-bottom: -0.5rem;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mb-0\.5 {
+  margin-bottom: 0.125rem;
 }
 
 .mb-1 {
@@ -1652,6 +1659,10 @@ body {
   height: 100%;
 }
 
+.h-px {
+  height: 1px;
+}
+
 .max-h-72 {
   max-height: 18rem;
 }
@@ -1766,6 +1777,10 @@ body {
 
 .w-px {
   width: 1px;
+}
+
+.max-w-\[201px\] {
+  max-width: 201px;
 }
 
 .max-w-\[382px\] {
@@ -2367,6 +2382,11 @@ body {
   background-color: rgb(252 217 189 / 0.2);
 }
 
+.bg-orange-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 186 140 / var(--tw-bg-opacity));
+}
+
 .bg-orange-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(255 138 76 / var(--tw-bg-opacity));
@@ -2965,6 +2985,14 @@ body {
 
 .font-DanaMedium {
   font-family: Dana Medium;
+}
+
+.font-MorabbaBold {
+  font-family: Morabba Bold;
+}
+
+.font-MorabbaLight {
+  font-family: Morabba Light;
 }
 
 .font-vazir {
@@ -4326,6 +4354,15 @@ body {
 }
 
 @media (min-width: 768px) {
+  .md\:my-8 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .md\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -4338,8 +4375,24 @@ body {
     display: none;
   }
 
+  .md\:h-0 {
+    height: 0px;
+  }
+
+  .md\:h-0\.5 {
+    height: 0.125rem;
+  }
+
+  .md\:min-h-screen {
+    min-height: 100vh;
+  }
+
   .md\:w-48 {
     width: 12rem;
+  }
+
+  .md\:max-w-\[460px\] {
+    max-width: 460px;
   }
 
   .md\:grid-cols-3 {
@@ -4353,6 +4406,21 @@ body {
   .md\:bg-blue-500 {
     --tw-bg-opacity: 1;
     background-color: rgb(63 131 248 / var(--tw-bg-opacity));
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
 
