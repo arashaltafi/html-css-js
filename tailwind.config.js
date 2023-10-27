@@ -4,15 +4,8 @@ module.exports = {
     "./tailwindcss/**/*.{html,js}",
     "./node_modules/flowbite/**/*.js"
   ],
-  darkMode : "class",
+  darkMode: "class",
   theme: {
-    container: {
-      center: true,
-      padding: {
-        DEFAULT: '1rem',
-        sm: '5rem'
-      }
-    },
     fontFamily: {
       "vazir": "vazir",
       "vazir-bold": "vazir bold",
@@ -23,6 +16,19 @@ module.exports = {
       "MorabbaLight": "Morabba Light",
       "MorabbaMedium": "Morabba Medium",
       "MorabbaBold": "Morabba Bold",
+    },
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px'
+    },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1rem',
+        lg: '0.625rem'
+      }
     },
     extend: {
       width: {
@@ -86,7 +92,7 @@ module.exports = {
   plugins: [
     require('flowbite/plugin'),
     // require("daisyui")
-    function ({addVariant}) {
+    function ({ addVariant }) {
       addVariant("child", "& > *")
       addVariant("child-hover", "& > *:hover")
     }

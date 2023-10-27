@@ -1084,8 +1084,6 @@ body {
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
-    padding-right: 5rem;
-    padding-left: 5rem;
   }
 }
 
@@ -1098,18 +1096,14 @@ body {
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
   }
 }
 
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
   }
 }
 
@@ -4445,12 +4439,5 @@ body {
   .xl\:bg-yellow-500 {
     --tw-bg-opacity: 1;
     background-color: rgb(194 120 3 / var(--tw-bg-opacity));
-  }
-}
-
-@media (min-width: 1536px) {
-  .\32xl\:bg-pink-500 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(231 70 148 / var(--tw-bg-opacity));
   }
 }
