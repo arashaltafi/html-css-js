@@ -67,11 +67,11 @@
 
 @layer components {
     .submenu {
-        @apply hidden flex-col gap-y-3 pr-7 mt-3 text-sm text-zinc-600 dark:text-white; 
+        @apply hidden flex-col gap-y-3 pr-7 mt-3 text-sm text-zinc-600 dark:text-white;
     }
 
     .submenu--open {
-        @apply flex; 
+        @apply flex;
     }
 
     .submenu__item--active {
@@ -134,5 +134,18 @@
 
     .circle--sm {
         @apply w-[95px] h-[95px] border-white/80;
+    }
+
+    @media screen and (min-width: 1280px) {
+        html.dark .products {
+            background-image: url("/tailwindcss/sample5/images/products-bg.png");
+        }
+
+        .products {
+            background: linear-gradient(rgba(243, 244, 246, 0.65), rgba(243, 244, 246, 0.65)), url("/tailwindcss/sample5/images/products-bg.png");
+            @apply bg-no-repeat
+            background-size: 100%;
+            height: 900px;
+        }
     }
 }
