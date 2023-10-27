@@ -1115,7 +1115,7 @@ body {
 
 .submenu {
   margin-top: 0.75rem;
-  display: flex;
+  display: none;
   flex-direction: column;
   row-gap: 0.75rem;
   padding-right: 1.75rem;
@@ -1128,6 +1128,10 @@ body {
 :is(.dark .submenu) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.submenu--open {
+  display: flex;
 }
 
 .submenu__item--active {
@@ -1547,10 +1551,6 @@ body {
   height: 100%;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .max-h-72 {
   max-height: 18rem;
 }
@@ -1968,10 +1968,6 @@ body {
 
 .overflow-y-auto {
   overflow-y: auto;
-}
-
-.overflow-y-scroll {
-  overflow-y: scroll;
 }
 
 .rounded-2xl {
@@ -3717,6 +3713,14 @@ body {
 .focus\:ring-yellow-300:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(250 202 21 / var(--tw-ring-opacity));
+}
+
+.active\:inline-block:active {
+  display: inline-block;
+}
+
+.active\:hidden:active {
+  display: none;
 }
 
 .active\:scale-95:active {

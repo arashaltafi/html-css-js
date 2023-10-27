@@ -1,17 +1,32 @@
 //toggle theme
-const btns = document.querySelectorAll('.toggle-theme');
+const toggleTheme = document.querySelectorAll('.toggle-theme');
+const toggleOpenSubMenu = document.querySelector('#submenu-open');
+const submenu = document.querySelector('.submenu');
 const html = document.documentElement;
 
-btns.forEach(btn => {
+toggleTheme.forEach(btn => {
     btn.addEventListener('click', () => {
         if (localStorage.theme === "dark"){
-            document.documentElement.classList.remove("dark");
+            html.classList.remove("dark");
             localStorage.setItem("theme" , "light");
         } else {
-            document.documentElement.classList.add("dark");
+            html.classList.add("dark");
             localStorage.setItem("theme" , "dark");
         }
     })
+})
+
+toggleOpenSubMenu.addEventListener('click', (e) => {
+    // submenu.classList.toggle('submenu--open')
+    // e.currentTarget.parentElement.classList.toggle('text-orange-300')
+
+    if (submenu.classList.contains('submenu--open')) {
+        e.currentTarget.parentElement.classList.remove("text-orange-300")
+        submenu.classList.remove("submenu--open")
+    } else {
+        e.currentTarget.parentElement.classList.add("text-orange-300")
+        submenu.classList.add("submenu--open")
+    }
 })
 
 if (localStorage.getItem("theme") === null) {
