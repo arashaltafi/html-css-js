@@ -2,9 +2,15 @@
 const toggleTheme = document.querySelectorAll('.toggle-theme');
 const toggleOpenSubMenu = document.querySelector('#submenu-open');
 const submenu = document.querySelector('.submenu');
+
 const navOpenBtn = document.querySelector('.nav-icon');
 const navCloseBtn = document.querySelector('.nav-close');
 const nav = document.querySelector('.nav');
+
+const cartOpenBtn = document.querySelector('.cart-icon');
+const cartCloseBtn = document.querySelector('.cart-close');
+const cart = document.querySelector('.cart');
+
 const overlay = document.querySelector('.overlay');
 const html = document.documentElement;
 
@@ -33,20 +39,30 @@ toggleOpenSubMenu.addEventListener('click', (e) => {
     }
 })
 
-navOpenBtn.addEventListener('click', () => {
-    nav.classList.add('nav--open');
+navOpenBtn.addEventListener('click', () => openMobileMenus(true))
+
+cartOpenBtn.addEventListener('click', () => openMobileMenus(false))
+
+navCloseBtn.addEventListener('click', closeMobileMenus)
+
+cartCloseBtn.addEventListener('click', closeMobileMenus)
+
+overlay.addEventListener('click', closeMobileMenus)
+
+function closeMobileMenus() {
+    nav.classList.remove('nav--open');
+    cart.classList.remove('cart--open');
+    overlay.classList.remove('overlay--visible');
+}
+
+function openMobileMenus(isNav = true) {
+    if (isNav) {
+        nav.classList.add('nav--open');
+    } else {
+        cart.classList.add('cart--open');
+    }
     overlay.classList.add('overlay--visible');
-})
-
-navCloseBtn.addEventListener('click', () => {
-    nav.classList.remove('nav--open');
-    overlay.classList.remove('overlay--visible');
-})
-
-overlay.addEventListener('click', () => {
-    nav.classList.remove('nav--open');
-    overlay.classList.remove('overlay--visible');
-})
+}
 
 if (localStorage.getItem("theme") === null) {
     console.log("if")
