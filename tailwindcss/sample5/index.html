@@ -205,11 +205,33 @@
                                 class="mt-2 max-h-72 lg:max-h-80 xl:max-h-96 overflow-y-auto  pb-1 border-b border-b-gray-200 dark:border-b-white/10 divide-y divide-gray-200 dark:divide-white/10 child:py-5">
                                 <div class="flex flex-row gap-x-2">
                                     <div class="w-30 h-30 cursor-pointer">
+                                        <img src="./images/products/p1.png" alt="coffee">
+                                    </div>
+                                    <div class="flex flex-col justify-between w-full">
+                                        <h2 class="text-base font-DanaMedium line-clamp-2">
+                                            قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                                        </h2>
+                                        <div class="mt-6">
+                                            <p
+                                                class="text-teal-600 dark:text-emerald-500 text-xs tracking-tighter line-clamp-1">
+                                                14.500 تومان تخفیف
+                                            </p>
+                                            <p class="text-zinc-700 dark:text-white font-DanaBold line-clamp-1 mt-1">
+                                                175,000
+                                                <span class="font-Dana text-sm">تومان</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-row gap-x-2">
+                                    <div class="w-30 h-30 cursor-pointer">
                                         <img src="./images/products/p2.png" alt="coffee">
                                     </div>
                                     <div class="flex flex-col justify-between w-full">
                                         <h2 class="text-base font-DanaMedium line-clamp-2">
                                             قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                                            قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
                                         </h2>
                                         <div class="mt-6">
                                             <p
@@ -226,7 +248,7 @@
 
                                 <div class="flex flex-row gap-x-2">
                                     <div class="w-30 h-30 cursor-pointer">
-                                        <img src="./images/products/p1.png" alt="coffee">
+                                        <img src="./images/products/p3.png" alt="coffee">
                                     </div>
                                     <div class="flex flex-col justify-between w-full">
                                         <h2 class="text-base font-DanaMedium line-clamp-2">
@@ -248,7 +270,7 @@
 
                                 <div class="flex flex-row gap-x-2">
                                     <div class="w-30 h-30 cursor-pointer">
-                                        <img src="./images/products/p1.png" alt="coffee">
+                                        <img src="./images/products/p4.png" alt="coffee">
                                     </div>
                                     <div class="flex flex-col justify-between w-full">
                                         <h2 class="text-base font-DanaMedium line-clamp-2">
@@ -270,7 +292,7 @@
 
                                 <div class="flex flex-row gap-x-2">
                                     <div class="w-30 h-30 cursor-pointer">
-                                        <img src="./images/products/p1.png" alt="coffee">
+                                        <img src="./images/products/p5.png" alt="coffee">
                                     </div>
                                     <div class="flex flex-col justify-between w-full">
                                         <h2 class="text-base font-DanaMedium line-clamp-2">
@@ -292,29 +314,7 @@
 
                                 <div class="flex flex-row gap-x-2">
                                     <div class="w-30 h-30 cursor-pointer">
-                                        <img src="./images/products/p1.png" alt="coffee">
-                                    </div>
-                                    <div class="flex flex-col justify-between w-full">
-                                        <h2 class="text-base font-DanaMedium line-clamp-2">
-                                            قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
-                                            قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
-                                        </h2>
-                                        <div class="mt-6">
-                                            <p
-                                                class="text-teal-600 dark:text-emerald-500 text-xs tracking-tighter line-clamp-1">
-                                                14.500 تومان تخفیف
-                                            </p>
-                                            <p class="text-zinc-700 dark:text-white font-DanaBold line-clamp-1 mt-1">
-                                                175,000
-                                                <span class="font-Dana text-sm">تومان</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="flex flex-row gap-x-2">
-                                    <div class="w-30 h-30 cursor-pointer">
-                                        <img src="./images/products/p1.png" alt="coffee">
+                                        <img src="./images/products/p6.png" alt="coffee">
                                     </div>
                                     <div class="flex flex-col justify-between w-full">
                                         <h2 class="text-base font-DanaMedium line-clamp-2">
@@ -402,7 +402,7 @@
                     </svg>
                 </div>
                 <!-- Close Button -->
-                <div class="nav-close">
+                <div class="nav-close cursor-pointer">
                     <svg class=" w-5 h-5 text-zinc-600 dark:text-white">
                         <use href="#x-mark"></use>
                     </svg>
@@ -538,11 +538,11 @@
         </div>
 
         <!-- Menu Header Click -->
-        <div class="cart cart--open">
+        <div class="cart cart--open flex flex-col">
             <!-- Header Cart -->
             <div class="flex items-center justify-between pb-5 mb-5 border-b border-b-gray-300 dark:border-b-white/10">
                 <!-- Close Button -->
-                <div class="cart-close">
+                <div class="cart-close cursor-pointer">
                     <svg class=" w-5 h-5 text-zinc-600 dark:text-white">
                         <use href="#x-mark"></use>
                     </svg>
@@ -553,9 +553,121 @@
             </div>
 
             <!-- Body Cart -->
+            <div class="child:pb-5 child:mb-5">
+                <div class="flex flex-row items-center gap-x-1 border-b border-b-gray-100 dark:border-b-white/10">
+                    <img class="w-[90px] h-[90px] cursor-pointer" src="./images/products/p1.png" alt="coffee">
+                    <div class="flex flex-col justify-between gap-y-1.5">
+                        <h2 class="text-sm font-DanaMedium line-clamp-2 text-zinc-700 dark:text-white">
+                            قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                        </h2>
+                        <div>
+                            <p
+                                class="text-teal-600 dark:text-emerald-500 font-DanaMedium text-xs tracking-tighter line-clamp-1">
+                                14.500 تومان تخفیف
+                            </p>
+                            <p class="text-zinc-700 dark:text-white font-DanaBold line-clamp-1">
+                                175,000
+                                <span class="font-Dana text-xs">تومان</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row items-center gap-x-1 border-b border-b-gray-100 dark:border-b-white/10">
+                    <img class="w-[90px] h-[90px] cursor-pointer" src="./images/products/p2.png" alt="coffee">
+                    <div class="flex flex-col justify-between gap-y-1.5">
+                        <h2 class="text-sm font-DanaMedium line-clamp-2 text-zinc-700 dark:text-white">
+                            قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                        </h2>
+                        <div>
+                            <p
+                                class="text-teal-600 dark:text-emerald-500 font-DanaMedium text-xs tracking-tighter line-clamp-1">
+                                14.500 تومان تخفیف
+                            </p>
+                            <p class="text-zinc-700 dark:text-white font-DanaBold line-clamp-1">
+                                175,000
+                                <span class="font-Dana text-xs">تومان</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row items-center gap-x-1 border-b border-b-gray-100 dark:border-b-white/10">
+                    <img class="w-[90px] h-[90px] cursor-pointer" src="./images/products/p3.png" alt="coffee">
+                    <div class="flex flex-col justify-between gap-y-1.5">
+                        <h2 class="text-sm font-DanaMedium line-clamp-2 text-zinc-700 dark:text-white">
+                            قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                            قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                            قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                        </h2>
+                        <div>
+                            <p
+                                class="text-teal-600 dark:text-emerald-500 font-DanaMedium text-xs tracking-tighter line-clamp-1">
+                                14.500 تومان تخفیف
+                            </p>
+                            <p class="text-zinc-700 dark:text-white font-DanaBold line-clamp-1">
+                                175,000
+                                <span class="font-Dana text-xs">تومان</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row items-center gap-x-1 border-b border-b-gray-100 dark:border-b-white/10">
+                    <img class="w-[90px] h-[90px] cursor-pointer" src="./images/products/p4.png" alt="coffee">
+                    <div class="flex flex-col justify-between gap-y-1.5">
+                        <h2 class="text-sm font-DanaMedium line-clamp-2 text-zinc-700 dark:text-white">
+                            قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                        </h2>
+                        <div>
+                            <p
+                                class="text-teal-600 dark:text-emerald-500 font-DanaMedium text-xs tracking-tighter line-clamp-1">
+                                14.500 تومان تخفیف
+                            </p>
+                            <p class="text-zinc-700 dark:text-white font-DanaBold line-clamp-1">
+                                175,000
+                                <span class="font-Dana text-xs">تومان</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row items-center gap-x-1 border-b border-b-gray-100 dark:border-b-white/10">
+                    <img class="w-[90px] h-[90px] cursor-pointer" src="./images/products/p5.png" alt="coffee">
+                    <div class="flex flex-col justify-between gap-y-1.5">
+                        <h2 class="text-sm font-DanaMedium line-clamp-2 text-zinc-700 dark:text-white">
+                            قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                        </h2>
+                        <div>
+                            <p
+                                class="text-teal-600 dark:text-emerald-500 font-DanaMedium text-xs tracking-tighter line-clamp-1">
+                                14.500 تومان تخفیف
+                            </p>
+                            <p class="text-zinc-700 dark:text-white font-DanaBold line-clamp-1">
+                                175,000
+                                <span class="font-Dana text-xs">تومان</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row items-center gap-x-1 border-b border-b-gray-100 dark:border-b-white/10">
+                    <img class="w-[90px] h-[90px] cursor-pointer" src="./images/products/p6.png" alt="coffee">
+                    <div class="flex flex-col justify-between gap-y-1.5">
+                        <h2 class="text-sm font-DanaMedium line-clamp-2 text-zinc-700 dark:text-white">
+                            قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                        </h2>
+                        <div>
+                            <p
+                                class="text-teal-600 dark:text-emerald-500 font-DanaMedium text-xs tracking-tighter line-clamp-1">
+                                14.500 تومان تخفیف
+                            </p>
+                            <p class="text-zinc-700 dark:text-white font-DanaBold line-clamp-1">
+                                175,000
+                                <span class="font-Dana text-xs">تومان</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- Footer Cart -->
-            <div class="flex items-center gap-x-4">
+            <div class="flex items-end gap-x-4 mt-auto mb-8">
                 <button
                     class="flex-grow bg-teal-600 dark:bg-emerald-500 hover:bg-teal-700 dark:hover:bg-emerald-600 transition-colors text-white py-2.5 px-5 rounded-xl cursor-pointer">
                     ثبت سفارش
@@ -564,7 +676,7 @@
                     <p class="text-xs tracking-tighter font-DanaMedium text-gray-300">
                         مبلغ قابل پرداخت
                     </p>
-                    <p class="font-DanaBold line-clamp-1 mt-1">
+                    <p class="font-DanaBold line-clamp-1">
                         350,000
                         <span class="font-Dana text-xs">تومان</span>
                     </p>
