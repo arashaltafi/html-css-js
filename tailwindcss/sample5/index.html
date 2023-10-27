@@ -786,13 +786,13 @@
             <!-- Products -->
             <div class="grid grid-cols-4 grid-rows-2 gap-5">
                 <div class="w-75 h-[467px] mt-12 bg-white dark:bg-zinc-700 rounded-2xl p-5 select-none">
-                    <!-- Discount -->
-                    <span
-                        class="mt-6 ms-6 py-1 px-[14px] bg-orange-300 hover:bg-orange-400 hover:text-white cursor-pointer rounded-full font-DanaMedium">
-                        %12
-                    </span>
-                    <!-- image of product -->
+                    <!-- image of product And Discount -->
                     <div class="w-65 h-65 cursor-pointer">
+                        <!-- Discount -->
+                        <span
+                            class="mt-6 ms-6 py-1 px-[14px] bg-orange-300 hover:bg-orange-400 hover:text-white cursor-pointer rounded-full font-DanaMedium">
+                            %12
+                        </span>
                         <img src="./images/products/p1.png" alt="coffee">
                     </div>
                     <!-- title -->
@@ -801,23 +801,23 @@
                     </p>
                     <!-- price, avalible or unavilable -->
                     <div>
-                        <p class="text-teal-600 dark:text-emerald-500">
+                        <p class="hidden text-teal-600 dark:text-emerald-500 text-xl">
                             175,000
                             <span class="font-Dana text-xs">تومان</span>
                         </p>
-                        <div class=" hidden flex-row gap-x-2.5 items-center">
-                            <div class="flex items-center gap-x-1 text-teal-600 dark:text-emerald-500">
+                        <div class="flex flex-row gap-x-2.5 items-center">
+                            <div class="flex items-center gap-x-1 text-teal-600 dark:text-emerald-500 text-xl">
                                 154,000
                                 <p class="font-Dana text-xs">تومان</p>
                             </div>
                             <div class="text-red-500 line-through">
-                                <div class="flex items-center gap-x-1 text-gray-400">
+                                <div class="flex items-center gap-x-1 text-gray-400 text-xl">
                                     175,000
                                     <p class="font-Dana text-xs">تومان</p>
                                 </div>
                             </div>
                         </div>
-                        <p class="hidden text-red-400">
+                        <p class="hidden text-red-400 text-xl">
                             فعلا موجود نیست
                         </p>
                     </div>
@@ -826,12 +826,13 @@
                         <!-- compare, add to cart icon -->
                         <div class="flex items-center justify-center gap-x-3">
                             <div
-                                class="flex items-center justify-center w-9 h-9 bg-gray-100 dark:bg-zinc-800 rounded-full cursor-pointer">
+                                class="flex items-center justify-center w-9 h-9 bg-gray-100 dark:bg-zinc-800 hover:bg-gray-200 dark:hover:bg-zinc-900 rounded-full cursor-pointer">
                                 <svg class="w-5 h-5 text-gray-400">
                                     <use href="#shopping-cart"></use>
                                 </svg>
                             </div>
-                            <svg class="w-6 h-6 text-gray-400 cursor-pointer">
+                            <svg
+                                class="w-6 h-6 text-gray-400 hover:text-gray-500 dark:hover:text-gray-300 cursor-pointer">
                                 <use href="#arrows-right-left"></use>
                             </svg>
                         </div>
@@ -856,13 +857,13 @@
                     </div>
                 </div>
                 <div class="w-75 h-[467px] mt-12 bg-white dark:bg-zinc-700 rounded-2xl p-5 select-none">
-                    <!-- Discount -->
-                    <span
-                        class="mt-6 ms-6 py-1 px-[14px] bg-orange-300 hover:bg-orange-400 hover:text-white cursor-pointer rounded-full font-DanaMedium">
-                        %12
-                    </span>
-                    <!-- image of product -->
+                    <!-- image of product And Discount -->
                     <div class="w-65 h-65 cursor-pointer">
+                        <!-- Discount -->
+                        <span
+                            class="hidden mt-6 ms-6 py-1 px-[14px] bg-orange-300 hover:bg-orange-400 hover:text-white cursor-pointer rounded-full font-DanaMedium">
+                            %12
+                        </span>
                         <img src="./images/products/p2.png" alt="coffee">
                     </div>
                     <!-- title -->
@@ -871,23 +872,24 @@
                     </p>
                     <!-- price, avalible or unavilable -->
                     <div>
-                        <p class="text-teal-600 dark:text-emerald-500">
+                        <p class="text-teal-600 dark:text-emerald-500 text-xl">
                             175,000
                             <span class="font-Dana text-xs">تومان</span>
                         </p>
-                        <div class=" hidden flex-row gap-x-2.5 items-center">
-                            <div class="flex items-center gap-x-1 text-teal-600 dark:text-emerald-500">
+                        <!-- set flex -->
+                        <div class="hidden flex-row gap-x-2.5 items-center">
+                            <div class="flex items-center gap-x-1 text-teal-600 dark:text-emerald-500 text-xl">
                                 154,000
                                 <p class="font-Dana text-xs">تومان</p>
                             </div>
                             <div class="text-red-500 line-through">
-                                <div class="flex items-center gap-x-1 text-gray-400">
+                                <div class="flex items-center gap-x-1 text-gray-400 text-xl">
                                     175,000
                                     <p class="font-Dana text-xs">تومان</p>
                                 </div>
                             </div>
                         </div>
-                        <p class="hidden text-red-400">
+                        <p class="hidden text-red-400 text-xl">
                             فعلا موجود نیست
                         </p>
                     </div>
@@ -896,12 +898,13 @@
                         <!-- compare, add to cart icon -->
                         <div class="flex items-center justify-center gap-x-3">
                             <div
-                                class="flex items-center justify-center w-9 h-9 bg-gray-100 dark:bg-zinc-800 rounded-full cursor-pointer">
+                                class="flex items-center justify-center w-9 h-9 bg-gray-100 dark:bg-zinc-800 hover:bg-gray-200 dark:hover:bg-zinc-900 rounded-full cursor-pointer">
                                 <svg class="w-5 h-5 text-gray-400">
                                     <use href="#shopping-cart"></use>
                                 </svg>
                             </div>
-                            <svg class="w-6 h-6 text-gray-400 cursor-pointer">
+                            <svg
+                                class="w-6 h-6 text-gray-400 hover:text-gray-500 dark:hover:text-gray-300 cursor-pointer">
                                 <use href="#arrows-right-left"></use>
                             </svg>
                         </div>
@@ -926,13 +929,13 @@
                     </div>
                 </div>
                 <div class="w-75 h-[467px] mt-12 bg-white dark:bg-zinc-700 rounded-2xl p-5 select-none">
-                    <!-- Discount -->
-                    <span
-                        class="mt-6 ms-6 py-1 px-[14px] bg-orange-300 hover:bg-orange-400 hover:text-white cursor-pointer rounded-full font-DanaMedium">
-                        %12
-                    </span>
-                    <!-- image of product -->
+                    <!-- image of product And Discount -->
                     <div class="w-65 h-65 cursor-pointer">
+                        <!-- Discount -->
+                        <span
+                            class="hidden mt-6 ms-6 py-1 px-[14px] bg-orange-300 hover:bg-orange-400 hover:text-white cursor-pointer rounded-full font-DanaMedium">
+                            %12
+                        </span>
                         <img src="./images/products/p3.png" alt="coffee">
                     </div>
                     <!-- title -->
@@ -941,23 +944,23 @@
                     </p>
                     <!-- price, avalible or unavilable -->
                     <div>
-                        <p class="text-teal-600 dark:text-emerald-500">
+                        <p class="hidden text-teal-600 dark:text-emerald-500 text-xl">
                             175,000
                             <span class="font-Dana text-xs">تومان</span>
                         </p>
-                        <div class=" hidden flex-row gap-x-2.5 items-center">
-                            <div class="flex items-center gap-x-1 text-teal-600 dark:text-emerald-500">
+                        <div class="hidden flex-row gap-x-2.5 items-center">
+                            <div class="flex items-center gap-x-1 text-teal-600 dark:text-emerald-500 text-xl">
                                 154,000
                                 <p class="font-Dana text-xs">تومان</p>
                             </div>
                             <div class="text-red-500 line-through">
-                                <div class="flex items-center gap-x-1 text-gray-400">
+                                <div class="flex items-center gap-x-1 text-gray-400 text-xl">
                                     175,000
                                     <p class="font-Dana text-xs">تومان</p>
                                 </div>
                             </div>
                         </div>
-                        <p class="hidden text-red-400">
+                        <p class="text-red-400 text-xl">
                             فعلا موجود نیست
                         </p>
                     </div>
@@ -966,12 +969,13 @@
                         <!-- compare, add to cart icon -->
                         <div class="flex items-center justify-center gap-x-3">
                             <div
-                                class="flex items-center justify-center w-9 h-9 bg-gray-100 dark:bg-zinc-800 rounded-full cursor-pointer">
+                                class="flex items-center justify-center w-9 h-9 bg-gray-100 dark:bg-zinc-800 hover:bg-gray-200 dark:hover:bg-zinc-900 rounded-full cursor-pointer">
                                 <svg class="w-5 h-5 text-gray-400">
                                     <use href="#shopping-cart"></use>
                                 </svg>
                             </div>
-                            <svg class="w-6 h-6 text-gray-400 cursor-pointer">
+                            <svg
+                                class="w-6 h-6 text-gray-400 hover:text-gray-500 dark:hover:text-gray-300 cursor-pointer">
                                 <use href="#arrows-right-left"></use>
                             </svg>
                         </div>
@@ -996,13 +1000,13 @@
                     </div>
                 </div>
                 <div class="w-75 h-[467px] mt-12 bg-white dark:bg-zinc-700 rounded-2xl p-5 select-none">
-                    <!-- Discount -->
-                    <span
-                        class="mt-6 ms-6 py-1 px-[14px] bg-orange-300 hover:bg-orange-400 hover:text-white cursor-pointer rounded-full font-DanaMedium">
-                        %12
-                    </span>
-                    <!-- image of product -->
+                    <!-- image of product And Discount -->
                     <div class="w-65 h-65 cursor-pointer">
+                        <!-- Discount -->
+                        <span
+                            class="mt-6 ms-6 py-1 px-[14px] bg-orange-300 hover:bg-orange-400 hover:text-white cursor-pointer rounded-full font-DanaMedium">
+                            %12
+                        </span>
                         <img src="./images/products/p4.png" alt="coffee">
                     </div>
                     <!-- title -->
@@ -1011,23 +1015,23 @@
                     </p>
                     <!-- price, avalible or unavilable -->
                     <div>
-                        <p class="text-teal-600 dark:text-emerald-500">
+                        <p class="hidden text-teal-600 dark:text-emerald-500 text-xl">
                             175,000
                             <span class="font-Dana text-xs">تومان</span>
                         </p>
-                        <div class=" hidden flex-row gap-x-2.5 items-center">
-                            <div class="flex items-center gap-x-1 text-teal-600 dark:text-emerald-500">
+                        <div class="flex flex-row gap-x-2.5 items-center">
+                            <div class="flex items-center gap-x-1 text-teal-600 dark:text-emerald-500 text-xl">
                                 154,000
                                 <p class="font-Dana text-xs">تومان</p>
                             </div>
                             <div class="text-red-500 line-through">
-                                <div class="flex items-center gap-x-1 text-gray-400">
+                                <div class="flex items-center gap-x-1 text-gray-400 text-xl">
                                     175,000
                                     <p class="font-Dana text-xs">تومان</p>
                                 </div>
                             </div>
                         </div>
-                        <p class="hidden text-red-400">
+                        <p class="hidden text-red-400 text-xl">
                             فعلا موجود نیست
                         </p>
                     </div>
@@ -1036,12 +1040,13 @@
                         <!-- compare, add to cart icon -->
                         <div class="flex items-center justify-center gap-x-3">
                             <div
-                                class="flex items-center justify-center w-9 h-9 bg-gray-100 dark:bg-zinc-800 rounded-full cursor-pointer">
+                                class="flex items-center justify-center w-9 h-9 bg-gray-100 dark:bg-zinc-800 hover:bg-gray-200 dark:hover:bg-zinc-900 rounded-full cursor-pointer">
                                 <svg class="w-5 h-5 text-gray-400">
                                     <use href="#shopping-cart"></use>
                                 </svg>
                             </div>
-                            <svg class="w-6 h-6 text-gray-400 cursor-pointer">
+                            <svg
+                                class="w-6 h-6 text-gray-400 hover:text-gray-500 dark:hover:text-gray-300 cursor-pointer">
                                 <use href="#arrows-right-left"></use>
                             </svg>
                         </div>
@@ -1066,14 +1071,14 @@
                     </div>
                 </div>
                 <div class="w-75 h-[467px] mt-12 bg-white dark:bg-zinc-700 rounded-2xl p-5 select-none">
-                    <!-- Discount -->
-                    <span
-                        class="mt-6 ms-6 py-1 px-[14px] bg-orange-300 hover:bg-orange-400 hover:text-white cursor-pointer rounded-full font-DanaMedium">
-                        %12
-                    </span>
-                    <!-- image of product -->
+                    <!-- image of product And Discount -->
                     <div class="w-65 h-65 cursor-pointer">
-                        <img src="./images/products/p3.png" alt="coffee">
+                        <!-- Discount -->
+                        <span
+                            class="hidden mt-6 ms-6 py-1 px-[14px] bg-orange-300 hover:bg-orange-400 hover:text-white cursor-pointer rounded-full font-DanaMedium">
+                            %12
+                        </span>
+                        <img src="./images/products/p2.png" alt="coffee">
                     </div>
                     <!-- title -->
                     <p class="mt-5 mb-2.5 text-zinc-700 dark:text-white line-clamp-2 cursor-pointer">
@@ -1081,23 +1086,23 @@
                     </p>
                     <!-- price, avalible or unavilable -->
                     <div>
-                        <p class="text-teal-600 dark:text-emerald-500">
+                        <p class="text-teal-600 dark:text-emerald-500 text-xl">
                             175,000
                             <span class="font-Dana text-xs">تومان</span>
                         </p>
-                        <div class=" hidden flex-row gap-x-2.5 items-center">
-                            <div class="flex items-center gap-x-1 text-teal-600 dark:text-emerald-500">
+                        <div class="hidden flex-row gap-x-2.5 items-center">
+                            <div class="flex items-center gap-x-1 text-teal-600 dark:text-emerald-500 text-xl">
                                 154,000
                                 <p class="font-Dana text-xs">تومان</p>
                             </div>
                             <div class="text-red-500 line-through">
-                                <div class="flex items-center gap-x-1 text-gray-400">
+                                <div class="flex items-center gap-x-1 text-gray-400 text-xl">
                                     175,000
                                     <p class="font-Dana text-xs">تومان</p>
                                 </div>
                             </div>
                         </div>
-                        <p class="hidden text-red-400">
+                        <p class="hidden text-red-400 text-xl">
                             فعلا موجود نیست
                         </p>
                     </div>
@@ -1106,12 +1111,13 @@
                         <!-- compare, add to cart icon -->
                         <div class="flex items-center justify-center gap-x-3">
                             <div
-                                class="flex items-center justify-center w-9 h-9 bg-gray-100 dark:bg-zinc-800 rounded-full cursor-pointer">
+                                class="flex items-center justify-center w-9 h-9 bg-gray-100 dark:bg-zinc-800 hover:bg-gray-200 dark:hover:bg-zinc-900 rounded-full cursor-pointer">
                                 <svg class="w-5 h-5 text-gray-400">
                                     <use href="#shopping-cart"></use>
                                 </svg>
                             </div>
-                            <svg class="w-6 h-6 text-gray-400 cursor-pointer">
+                            <svg
+                                class="w-6 h-6 text-gray-400 hover:text-gray-500 dark:hover:text-gray-300 cursor-pointer">
                                 <use href="#arrows-right-left"></use>
                             </svg>
                         </div>
@@ -1136,13 +1142,13 @@
                     </div>
                 </div>
                 <div class="w-75 h-[467px] mt-12 bg-white dark:bg-zinc-700 rounded-2xl p-5 select-none">
-                    <!-- Discount -->
-                    <span
-                        class="mt-6 ms-6 py-1 px-[14px] bg-orange-300 hover:bg-orange-400 hover:text-white cursor-pointer rounded-full font-DanaMedium">
-                        %12
-                    </span>
-                    <!-- image of product -->
+                    <!-- image of product And Discount -->
                     <div class="w-65 h-65 cursor-pointer">
+                        <!-- Discount -->
+                        <span
+                            class="hidden mt-6 ms-6 py-1 px-[14px] bg-orange-300 hover:bg-orange-400 hover:text-white cursor-pointer rounded-full font-DanaMedium">
+                            %12
+                        </span>
                         <img src="./images/products/p1.png" alt="coffee">
                     </div>
                     <!-- title -->
@@ -1151,23 +1157,23 @@
                     </p>
                     <!-- price, avalible or unavilable -->
                     <div>
-                        <p class="text-teal-600 dark:text-emerald-500">
+                        <p class="hidden text-teal-600 dark:text-emerald-500 text-xl">
                             175,000
                             <span class="font-Dana text-xs">تومان</span>
                         </p>
-                        <div class=" hidden flex-row gap-x-2.5 items-center">
-                            <div class="flex items-center gap-x-1 text-teal-600 dark:text-emerald-500">
+                        <div class="hidden flex-row gap-x-2.5 items-center">
+                            <div class="flex items-center gap-x-1 text-teal-600 dark:text-emerald-500 text-xl">
                                 154,000
                                 <p class="font-Dana text-xs">تومان</p>
                             </div>
                             <div class="text-red-500 line-through">
-                                <div class="flex items-center gap-x-1 text-gray-400">
+                                <div class="flex items-center gap-x-1 text-gray-400 text-xl">
                                     175,000
                                     <p class="font-Dana text-xs">تومان</p>
                                 </div>
                             </div>
                         </div>
-                        <p class="hidden text-red-400">
+                        <p class="text-red-400 text-xl">
                             فعلا موجود نیست
                         </p>
                     </div>
@@ -1176,12 +1182,13 @@
                         <!-- compare, add to cart icon -->
                         <div class="flex items-center justify-center gap-x-3">
                             <div
-                                class="flex items-center justify-center w-9 h-9 bg-gray-100 dark:bg-zinc-800 rounded-full cursor-pointer">
+                                class="flex items-center justify-center w-9 h-9 bg-gray-100 dark:bg-zinc-800 hover:bg-gray-200 dark:hover:bg-zinc-900 rounded-full cursor-pointer">
                                 <svg class="w-5 h-5 text-gray-400">
                                     <use href="#shopping-cart"></use>
                                 </svg>
                             </div>
-                            <svg class="w-6 h-6 text-gray-400 cursor-pointer">
+                            <svg
+                                class="w-6 h-6 text-gray-400 hover:text-gray-500 dark:hover:text-gray-300 cursor-pointer">
                                 <use href="#arrows-right-left"></use>
                             </svg>
                         </div>
@@ -1206,13 +1213,13 @@
                     </div>
                 </div>
                 <div class="w-75 h-[467px] mt-12 bg-white dark:bg-zinc-700 rounded-2xl p-5 select-none">
-                    <!-- Discount -->
-                    <span
-                        class="mt-6 ms-6 py-1 px-[14px] bg-orange-300 hover:bg-orange-400 hover:text-white cursor-pointer rounded-full font-DanaMedium">
-                        %12
-                    </span>
-                    <!-- image of product -->
+                    <!-- image of product And Discount -->
                     <div class="w-65 h-65 cursor-pointer">
+                        <!-- Discount -->
+                        <span
+                            class="hidden mt-6 ms-6 py-1 px-[14px] bg-orange-300 hover:bg-orange-400 hover:text-white cursor-pointer rounded-full font-DanaMedium">
+                            %12
+                        </span>
                         <img src="./images/products/p4.png" alt="coffee">
                     </div>
                     <!-- title -->
@@ -1221,23 +1228,23 @@
                     </p>
                     <!-- price, avalible or unavilable -->
                     <div>
-                        <p class="text-teal-600 dark:text-emerald-500">
+                        <p class="text-teal-600 dark:text-emerald-500 text-xl">
                             175,000
                             <span class="font-Dana text-xs">تومان</span>
                         </p>
-                        <div class=" hidden flex-row gap-x-2.5 items-center">
-                            <div class="flex items-center gap-x-1 text-teal-600 dark:text-emerald-500">
+                        <div class="hidden flex-row gap-x-2.5 items-center">
+                            <div class="flex items-center gap-x-1 text-teal-600 dark:text-emerald-500 text-xl">
                                 154,000
                                 <p class="font-Dana text-xs">تومان</p>
                             </div>
                             <div class="text-red-500 line-through">
-                                <div class="flex items-center gap-x-1 text-gray-400">
+                                <div class="flex items-center gap-x-1 text-gray-400 text-xl">
                                     175,000
                                     <p class="font-Dana text-xs">تومان</p>
                                 </div>
                             </div>
                         </div>
-                        <p class="hidden text-red-400">
+                        <p class="hidden text-red-400 text-xl">
                             فعلا موجود نیست
                         </p>
                     </div>
@@ -1246,12 +1253,13 @@
                         <!-- compare, add to cart icon -->
                         <div class="flex items-center justify-center gap-x-3">
                             <div
-                                class="flex items-center justify-center w-9 h-9 bg-gray-100 dark:bg-zinc-800 rounded-full cursor-pointer">
+                                class="flex items-center justify-center w-9 h-9 bg-gray-100 dark:bg-zinc-800 hover:bg-gray-200 dark:hover:bg-zinc-900 rounded-full cursor-pointer">
                                 <svg class="w-5 h-5 text-gray-400">
                                     <use href="#shopping-cart"></use>
                                 </svg>
                             </div>
-                            <svg class="w-6 h-6 text-gray-400 cursor-pointer">
+                            <svg
+                                class="w-6 h-6 text-gray-400 hover:text-gray-500 dark:hover:text-gray-300 cursor-pointer">
                                 <use href="#arrows-right-left"></use>
                             </svg>
                         </div>
@@ -1276,14 +1284,14 @@
                     </div>
                 </div>
                 <div class="w-75 h-[467px] mt-12 bg-white dark:bg-zinc-700 rounded-2xl p-5 select-none">
-                    <!-- Discount -->
-                    <span
-                        class="mt-6 ms-6 py-1 px-[14px] bg-orange-300 hover:bg-orange-400 hover:text-white cursor-pointer rounded-full font-DanaMedium">
-                        %12
-                    </span>
-                    <!-- image of product -->
+                    <!-- image of product And Discount -->
                     <div class="w-65 h-65 cursor-pointer">
-                        <img src="./images/products/p2.png" alt="coffee">
+                        <!-- Discount -->
+                        <span
+                            class="mt-6 ms-6 py-1 px-[14px] bg-orange-300 hover:bg-orange-400 hover:text-white cursor-pointer rounded-full font-DanaMedium">
+                            %12
+                        </span>
+                        <img src="./images/products/p3.png" alt="coffee">
                     </div>
                     <!-- title -->
                     <p class="mt-5 mb-2.5 text-zinc-700 dark:text-white line-clamp-2 cursor-pointer">
@@ -1291,23 +1299,23 @@
                     </p>
                     <!-- price, avalible or unavilable -->
                     <div>
-                        <p class="text-teal-600 dark:text-emerald-500">
+                        <p class="hidden text-teal-600 dark:text-emerald-500 text-xl">
                             175,000
                             <span class="font-Dana text-xs">تومان</span>
                         </p>
-                        <div class=" hidden flex-row gap-x-2.5 items-center">
-                            <div class="flex items-center gap-x-1 text-teal-600 dark:text-emerald-500">
+                        <div class="flex flex-row gap-x-2.5 items-center">
+                            <div class="flex items-center gap-x-1 text-teal-600 dark:text-emerald-500 text-xl">
                                 154,000
                                 <p class="font-Dana text-xs">تومان</p>
                             </div>
                             <div class="text-red-500 line-through">
-                                <div class="flex items-center gap-x-1 text-gray-400">
+                                <div class="flex items-center gap-x-1 text-gray-400 text-xl">
                                     175,000
                                     <p class="font-Dana text-xs">تومان</p>
                                 </div>
                             </div>
                         </div>
-                        <p class="hidden text-red-400">
+                        <p class="hidden text-red-400 text-xl">
                             فعلا موجود نیست
                         </p>
                     </div>
@@ -1316,12 +1324,13 @@
                         <!-- compare, add to cart icon -->
                         <div class="flex items-center justify-center gap-x-3">
                             <div
-                                class="flex items-center justify-center w-9 h-9 bg-gray-100 dark:bg-zinc-800 rounded-full cursor-pointer">
+                                class="flex items-center justify-center w-9 h-9 bg-gray-100 dark:bg-zinc-800 hover:bg-gray-200 dark:hover:bg-zinc-900 rounded-full cursor-pointer">
                                 <svg class="w-5 h-5 text-gray-400">
                                     <use href="#shopping-cart"></use>
                                 </svg>
                             </div>
-                            <svg class="w-6 h-6 text-gray-400 cursor-pointer">
+                            <svg
+                                class="w-6 h-6 text-gray-400 hover:text-gray-500 dark:hover:text-gray-300 cursor-pointer">
                                 <use href="#arrows-right-left"></use>
                             </svg>
                         </div>
