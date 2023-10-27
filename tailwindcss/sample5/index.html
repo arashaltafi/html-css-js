@@ -13,7 +13,7 @@
     <link rel="icon" href="./images/app-logo.png" type="image/png">
 </head>
 
-<body class="font-Dana bg-gray-100 dark:bg-zinc-800 h-[2000px]">
+<body class="font-Dana bg-gray-100 dark:bg-zinc-800 h-[5000px]">
     <!-- All Apps Icons -->
     <svg class="hidden">
         <symbol id="shopping-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -784,76 +784,575 @@
             </div>
 
             <!-- Products -->
-            <div class="grid">
-
-            </div>
-            <div class="w-75 h-[467px] mt-12 bg-white dark:bg-zinc-700 rounded-2xl p-5 select-none">
-                <!-- Discount -->
-                <span
-                    class="mt-6 ms-6 py-1 px-[14px] bg-orange-300 hover:bg-orange-400 hover:text-white cursor-pointer rounded-full font-DanaMedium">
-                    %12
-                </span>
-                <!-- image of product -->
-                <div class="w-65 h-65">
-                    <img src="./images/products/p1.png" alt="coffee">
-                </div>
-                <!-- title -->
-                <p class="mt-5 mb-2.5 text-zinc-700 dark:text-white line-clamp-2">
-                    قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
-                </p>
-                <!-- price, avalible or unavilable -->
-                <div>
-                    <p class="text-teal-600 dark:text-emerald-500">
-                        175,000
-                        <span class="font-Dana text-xs">تومان</span>
+            <div class="grid grid-cols-4 grid-rows-2 gap-5">
+                <div class="w-75 h-[467px] mt-12 bg-white dark:bg-zinc-700 rounded-2xl p-5 select-none">
+                    <!-- Discount -->
+                    <span
+                        class="mt-6 ms-6 py-1 px-[14px] bg-orange-300 hover:bg-orange-400 hover:text-white cursor-pointer rounded-full font-DanaMedium">
+                        %12
+                    </span>
+                    <!-- image of product -->
+                    <div class="w-65 h-65 cursor-pointer">
+                        <img src="./images/products/p1.png" alt="coffee">
+                    </div>
+                    <!-- title -->
+                    <p class="mt-5 mb-2.5 text-zinc-700 dark:text-white line-clamp-2 cursor-pointer">
+                        قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
                     </p>
-                    <div class=" hidden flex-row gap-x-2.5 items-center">
-                        <div class="flex items-center gap-x-1 text-teal-600 dark:text-emerald-500">
-                            154,000
-                            <p class="font-Dana text-xs">تومان</p>
-                        </div>
-                        <div class="text-red-500 line-through">
-                            <div class="flex items-center gap-x-1 text-gray-400">
-                                175,000
+                    <!-- price, avalible or unavilable -->
+                    <div>
+                        <p class="text-teal-600 dark:text-emerald-500">
+                            175,000
+                            <span class="font-Dana text-xs">تومان</span>
+                        </p>
+                        <div class=" hidden flex-row gap-x-2.5 items-center">
+                            <div class="flex items-center gap-x-1 text-teal-600 dark:text-emerald-500">
+                                154,000
                                 <p class="font-Dana text-xs">تومان</p>
                             </div>
+                            <div class="text-red-500 line-through">
+                                <div class="flex items-center gap-x-1 text-gray-400">
+                                    175,000
+                                    <p class="font-Dana text-xs">تومان</p>
+                                </div>
+                            </div>
                         </div>
+                        <p class="hidden text-red-400">
+                            فعلا موجود نیست
+                        </p>
                     </div>
-                    <p class="hidden text-red-400">
-                        فعلا موجود نیست
-                    </p>
-                </div>
-                <!-- footer icons -->
-                <div class="flex flex-row items-center justify-between mt-4">
-                    <!-- compare, add to cart icon -->
-                    <div class="flex items-center justify-center gap-x-3">
-                        <div class="flex items-center justify-center w-9 h-9 bg-gray-100 dark:bg-zinc-800 rounded-full">
-                            <svg class="w-5 h-5 text-gray-400">
-                                <use href="#shopping-cart"></use>
+                    <!-- footer icons -->
+                    <div class="flex flex-row items-center justify-between mt-4">
+                        <!-- compare, add to cart icon -->
+                        <div class="flex items-center justify-center gap-x-3">
+                            <div
+                                class="flex items-center justify-center w-9 h-9 bg-gray-100 dark:bg-zinc-800 rounded-full cursor-pointer">
+                                <svg class="w-5 h-5 text-gray-400">
+                                    <use href="#shopping-cart"></use>
+                                </svg>
+                            </div>
+                            <svg class="w-6 h-6 text-gray-400 cursor-pointer">
+                                <use href="#arrows-right-left"></use>
                             </svg>
                         </div>
-                        <svg class="w-6 h-6 text-gray-400">
-                            <use href="#arrows-right-left"></use>
-                        </svg>
+                        <!-- starts -->
+                        <div class="flex flex-row items-center justify-center text-gray-400">
+                            <svg class="w-6 h-6">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                        </div>
                     </div>
-                    <!-- starts -->
-                    <div class="flex flex-row items-center justify-center text-gray-400">
-                        <svg class="w-6 h-6">
-                            <use href="#star"></use>
-                        </svg>
-                        <svg class="w-6 h-6 text-yellow-400">
-                            <use href="#star"></use>
-                        </svg>
-                        <svg class="w-6 h-6 text-yellow-400">
-                            <use href="#star"></use>
-                        </svg>
-                        <svg class="w-6 h-6 text-yellow-400">
-                            <use href="#star"></use>
-                        </svg>
-                        <svg class="w-6 h-6 text-yellow-400">
-                            <use href="#star"></use>
-                        </svg>
+                </div>
+                <div class="w-75 h-[467px] mt-12 bg-white dark:bg-zinc-700 rounded-2xl p-5 select-none">
+                    <!-- Discount -->
+                    <span
+                        class="mt-6 ms-6 py-1 px-[14px] bg-orange-300 hover:bg-orange-400 hover:text-white cursor-pointer rounded-full font-DanaMedium">
+                        %12
+                    </span>
+                    <!-- image of product -->
+                    <div class="w-65 h-65 cursor-pointer">
+                        <img src="./images/products/p2.png" alt="coffee">
                     </div>
+                    <!-- title -->
+                    <p class="mt-5 mb-2.5 text-zinc-700 dark:text-white line-clamp-2 cursor-pointer">
+                        قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
+                    </p>
+                    <!-- price, avalible or unavilable -->
+                    <div>
+                        <p class="text-teal-600 dark:text-emerald-500">
+                            175,000
+                            <span class="font-Dana text-xs">تومان</span>
+                        </p>
+                        <div class=" hidden flex-row gap-x-2.5 items-center">
+                            <div class="flex items-center gap-x-1 text-teal-600 dark:text-emerald-500">
+                                154,000
+                                <p class="font-Dana text-xs">تومان</p>
+                            </div>
+                            <div class="text-red-500 line-through">
+                                <div class="flex items-center gap-x-1 text-gray-400">
+                                    175,000
+                                    <p class="font-Dana text-xs">تومان</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="hidden text-red-400">
+                            فعلا موجود نیست
+                        </p>
+                    </div>
+                    <!-- footer icons -->
+                    <div class="flex flex-row items-center justify-between mt-4">
+                        <!-- compare, add to cart icon -->
+                        <div class="flex items-center justify-center gap-x-3">
+                            <div
+                                class="flex items-center justify-center w-9 h-9 bg-gray-100 dark:bg-zinc-800 rounded-full cursor-pointer">
+                                <svg class="w-5 h-5 text-gray-400">
+                                    <use href="#shopping-cart"></use>
+                                </svg>
+                            </div>
+                            <svg class="w-6 h-6 text-gray-400 cursor-pointer">
+                                <use href="#arrows-right-left"></use>
+                            </svg>
+                        </div>
+                        <!-- starts -->
+                        <div class="flex flex-row items-center justify-center text-gray-400">
+                            <svg class="w-6 h-6">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-75 h-[467px] mt-12 bg-white dark:bg-zinc-700 rounded-2xl p-5 select-none">
+                    <!-- Discount -->
+                    <span
+                        class="mt-6 ms-6 py-1 px-[14px] bg-orange-300 hover:bg-orange-400 hover:text-white cursor-pointer rounded-full font-DanaMedium">
+                        %12
+                    </span>
+                    <!-- image of product -->
+                    <div class="w-65 h-65 cursor-pointer">
+                        <img src="./images/products/p3.png" alt="coffee">
+                    </div>
+                    <!-- title -->
+                    <p class="mt-5 mb-2.5 text-zinc-700 dark:text-white line-clamp-2 cursor-pointer">
+                        قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
+                    </p>
+                    <!-- price, avalible or unavilable -->
+                    <div>
+                        <p class="text-teal-600 dark:text-emerald-500">
+                            175,000
+                            <span class="font-Dana text-xs">تومان</span>
+                        </p>
+                        <div class=" hidden flex-row gap-x-2.5 items-center">
+                            <div class="flex items-center gap-x-1 text-teal-600 dark:text-emerald-500">
+                                154,000
+                                <p class="font-Dana text-xs">تومان</p>
+                            </div>
+                            <div class="text-red-500 line-through">
+                                <div class="flex items-center gap-x-1 text-gray-400">
+                                    175,000
+                                    <p class="font-Dana text-xs">تومان</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="hidden text-red-400">
+                            فعلا موجود نیست
+                        </p>
+                    </div>
+                    <!-- footer icons -->
+                    <div class="flex flex-row items-center justify-between mt-4">
+                        <!-- compare, add to cart icon -->
+                        <div class="flex items-center justify-center gap-x-3">
+                            <div
+                                class="flex items-center justify-center w-9 h-9 bg-gray-100 dark:bg-zinc-800 rounded-full cursor-pointer">
+                                <svg class="w-5 h-5 text-gray-400">
+                                    <use href="#shopping-cart"></use>
+                                </svg>
+                            </div>
+                            <svg class="w-6 h-6 text-gray-400 cursor-pointer">
+                                <use href="#arrows-right-left"></use>
+                            </svg>
+                        </div>
+                        <!-- starts -->
+                        <div class="flex flex-row items-center justify-center text-gray-400">
+                            <svg class="w-6 h-6">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-75 h-[467px] mt-12 bg-white dark:bg-zinc-700 rounded-2xl p-5 select-none">
+                    <!-- Discount -->
+                    <span
+                        class="mt-6 ms-6 py-1 px-[14px] bg-orange-300 hover:bg-orange-400 hover:text-white cursor-pointer rounded-full font-DanaMedium">
+                        %12
+                    </span>
+                    <!-- image of product -->
+                    <div class="w-65 h-65 cursor-pointer">
+                        <img src="./images/products/p4.png" alt="coffee">
+                    </div>
+                    <!-- title -->
+                    <p class="mt-5 mb-2.5 text-zinc-700 dark:text-white line-clamp-2 cursor-pointer">
+                        قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
+                    </p>
+                    <!-- price, avalible or unavilable -->
+                    <div>
+                        <p class="text-teal-600 dark:text-emerald-500">
+                            175,000
+                            <span class="font-Dana text-xs">تومان</span>
+                        </p>
+                        <div class=" hidden flex-row gap-x-2.5 items-center">
+                            <div class="flex items-center gap-x-1 text-teal-600 dark:text-emerald-500">
+                                154,000
+                                <p class="font-Dana text-xs">تومان</p>
+                            </div>
+                            <div class="text-red-500 line-through">
+                                <div class="flex items-center gap-x-1 text-gray-400">
+                                    175,000
+                                    <p class="font-Dana text-xs">تومان</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="hidden text-red-400">
+                            فعلا موجود نیست
+                        </p>
+                    </div>
+                    <!-- footer icons -->
+                    <div class="flex flex-row items-center justify-between mt-4">
+                        <!-- compare, add to cart icon -->
+                        <div class="flex items-center justify-center gap-x-3">
+                            <div
+                                class="flex items-center justify-center w-9 h-9 bg-gray-100 dark:bg-zinc-800 rounded-full cursor-pointer">
+                                <svg class="w-5 h-5 text-gray-400">
+                                    <use href="#shopping-cart"></use>
+                                </svg>
+                            </div>
+                            <svg class="w-6 h-6 text-gray-400 cursor-pointer">
+                                <use href="#arrows-right-left"></use>
+                            </svg>
+                        </div>
+                        <!-- starts -->
+                        <div class="flex flex-row items-center justify-center text-gray-400">
+                            <svg class="w-6 h-6">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-75 h-[467px] mt-12 bg-white dark:bg-zinc-700 rounded-2xl p-5 select-none">
+                    <!-- Discount -->
+                    <span
+                        class="mt-6 ms-6 py-1 px-[14px] bg-orange-300 hover:bg-orange-400 hover:text-white cursor-pointer rounded-full font-DanaMedium">
+                        %12
+                    </span>
+                    <!-- image of product -->
+                    <div class="w-65 h-65 cursor-pointer">
+                        <img src="./images/products/p3.png" alt="coffee">
+                    </div>
+                    <!-- title -->
+                    <p class="mt-5 mb-2.5 text-zinc-700 dark:text-white line-clamp-2 cursor-pointer">
+                        قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
+                    </p>
+                    <!-- price, avalible or unavilable -->
+                    <div>
+                        <p class="text-teal-600 dark:text-emerald-500">
+                            175,000
+                            <span class="font-Dana text-xs">تومان</span>
+                        </p>
+                        <div class=" hidden flex-row gap-x-2.5 items-center">
+                            <div class="flex items-center gap-x-1 text-teal-600 dark:text-emerald-500">
+                                154,000
+                                <p class="font-Dana text-xs">تومان</p>
+                            </div>
+                            <div class="text-red-500 line-through">
+                                <div class="flex items-center gap-x-1 text-gray-400">
+                                    175,000
+                                    <p class="font-Dana text-xs">تومان</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="hidden text-red-400">
+                            فعلا موجود نیست
+                        </p>
+                    </div>
+                    <!-- footer icons -->
+                    <div class="flex flex-row items-center justify-between mt-4">
+                        <!-- compare, add to cart icon -->
+                        <div class="flex items-center justify-center gap-x-3">
+                            <div
+                                class="flex items-center justify-center w-9 h-9 bg-gray-100 dark:bg-zinc-800 rounded-full cursor-pointer">
+                                <svg class="w-5 h-5 text-gray-400">
+                                    <use href="#shopping-cart"></use>
+                                </svg>
+                            </div>
+                            <svg class="w-6 h-6 text-gray-400 cursor-pointer">
+                                <use href="#arrows-right-left"></use>
+                            </svg>
+                        </div>
+                        <!-- starts -->
+                        <div class="flex flex-row items-center justify-center text-gray-400">
+                            <svg class="w-6 h-6">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-75 h-[467px] mt-12 bg-white dark:bg-zinc-700 rounded-2xl p-5 select-none">
+                    <!-- Discount -->
+                    <span
+                        class="mt-6 ms-6 py-1 px-[14px] bg-orange-300 hover:bg-orange-400 hover:text-white cursor-pointer rounded-full font-DanaMedium">
+                        %12
+                    </span>
+                    <!-- image of product -->
+                    <div class="w-65 h-65 cursor-pointer">
+                        <img src="./images/products/p1.png" alt="coffee">
+                    </div>
+                    <!-- title -->
+                    <p class="mt-5 mb-2.5 text-zinc-700 dark:text-white line-clamp-2 cursor-pointer">
+                        قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
+                    </p>
+                    <!-- price, avalible or unavilable -->
+                    <div>
+                        <p class="text-teal-600 dark:text-emerald-500">
+                            175,000
+                            <span class="font-Dana text-xs">تومان</span>
+                        </p>
+                        <div class=" hidden flex-row gap-x-2.5 items-center">
+                            <div class="flex items-center gap-x-1 text-teal-600 dark:text-emerald-500">
+                                154,000
+                                <p class="font-Dana text-xs">تومان</p>
+                            </div>
+                            <div class="text-red-500 line-through">
+                                <div class="flex items-center gap-x-1 text-gray-400">
+                                    175,000
+                                    <p class="font-Dana text-xs">تومان</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="hidden text-red-400">
+                            فعلا موجود نیست
+                        </p>
+                    </div>
+                    <!-- footer icons -->
+                    <div class="flex flex-row items-center justify-between mt-4">
+                        <!-- compare, add to cart icon -->
+                        <div class="flex items-center justify-center gap-x-3">
+                            <div
+                                class="flex items-center justify-center w-9 h-9 bg-gray-100 dark:bg-zinc-800 rounded-full cursor-pointer">
+                                <svg class="w-5 h-5 text-gray-400">
+                                    <use href="#shopping-cart"></use>
+                                </svg>
+                            </div>
+                            <svg class="w-6 h-6 text-gray-400 cursor-pointer">
+                                <use href="#arrows-right-left"></use>
+                            </svg>
+                        </div>
+                        <!-- starts -->
+                        <div class="flex flex-row items-center justify-center text-gray-400">
+                            <svg class="w-6 h-6">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-75 h-[467px] mt-12 bg-white dark:bg-zinc-700 rounded-2xl p-5 select-none">
+                    <!-- Discount -->
+                    <span
+                        class="mt-6 ms-6 py-1 px-[14px] bg-orange-300 hover:bg-orange-400 hover:text-white cursor-pointer rounded-full font-DanaMedium">
+                        %12
+                    </span>
+                    <!-- image of product -->
+                    <div class="w-65 h-65 cursor-pointer">
+                        <img src="./images/products/p4.png" alt="coffee">
+                    </div>
+                    <!-- title -->
+                    <p class="mt-5 mb-2.5 text-zinc-700 dark:text-white line-clamp-2 cursor-pointer">
+                        قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
+                    </p>
+                    <!-- price, avalible or unavilable -->
+                    <div>
+                        <p class="text-teal-600 dark:text-emerald-500">
+                            175,000
+                            <span class="font-Dana text-xs">تومان</span>
+                        </p>
+                        <div class=" hidden flex-row gap-x-2.5 items-center">
+                            <div class="flex items-center gap-x-1 text-teal-600 dark:text-emerald-500">
+                                154,000
+                                <p class="font-Dana text-xs">تومان</p>
+                            </div>
+                            <div class="text-red-500 line-through">
+                                <div class="flex items-center gap-x-1 text-gray-400">
+                                    175,000
+                                    <p class="font-Dana text-xs">تومان</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="hidden text-red-400">
+                            فعلا موجود نیست
+                        </p>
+                    </div>
+                    <!-- footer icons -->
+                    <div class="flex flex-row items-center justify-between mt-4">
+                        <!-- compare, add to cart icon -->
+                        <div class="flex items-center justify-center gap-x-3">
+                            <div
+                                class="flex items-center justify-center w-9 h-9 bg-gray-100 dark:bg-zinc-800 rounded-full cursor-pointer">
+                                <svg class="w-5 h-5 text-gray-400">
+                                    <use href="#shopping-cart"></use>
+                                </svg>
+                            </div>
+                            <svg class="w-6 h-6 text-gray-400 cursor-pointer">
+                                <use href="#arrows-right-left"></use>
+                            </svg>
+                        </div>
+                        <!-- starts -->
+                        <div class="flex flex-row items-center justify-center text-gray-400">
+                            <svg class="w-6 h-6">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-75 h-[467px] mt-12 bg-white dark:bg-zinc-700 rounded-2xl p-5 select-none">
+                    <!-- Discount -->
+                    <span
+                        class="mt-6 ms-6 py-1 px-[14px] bg-orange-300 hover:bg-orange-400 hover:text-white cursor-pointer rounded-full font-DanaMedium">
+                        %12
+                    </span>
+                    <!-- image of product -->
+                    <div class="w-65 h-65 cursor-pointer">
+                        <img src="./images/products/p2.png" alt="coffee">
+                    </div>
+                    <!-- title -->
+                    <p class="mt-5 mb-2.5 text-zinc-700 dark:text-white line-clamp-2 cursor-pointer">
+                        قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
+                    </p>
+                    <!-- price, avalible or unavilable -->
+                    <div>
+                        <p class="text-teal-600 dark:text-emerald-500">
+                            175,000
+                            <span class="font-Dana text-xs">تومان</span>
+                        </p>
+                        <div class=" hidden flex-row gap-x-2.5 items-center">
+                            <div class="flex items-center gap-x-1 text-teal-600 dark:text-emerald-500">
+                                154,000
+                                <p class="font-Dana text-xs">تومان</p>
+                            </div>
+                            <div class="text-red-500 line-through">
+                                <div class="flex items-center gap-x-1 text-gray-400">
+                                    175,000
+                                    <p class="font-Dana text-xs">تومان</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="hidden text-red-400">
+                            فعلا موجود نیست
+                        </p>
+                    </div>
+                    <!-- footer icons -->
+                    <div class="flex flex-row items-center justify-between mt-4">
+                        <!-- compare, add to cart icon -->
+                        <div class="flex items-center justify-center gap-x-3">
+                            <div
+                                class="flex items-center justify-center w-9 h-9 bg-gray-100 dark:bg-zinc-800 rounded-full cursor-pointer">
+                                <svg class="w-5 h-5 text-gray-400">
+                                    <use href="#shopping-cart"></use>
+                                </svg>
+                            </div>
+                            <svg class="w-6 h-6 text-gray-400 cursor-pointer">
+                                <use href="#arrows-right-left"></use>
+                            </svg>
+                        </div>
+                        <!-- starts -->
+                        <div class="flex flex-row items-center justify-center text-gray-400">
+                            <svg class="w-6 h-6">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                            <svg class="w-6 h-6 text-yellow-400">
+                                <use href="#star"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-row gap-x-5 mt-20">
+                <div class="flex rounded-2xl overflow-hidden">
+                    <img src="/tailwindcss/sample5/images/categories/category-left.jpg" alt="category 1">
+                </div>
+                <div class="flex rounded-2xl overflow-hidden">
+                    <img src="/tailwindcss/sample5/images/categories/category-right.jpg" alt="category 1">
                 </div>
             </div>
 

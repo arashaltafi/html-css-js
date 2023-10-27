@@ -76,7 +76,8 @@ module.exports = {
         "65": '260px',
         "75": "300px",
         "90": '360px',
-        "100": '400px'
+        "100": '400px',
+        "155": '620px',
       },
       letterSpacing: {
         "tightest": "-0.065em"
