@@ -4667,6 +4667,14 @@ input:checked + .toggle-bg {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+:is(.dark .dark\:hover\:decoration-zinc-700:hover) {
+  text-decoration-color: #3f3f46;
+}
+
+:is(.dark .dark\:hover\:decoration-zinc-600:hover) {
+  text-decoration-color: #52525b;
+}
+
 :is(.dark .dark\:focus\:ring-blue-800:focus) {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(30 66 159 / var(--tw-ring-opacity));
