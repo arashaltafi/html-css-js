@@ -1806,6 +1806,10 @@ input:checked + .toggle-bg {
   margin-top: auto;
 }
 
+.mb-1\.5 {
+  margin-bottom: 0.375rem;
+}
+
 .line-clamp-1 {
   overflow: hidden;
   display: -webkit-box;
@@ -4935,6 +4939,14 @@ input:checked + .toggle-bg {
     margin-bottom: 0.5rem;
   }
 
+  .md\:mb-2\.5 {
+    margin-bottom: 0.625rem;
+  }
+
+  .md\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
   .md\:inline-block {
     display: inline-block;
   }
@@ -4985,6 +4997,16 @@ input:checked + .toggle-bg {
 
   .md\:gap-5 {
     gap: 1.25rem;
+  }
+
+  .md\:gap-x-2 {
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
+  }
+
+  .md\:gap-x-2\.5 {
+    -moz-column-gap: 0.625rem;
+         column-gap: 0.625rem;
   }
 
   .md\:bg-blue-500 {
