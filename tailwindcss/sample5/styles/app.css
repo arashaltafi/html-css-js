@@ -1618,6 +1618,10 @@ input:checked + .toggle-bg {
   margin-top: 0.25rem;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -1660,10 +1664,6 @@ input:checked + .toggle-bg {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.mt-12 {
-  margin-top: 3rem;
 }
 
 .line-clamp-1 {
@@ -2152,10 +2152,6 @@ input:checked + .toggle-bg {
 
 .justify-stretch {
   justify-content: stretch;
-}
-
-.justify-items-end {
-  justify-items: end;
 }
 
 .justify-items-center {
@@ -2781,6 +2777,10 @@ input:checked + .toggle-bg {
 
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
+}
+
+.bg-\[url\(\'\/tailwindcss\/sample5\/images\/products\/p5\.png\'\)\] {
+  background-image: url('/tailwindcss/sample5/images/products/p5.png');
 }
 
 .bg-gradient-to-b {
@@ -4296,6 +4296,10 @@ input:checked + .toggle-bg {
 
 .child\:inline-block > * {
   display: inline-block;
+}
+
+.child\:flex-1 > * {
+  flex: 1 1 0%;
 }
 
 .child\:bg-white > * {
