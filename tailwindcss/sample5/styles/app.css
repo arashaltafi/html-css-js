@@ -3400,6 +3400,18 @@ input:checked + .toggle-bg {
   padding-top: 1rem;
 }
 
+.pt-48 {
+  padding-top: 12rem;
+}
+
+.pt-32 {
+  padding-top: 8rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -4973,6 +4985,10 @@ input:checked + .toggle-bg {
     background-image: url(/tailwindcss/sample5/images/headerBgDesktop.webp);
   }
 
+  .md\:pt-8 {
+    padding-top: 2rem;
+  }
+
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -5052,6 +5068,10 @@ input:checked + .toggle-bg {
   .lg\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .lg\:pt-48 {
+    padding-top: 12rem;
   }
 }
 
