@@ -1730,10 +1730,6 @@ input:checked + .toggle-bg {
   margin-right: 1rem;
 }
 
-.ms-1 {
-  margin-inline-start: 0.25rem;
-}
-
 .ms-2 {
   margin-inline-start: 0.5rem;
 }
@@ -3317,11 +3313,6 @@ input:checked + .toggle-bg {
   padding-right: 2rem;
 }
 
-.px-\[14px\] {
-  padding-left: 14px;
-  padding-right: 14px;
-}
-
 .px-\[28px\] {
   padding-left: 28px;
   padding-right: 28px;
@@ -3407,10 +3398,6 @@ input:checked + .toggle-bg {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.text-left {
-  text-align: left;
 }
 
 .text-center {
@@ -4189,11 +4176,6 @@ input:checked + .toggle-bg {
   background-color: rgb(194 120 3 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-orange-500:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 90 31 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-gradient-to-bl:hover {
   background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
 }
@@ -4266,11 +4248,6 @@ input:checked + .toggle-bg {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:text-teal-600:hover {
-  --tw-text-opacity: 1;
-  color: rgb(4 116 129 / var(--tw-text-opacity));
 }
 
 .hover\:shadow-sm:hover {
@@ -4853,16 +4830,6 @@ input:checked + .toggle-bg {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-:is(.dark .dark\:hover\:text-teal-600:hover) {
-  --tw-text-opacity: 1;
-  color: rgb(4 116 129 / var(--tw-text-opacity));
-}
-
-:is(.dark .dark\:hover\:text-emerald-500:hover) {
-  --tw-text-opacity: 1;
-  color: rgb(16 185 129 / var(--tw-text-opacity));
-}
-
 :is(.dark .dark\:focus\:ring-blue-800:focus) {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(30 66 159 / var(--tw-ring-opacity));
@@ -4972,6 +4939,10 @@ input:checked + .toggle-bg {
     display: inline-block;
   }
 
+  .md\:inline {
+    display: inline;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -5025,6 +4996,10 @@ input:checked + .toggle-bg {
     background-image: url(/tailwindcss/sample5/images/headerBgDesktop.webp);
   }
 
+  .md\:p-5 {
+    padding: 1.25rem;
+  }
+
   .md\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -5047,6 +5022,16 @@ input:checked + .toggle-bg {
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .child\:md\:mt-12 > * {
