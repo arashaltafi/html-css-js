@@ -1303,6 +1303,8 @@ input:checked + .toggle-bg {
      -moz-user-select: none;
           user-select: none;
   flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   -moz-column-gap: 1.25rem;
        column-gap: 1.25rem;
@@ -1921,10 +1923,6 @@ input:checked + .toggle-bg {
   height: 2.25rem;
 }
 
-.h-\[10000px\] {
-  height: 10000px;
-}
-
 .h-\[200px\] {
   height: 200px;
 }
@@ -2292,20 +2290,8 @@ input:checked + .toggle-bg {
   justify-content: space-between;
 }
 
-.justify-items-center {
-  justify-items: center;
-}
-
 .gap-2 {
   gap: 0.5rem;
-}
-
-.gap-4 {
-  gap: 1rem;
-}
-
-.gap-5 {
-  gap: 1.25rem;
 }
 
 .gap-3 {
@@ -2314,6 +2300,14 @@ input:checked + .toggle-bg {
 
 .gap-3\.5 {
   gap: 0.875rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-x-1 {
