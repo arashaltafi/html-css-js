@@ -149,11 +149,11 @@
     }
 
     .banner {
-        @apply flex flex-row flex-wrap items-center justify-center gap-x-5 my-20 select-none;
+        @apply flex flex-row flex-wrap items-center justify-center gap-y-5 md:gap-y-0 md:gap-x-5 my-10 md:my-20 select-none;
     }
 
     .banner-div {
-        @apply w-full h-62 px-12 flex flex-col justify-center items-start;
+        @apply w-full h-[142px] md:h-62 px-7 md:px-12 flex flex-col justify-center items-start;
     }
 
     .banner--right {
