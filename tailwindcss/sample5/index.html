@@ -13,7 +13,7 @@
     <link rel="icon" href="./images/app-logo.png" type="image/png">
 </head>
 
-<body class="font-Dana bg-gray-100 dark:bg-zinc-800 h-[5000px]">
+<body class="font-Dana bg-gray-100 dark:bg-zinc-800 h-[10000px]">
     <!-- All Apps Icons -->
     <svg class="hidden">
         <symbol id="shopping-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -156,6 +156,11 @@
             <path
                 d="M26.8995 3.5606C26.8195 4.0606 26.7795 4.5606 26.7795 5.0606C26.7795 9.5606 30.4195 13.1986 34.8995 13.1986C35.3995 13.1986 35.8795 13.1406 36.3795 13.0606V29.1986C36.3795 35.9806 32.3795 40.0006 25.5795 40.0006H10.8015C3.99951 40.0006 -0.000488281 35.9806 -0.000488281 29.1986V14.4006C-0.000488281 7.6006 3.99951 3.5606 10.8015 3.5606H26.8995ZM27.3015 15.7206C26.7595 15.6606 26.2215 15.9006 25.8995 16.3406L21.0615 22.6006L15.5195 18.2406C15.1795 17.9806 14.7795 17.8786 14.3795 17.9206C13.9815 17.9806 13.6215 18.1986 13.3795 18.5186L7.46151 26.2206L7.33951 26.4006C6.99951 27.0386 7.15951 27.8586 7.75951 28.3006C8.03951 28.4806 8.33951 28.6006 8.67951 28.6006C9.14151 28.6206 9.57951 28.3786 9.85951 28.0006L14.8795 21.5386L20.5795 25.8206L20.7595 25.9386C21.3995 26.2786 22.1995 26.1206 22.6595 25.5186L28.4395 18.0606L28.3595 18.1006C28.6795 17.6606 28.7395 17.1006 28.5195 16.6006C28.3015 16.1006 27.8195 15.7606 27.3015 15.7206ZM35.1797 0C37.8397 0 39.9997 2.16 39.9997 4.82C39.9997 7.48 37.8397 9.64 35.1797 9.64C32.5197 9.64 30.3597 7.48 30.3597 4.82C30.3597 2.16 32.5197 0 35.1797 0Z"
                 fill="#059669" />
+        </symbol>
+        <symbol id="phone" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
         </symbol>
 
     </svg>
@@ -1920,6 +1925,33 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <!-- Conatact -->
+            <div class="mt-28 flex flex-row items-center select-none text-zinc-700 dark:text-white">
+                <img class="w-[296px] h-[305px]" src="/tailwindcss/sample5/images/contact.png" alt="contact">
+                <div class="flex flex-col ms-5">
+                    <h2 class="font-MorabbaBold text-5xl line-clamp-1">
+                        یکی از بهترین قهوه ها !
+                    </h2>
+                    <h4 class="mt-2.5 font-MorabbaMedium text-3xl line-clamp-1">
+                        کیفیت قهوه را از ما بخواهید ...
+                    </h4>
+                    <p class="font-Dana text-2xl mt-[52px]">
+                        فضای گرم و دنج ما را احساس کنید، جایی که همه می توانند قهوه معطری پیدا کنند و دسرهای خوشمزه ما
+                        را که
+                        کاملاً با قهوه داغ همراه شده است، امتحان کنند. فضای داخلی شیک و کارکنان خوش برخورد ما روز شما را
+                        می
+                        سازد!
+                    </p>
+                    <button
+                        class="flex flex-row gap-x-2 py-4 px-6 max-w-xs items-center justify-center mt-6 text-orange-300 border-2 border-orange-300 hover:bg-orange-300 hover:text-white transition-colors rounded-full text-xl">
+                        <svg class="w-8 h-8">
+                            <use href="#phone"></use>
+                        </svg>
+                        ثبت سفارش تلفنی
+                    </button>
                 </div>
             </div>
 
