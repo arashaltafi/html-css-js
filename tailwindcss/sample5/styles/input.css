@@ -149,16 +149,16 @@
         }
     }
 
-    .category {
-        @apply flex flex-row justify-center gap-x-5 mt-20;
+    .banner {
+        @apply flex flex-row justify-center gap-x-5 my-20;
     }
 
-    .category--right {
+    .banner--right {
         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/tailwindcss/sample5/images/categories/category-right.jpg");
         @apply h-62 px-12 flex flex-col justify-center items-start bg-no-repeat bg-cover bg-center overflow-hidden rounded-2xl flex-grow flex-shrink-0 text-white;
     }
 
-    .category--left {
+    .banner--left {
         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/tailwindcss/sample5/images/categories/category-left.jpg");
         @apply h-62 px-12 flex flex-col justify-center items-start bg-no-repeat bg-cover bg-center overflow-hidden rounded-2xl flex-grow flex-shrink-0 text-white;
     }
