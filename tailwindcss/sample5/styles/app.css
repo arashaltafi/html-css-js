@@ -2189,6 +2189,10 @@ input:checked + .toggle-bg {
   flex-wrap: wrap;
 }
 
+.content-stretch {
+  align-content: stretch;
+}
+
 .items-start {
   align-items: flex-start;
 }
@@ -2219,6 +2223,10 @@ input:checked + .toggle-bg {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-stretch {
+  justify-content: stretch;
 }
 
 .justify-items-center {
