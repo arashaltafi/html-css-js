@@ -166,4 +166,16 @@
         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/tailwindcss/sample5/images/categories/category-left.jpg");
         @apply bg-no-repeat bg-cover bg-center overflow-hidden rounded-2xl flex-grow flex-shrink-0 text-white;
     }
+
+    .section-title {
+        @apply text-5xl font-MorabbaMedium text-zinc-700 dark:text-white line-clamp-1;
+    }
+
+    .section-subtitle {
+        @apply text-3xl font-MorabbaLight mt-1.5 text-zinc-700 dark:text-white line-clamp-1;
+    }
+
+    .section-link {
+        @apply flex items-center gap-x-1 text-xl text-orange-300 line-clamp-1 cursor-pointer;
+    }
 }
