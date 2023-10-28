@@ -1896,6 +1896,10 @@ input:checked + .toggle-bg {
   margin-left: 1.5rem;
 }
 
+.mt-11 {
+  margin-top: 2.75rem;
+}
+
 .line-clamp-1 {
   overflow: hidden;
   display: -webkit-box;
@@ -2215,6 +2219,10 @@ input:checked + .toggle-bg {
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-\[22px\] {
+  width: 22px;
 }
 
 .max-w-\[201px\] {
@@ -5112,6 +5120,26 @@ input:checked + .toggle-bg {
     margin-left: 1.5rem;
   }
 
+  .md\:mt-8 {
+    margin-top: 2rem;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .md\:mr-5 {
+    margin-right: 1.25rem;
+  }
+
+  .md\:mt-\[52px\] {
+    margin-top: 52px;
+  }
+
+  .md\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
   .md\:inline-block {
     display: inline-block;
   }
@@ -5144,6 +5172,10 @@ input:checked + .toggle-bg {
     height: 3rem;
   }
 
+  .md\:h-8 {
+    height: 2rem;
+  }
+
   .md\:min-h-screen {
     min-height: 100vh;
   }
@@ -5158,6 +5190,10 @@ input:checked + .toggle-bg {
 
   .md\:w-12 {
     width: 3rem;
+  }
+
+  .md\:w-8 {
+    width: 2rem;
   }
 
   .md\:max-w-\[460px\] {
@@ -5375,6 +5411,13 @@ input:checked + .toggle-bg {
 }
 
 @media (min-width: 1280px) {
+  .xl\:line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
   .xl\:inline-block {
     display: inline-block;
   }
