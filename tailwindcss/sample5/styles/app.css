@@ -3377,6 +3377,16 @@ input:checked + .toggle-bg {
   padding-bottom: 2rem;
 }
 
+.px-\[335px\] {
+  padding-left: 335px;
+  padding-right: 335px;
+}
+
+.px-\[\] {
+  padding-left: ;
+  padding-right: ;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -4512,6 +4522,10 @@ input:checked + .toggle-bg {
   margin-top: 3rem;
 }
 
+.child\:mt-5 > * {
+  margin-top: 1.25rem;
+}
+
 .child\:inline-block > * {
   display: inline-block;
 }
@@ -4990,6 +5004,16 @@ input:checked + .toggle-bg {
     background-image: url(/tailwindcss/sample5/images/headerBgDesktop.webp);
   }
 
+  .md\:px-\[335px\] {
+    padding-left: 335px;
+    padding-right: 335px;
+  }
+
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .md\:pt-8 {
     padding-top: 2rem;
   }
@@ -5007,6 +5031,10 @@ input:checked + .toggle-bg {
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .child\:md\:mt-12 > * {
+    margin-top: 3rem;
   }
 }
 
@@ -5075,6 +5103,16 @@ input:checked + .toggle-bg {
     padding-right: 2.5rem;
   }
 
+  .lg\:px-\[335px\] {
+    padding-left: 335px;
+    padding-right: 335px;
+  }
+
+  .lg\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   .lg\:pt-48 {
     padding-top: 12rem;
   }
@@ -5097,5 +5135,10 @@ input:checked + .toggle-bg {
   .xl\:bg-yellow-500 {
     --tw-bg-opacity: 1;
     background-color: rgb(194 120 3 / var(--tw-bg-opacity));
+  }
+
+  .xl\:px-\[335px\] {
+    padding-left: 335px;
+    padding-right: 335px;
   }
 }
