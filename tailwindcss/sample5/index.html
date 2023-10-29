@@ -128,10 +128,21 @@
                 d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
                 clip-rule="evenodd" />
         </symbol>
+        <symbol id="chevron-up-mini" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+                d="M14.77 12.79a.75.75 0 01-1.06-.02L10 8.832 6.29 12.77a.75.75 0 11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 01-.02 1.06z"
+                clip-rule="evenodd" />
+        </symbol>
         <symbol id="curve" width="100" height="22" viewBox="0 0 100 22" fill="currentColor"
             xmlns="http://www.w3.org/2000/svg">
             <path d="M50 0C69 0 81 22 100 22L0 22C18.75 22 31 0 50 0Z" />
         </symbol>
+        <symbol id="curve-up" width="100" height="22" viewBox="0 0 100 22" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M50 22C31 22 19 -3.26655e-06 1.9233e-06 -3.02023e-06L100 -3.8147e-06C81.25 -5.45387e-06 69 22 50 22Z" />
+        </symbol>
+
         <symbol id="arrows-right-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd"
                 d="M13.2 2.24a.75.75 0 00.04 1.06l2.1 1.95H6.75a.75.75 0 000 1.5h8.59l-2.1 1.95a.75.75 0 101.02 1.1l3.5-3.25a.75.75 0 000-1.1l-3.5-3.25a.75.75 0 00-1.06.04zm-6.4 8a.75.75 0 00-1.06-.04l-3.5 3.25a.75.75 0 000 1.1l3.5 3.25a.75.75 0 101.02-1.1l-2.1-1.95h8.59a.75.75 0 000-1.5H4.66l2.1-1.95a.75.75 0 00.04-1.06z"
@@ -963,7 +974,7 @@
 
     <!-- Main -->
     <main>
-        <section
+        <section id="header"
             class="home relative h-[200px] xs:h-auto xs:aspect-[2/1] mr:aspect-auto bg-home-mobile md:bg-home-desktop bg-no-repeat bg-cover bg-[center_top]">
             <div class="container overflow-y-hidden relative h-full md:min-h-screen flex items-center justify-end">
                 <div class="text-white">
@@ -1001,12 +1012,12 @@
             </svg>
 
             <!-- Arrow Circle -->
-            <div
+            <a href="#footer"
                 class="shadow-md absolute left-0 bottom-0 right-0 mx-auto translate-y-2/4 hidden md:flex items-center justify-center w-[30px] h-[30px] border-2 border-orange-300 rounded-full hover:bg-gray-200 dark:hover:bg-zinc-600 cursor-pointer">
                 <svg class="w-5 h-5 text-zinc-700 dark:text-white">
                     <use href="#chevron-down-mini"></use>
                 </svg>
-            </div>
+            </a>
 
         </section>
 
@@ -2363,7 +2374,21 @@
         </section>
     </main>
 
-    <footer class="mt-[148px] bg-zinc-700 px-24 pt-[62px] pb-12">
+    <footer id="footer" class="relative mt-[148px] bg-zinc-700 px-24 pt-[62px] pb-12">
+
+        <!-- Curve Icon -->
+        <svg class="absolute top-0 right-0 left-0 mx-auto hidden md:inline-block w-[100px] h-[22px] text-zinc-800">
+            <use href="#curve-up"></use>
+        </svg>
+
+        <!-- Arrow Circle -->
+        <a href="#header"
+            class="shadow-md absolute left-0 top-0 right-0 mx-auto -translate-y-2/4 hidden md:flex items-center justify-center w-[30px] h-[30px] border-2 border-orange-300 rounded-full hover:bg-gray-200 dark:hover:bg-zinc-600 cursor-pointer">
+            <svg class="w-5 h-5 text-zinc-700 dark:text-white">
+                <use href="#chevron-up-mini"></use>
+            </svg>
+        </a>
+
         <!-- Body -->
         <section class="flex flex-row gap-x-28 justify-between items-center">
             <div class="flex flex-col items-start justify-start">
@@ -2459,7 +2484,7 @@
                     شخصی و تجاری ندارد.
                 </p>
                 <!-- Circle -->
-                <div class="circle circle--main circle--lg">
+                <div class="hidden circle circle--main circle--lg">
                     <div class="circle circle--md">
                         <div class="circle circle--sm">
 
