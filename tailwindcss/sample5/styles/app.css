@@ -4752,6 +4752,11 @@ input:checked + .toggle-bg {
   color: rgb(253 186 140 / var(--tw-text-opacity));
 }
 
+.child\:hover\:text-orange-300:hover > * {
+  --tw-text-opacity: 1;
+  color: rgb(253 186 140 / var(--tw-text-opacity));
+}
+
 .child-hover\:text-orange-300 > *:hover {
   --tw-text-opacity: 1;
   color: rgb(253 186 140 / var(--tw-text-opacity));
