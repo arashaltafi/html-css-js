@@ -149,21 +149,21 @@
     }
 
     .banner {
-        @apply flex flex-row flex-wrap items-center justify-center gap-y-5 md:gap-y-0 md:gap-x-5 my-10 md:my-20 select-none;
+        @apply grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-y-5 md:gap-x-5 my-10 md:my-20 select-none;
     }
 
     .banner-div {
-        @apply w-full h-[142px] md:h-62 px-7 md:px-12 flex flex-col justify-center items-start hover:scale-[102%];
+        @apply w-full h-36 md:h-48 lg:h-62 px-7 md:px-12 flex flex-col justify-center items-start hover:scale-[102%];
     }
 
     .banner--right {
         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/tailwindcss/sample5/images/categories/category-right.jpg");
-        @apply bg-no-repeat bg-cover bg-center overflow-hidden rounded-2xl flex-grow flex-shrink-0 text-white;
+        @apply w-full bg-no-repeat bg-cover bg-center overflow-hidden rounded-2xl flex-grow flex-shrink-0 text-white;
     }
 
     .banner--left {
         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/tailwindcss/sample5/images/categories/category-left.jpg");
-        @apply bg-no-repeat bg-cover bg-center overflow-hidden rounded-2xl flex-grow flex-shrink-0 text-white;
+        @apply w-full bg-no-repeat bg-cover bg-center overflow-hidden rounded-2xl flex-grow flex-shrink-0 text-white;
     }
 
     .section-title {
