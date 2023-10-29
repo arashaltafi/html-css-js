@@ -116,6 +116,22 @@
         @apply left-0
     }
 
+    .circle-mini {
+        @apply flex items-center justify-center border rounded-full;
+    }
+
+    .circle--lg-mini {
+        @apply w-[30px] h-[30px] flex-shrink-0 border-white/25;
+    }
+
+    .circle--md-mini {
+        @apply w-[20px] h-[20px] flex-shrink-0 border-white/50;
+    }
+
+    .circle--sm-mini {
+        @apply w-[10px] h-[10px] flex-shrink-0 bg-orange-300 rounded-full;
+    }
+
     .circle {
         @apply hidden md:flex items-center justify-center border rounded-full;
     }

@@ -2393,10 +2393,11 @@
 
         <section class="w-[98%] lg:w-[90%] px-4 md:px-0 mx-auto text-gray-300">
             <!-- Body -->
-            <section class="flex flex-row gap-x-28 justify-between items-center">
+            <section class="flex flex-row md:flex-row gap-x-28 justify-between items-center">
                 <div class="flex flex-col items-start justify-start">
                     <!-- Icons -->
-                    <div class="flex flex-row gap-x-5 hover:child:text-orange-300 child:transition-colors child:cursor-pointer">
+                    <div
+                        class="flex flex-row gap-x-5 hover:child:text-orange-300 child:transition-colors child:cursor-pointer">
                         <svg class="w-14 h-14">
                             <use href="#logo"></use>
                         </svg>
@@ -2404,7 +2405,8 @@
                             <use href="#logo-type"></use>
                         </svg>
                     </div>
-                    <p class="max-w-xl mt-6 md:mt-[18px] text-lg md:text-xl text-gray-300 leading-7 md:leading-[48px]">
+                    <p
+                        class="md:max-w-xl mt-6 md:mt-[18px] text-lg md:text-xl text-gray-300 leading-7 md:leading-[48px]">
                         ما برآنیم تا با پیشرو بودن در فرآیند تولید، نوع و کیفیت محصول، خدمات و توزیع، الگویی برای
                         تولیدکنندگان ایرانی باشیم و به مرجع فرهنگ قهوه در ایران تبدیل شویم. می‌پنداریم که نظر مردم ایران
                         و
@@ -2481,22 +2483,22 @@
             <div class="h-px w-full bg-white/10 mt-14"></div>
 
             <!-- footer -->
-            <section class="mt-12 flex justify-between items-center">
-                <div class="flex items-center justify-center">
-                    <p>
-                        تمام حقوق این رابط کاربری متعلق به سبزلرن میباشد و دانشجوی این دوره اجازه استفاده آن را در مصارف
-                        شخصی و تجاری ندارد.
-                    </p>
+            <section class="mt-12 flex flex-col md:flex-row gap-y-4 justify-between">
+                <div class="flex items-center gap-x-2.5 justify-center">
                     <!-- Circle -->
-                    <div class="hidden circle circle--main circle--lg">
-                        <div class="circle circle--md">
-                            <div class="circle circle--sm">
+                    <div class="circle-mini circle--lg-mini">
+                        <div class="circle-mini circle--md-mini">
+                            <div class="circle-mini circle--sm-mini">
 
                             </div>
                         </div>
                     </div>
+                    <p class="text-xs md:text-base">
+                        تمام حقوق این رابط کاربری متعلق به سبزلرن میباشد و دانشجوی این دوره اجازه استفاده آن را در مصارف
+                        شخصی و تجاری ندارد.
+                    </p>
                 </div>
-                <p>
+                <p dir="ltr" class="text-xs md:text-base">
                     Copyright © 2023 Golden Coffee. All rights reserved.
                 </p>
             </section>
