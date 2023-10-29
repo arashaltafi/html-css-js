@@ -3549,8 +3549,20 @@ input:checked + .toggle-bg {
   padding-bottom: 2rem;
 }
 
+.pt-\[26px\] {
+  padding-top: 26px;
+}
+
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .font-Dana {
@@ -3692,6 +3704,10 @@ input:checked + .toggle-bg {
 
 .leading-\[80px\] {
   line-height: 80px;
+}
+
+.leading-7 {
+  line-height: 1.75rem;
 }
 
 .tracking-normal {
@@ -4695,6 +4711,10 @@ input:checked + .toggle-bg {
   display: flex;
 }
 
+.child\:cursor-pointer > * {
+  cursor: pointer;
+}
+
 .child\:items-center > * {
   align-items: center;
 }
@@ -5202,6 +5222,10 @@ input:checked + .toggle-bg {
     margin-top: 52px;
   }
 
+  .md\:mt-\[18px\] {
+    margin-top: 18px;
+  }
+
   .md\:inline-block {
     display: inline-block;
   }
@@ -5311,6 +5335,10 @@ input:checked + .toggle-bg {
          column-gap: 1.25rem;
   }
 
+  .md\:gap-y-7 {
+    row-gap: 1.75rem;
+  }
+
   .md\:bg-blue-500 {
     --tw-bg-opacity: 1;
     background-color: rgb(63 131 248 / var(--tw-bg-opacity));
@@ -5347,6 +5375,11 @@ input:checked + .toggle-bg {
   .md\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+  }
+
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .md\:pt-8 {
@@ -5403,6 +5436,10 @@ input:checked + .toggle-bg {
 
   .md\:leading-9 {
     line-height: 2.25rem;
+  }
+
+  .md\:leading-\[48px\] {
+    line-height: 48px;
   }
 
   .child\:md\:mt-12 > * {
