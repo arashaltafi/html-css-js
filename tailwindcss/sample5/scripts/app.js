@@ -14,6 +14,22 @@ const cart = document.querySelector('.cart');
 const overlay = document.querySelector('.overlay');
 const html = document.documentElement;
 
+const alertSuccess = document.querySelector('#alert-success');
+const logoBtn = document.querySelector('#logo1');
+
+logoBtn.addEventListener('click', () => {
+    alertSuccess.classList.remove("invisible")
+    alertSuccess.classList.remove("opacity-0")
+    alertSuccess.classList.add("visible")
+    alertSuccess.classList.add("opacity-100")
+    setTimeout(() => {
+        alertSuccess.classList.add("invisible")
+        alertSuccess.classList.add("opacity-0")
+        alertSuccess.classList.remove("visible")
+        alertSuccess.classList.remove("opacity-100")
+    }, 2000);
+})
+
 toggleTheme.forEach(btn => {
     btn.addEventListener('click', () => {
         if (localStorage.theme === "dark"){
