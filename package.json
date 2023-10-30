@@ -18,7 +18,7 @@
     "convertTailwind3": "npx tailwindcss -i ./tailwindcss/main.css -o ./tailwindcss/sample3/main-dist.css --watch",
     "convertTailwind4": "npx tailwindcss -i ./tailwindcss/main.css -o ./tailwindcss/sample4/main-dist.css --watch",
     "convertTailwindCoffee": "npx tailwindcss -i ./tailwindcss/sample5/styles/input.css -o ./tailwindcss/sample5/styles/app.css --watch",
-    "convertTailwindProduction": "cross-env NODE_ENV=production npx tailwindcss -i ./tailwindcss/main.css -o ./tailwind/sample1/main-dist.css --watch"
+    "convertTailwindProduction": "npx tailwindcss -i ./tailwindcss/sample5/styles/input.css -o ./tailwindcss/sample5/styles/final.css --minify"
   },
   "repository": {
     "type": "git",
