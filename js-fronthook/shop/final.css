@@ -886,6 +886,12 @@ input:checked + .toggle-bg {
   border-color: #1C64F2;
 }
 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
