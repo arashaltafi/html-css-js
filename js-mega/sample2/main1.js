@@ -76,7 +76,7 @@ switch (day) {
 
 //while
 var i = 0
-while(i < 10) {
+while (i < 10) {
     i++;
     console.log("while i is : " + i);
     if (i == 5) break;
@@ -93,3 +93,23 @@ do {
     j++;
     console.log("do while j is : " + j);
 } while (j < 5)
+
+//Array
+const array1 = [1, 2, 3, 4];
+const array2 = [5, 6, 7, 8];
+
+console.log(array1.concat(array2))
+console.log(array1.pop())
+console.log(array1.shift())
+console.log(array1.push())
+console.log("---------------------")
+console.log(array1.find((a) => a > 1))
+array2.forEach(element => {
+    console.log("element", element)
+});
+
+//splice
+//slice
+//sort
+//reverse
+//forEach
