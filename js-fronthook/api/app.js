@@ -6,11 +6,17 @@ const getData = document.querySelector("#get-data")
 const postDataAxios = document.querySelector("#post-data-axios")
 const getDataAxios = document.querySelector("#get-data-axios")
 
+const deleteDataAxios = document.querySelector("#delete-data-axios")
+const putDataAxios = document.querySelector("#put-data-axios")
+
 postData.addEventListener('click', () => fetchData2("https://jsonplaceholder.typicode.com/users", "POST"))
 getData.addEventListener('click', () => fetchData2("https://jsonplaceholder.typicode.com/users/2", "GET"))
 
 postDataAxios.addEventListener('click', () => axiosData2("https://jsonplaceholder.typicode.com/users", "POST"))
 getDataAxios.addEventListener('click', () => axiosData2("https://jsonplaceholder.typicode.com/users/2", "GET"))
+
+deleteDataAxios.addEventListener('click', () => axiosData2("https://jsonplaceholder.typicode.com/users/2", "DELETE"))
+putDataAxios.addEventListener('click', () => axiosData2("https://jsonplaceholder.typicode.com/users/2", "PUT"))
 
 function fetchData1(url, method) {
     const userData = {
@@ -92,12 +98,17 @@ function axiosData1(url, method) {
     }
 
     const header = {
-        'Content-type': 'application/json; charset=UTF-8'
+        'Content-type': 'application/json; charset=UTF-8',
+        "authorization": '123'
     }
 
     let axiosPromise;
     if (method == 'POST') {
         axiosPromise = axios.post(url, userData, header)
+    } else if (method == 'PUT') {
+        axiosPromise = axios.put(url, userData, header)
+    } else if (method == 'DELETE') {
+        axiosPromise = axios.delete(url)
     } else {
         axiosPromise = axios.get(url)
     }
@@ -118,12 +129,17 @@ async function axiosData2(url, method) {
     }
 
     const header = {
-        'Content-type': 'application/json; charset=UTF-8'
+        'Content-type': 'application/json; charset=UTF-8',
+        "authorization": '123'
     }
 
     let axiosPromise;
     if (method == 'POST') {
         axiosPromise = axios.post(url, userData, header)
+    } else if (method == 'PUT') {
+        axiosPromise = axios.put(url, userData, header)
+    } else if (method == 'DELETE') {
+        axiosPromise = axios.delete(url)
     } else {
         axiosPromise = axios.get(url)
     }
