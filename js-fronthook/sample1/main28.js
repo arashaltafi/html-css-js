@@ -1,3 +1,4 @@
+//CallBack
 console.log("start");
 
 function loginUser(email, password, callback) {
@@ -15,6 +16,7 @@ const user = loginUser("arash@gmail.com", "123", (user) => {
 console.log("end");
 
 ///////////////////////////////////
+//Promise
 
 const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -32,6 +34,7 @@ promise
     })
 
 ///////////////////////////////////
+//Promise
 
 function getUsername(user) {
     return new Promise((resolve, reject) => {
@@ -58,8 +61,23 @@ getUsername("arash")
         return getUserPhoto(user.user)
     })
     .then((photo) => {
-        console.log(`${photo.user} photo is: ${photo.photo}`)
+        console.log(`promise => ${photo.user} photo is: ${photo.photo}`)
     })
     .catch((error) => {
-        console.log(error.message)
+        console.log(`promise => ${error.message}`)
     });
+
+
+///////////////////////////////////
+//Async Await
+async function displayPhoto(name) {
+    try {
+        const user = await getUsername(name);
+        const photo = await getUserPhoto(user.user)
+        console.log(`await async => ${photo.user} photo is: ${photo.photo}`)
+    } catch (error) {
+        console.log(`await async => ${error.message}`)
+    }
+}
+
+displayPhoto("arash")
