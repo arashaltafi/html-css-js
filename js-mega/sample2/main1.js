@@ -73,3 +73,23 @@ switch (day) {
     default:
         console.log("day is wrong!!!");
 }
+
+//while
+var i = 0
+while(i < 10) {
+    i++;
+    console.log("while i is : " + i);
+    if (i == 5) break;
+}
+
+//for
+for (i = 0; i < 10; ++i) {
+    console.log("for i is : " + i);
+}
+
+//do while
+var j = 0;
+do {
+    j++;
+    console.log("do while j is : " + j);
+} while (j < 5)
