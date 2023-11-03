@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl" translate="no">
-    
+
 <head>
     <meta name="darkreader-lock" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample 1 MegaJs</title>
+
+    <style>
+        .change-style {
+            margin: 0 auto;
+            text-align: center;
+            color: white;
+            padding: 50px 20px;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30%;
+            border-radius: 20px;
+            font-size: 2rem;
+            border: 5px dashed darkslategray;
+            font-style: bold;
+            box-shadow: 4px 3px 10px gray;
+            margin-bottom: 32px;
+        }
+    </style>
 </head>
+
 <body>
-    
+
+    <h1 id="test1">inner Html</h1>
+    <button onclick="document.getElementById('test1').innerHTML = 'test clicked on button';">
+        Click Me To innerHTML!
+    </button>
+
+    <br /><br />
+    <hr /><br /><br />
+
+    <h1 id="test2" class="change-style">Change Style</h1>
+    <button onclick="document.getElementById('test2').style = 'background-color:Blue';">
+        Click Me To Set Background Blue!
+    </button>
+    <button onclick="document.getElementById('test2').style = 'background-color:Green;'">
+        Click Me To Set Background Green!
+    </button>
+    <button onclick="document.getElementById('test2').style = 'background-color:Purple';">
+        Click Me To Set Background Purple!
+    </button>
+
+    <br /><br />
+    <hr /><br /><br />
 </body>
+
 </html>
