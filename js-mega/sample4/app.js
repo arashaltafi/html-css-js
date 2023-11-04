@@ -1,3 +1,4 @@
+const body = document.body;
 const input = document.querySelector("#input");
 input.min = 0; // Set the minimum value
 input.max = 5; // Set the maximum value
@@ -17,5 +18,13 @@ input.addEventListener('keypress', (event) => {
         input.value = input.value + " - " + inputValue
     } else {
         input.value = inputValue
+    }
+});
+
+body.addEventListener('keydown', (e) => {
+    if ((e.code == 'KeyA') && e.ctrlKey == true) {
+        body.style.backgroundColor = 'green';
+    } else {
+        body.style.backgroundColor = '#F8BBD0';
     }
 });
