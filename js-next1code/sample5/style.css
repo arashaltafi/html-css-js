@@ -51,6 +51,8 @@ body {
     flex-shrink: 1;
     flex-grow: 0;
     text-transform: uppercase;
+    transition: all;
+    transition-duration: 10ms;
 }
 
 .btn:hover {
@@ -59,6 +61,10 @@ body {
 
 .btn:active {
     background-color: #424242;
+}
+
+.btn-active {
+    background-color: #E57373;
 }
 
 .input {
