@@ -22,7 +22,7 @@ input.addEventListener('keypress', (event) => {
 });
 
 body.addEventListener('keydown', (e) => {
-    if ((e.code == 'KeyA') && e.ctrlKey == true) {
+    if ((e.code == 'KeyA') && (e.ctrlKey == true)) {
         body.style.backgroundColor = 'green';
     } else {
         body.style.backgroundColor = '#F8BBD0';
