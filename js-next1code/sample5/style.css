@@ -12,6 +12,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 32px 0px;
 }
 
 .management {
@@ -102,4 +103,130 @@ body {
 .reset:active {
     background-color: #B71C1C;
     transform: scale(99%);
+}
+
+@media screen and (max-width: 1024px) {
+    .keyboard {
+        width: 85%;
+        gap: 14px;
+        padding: 42px 22px;
+    }
+
+    .btn {
+        width: 85px;
+        height: 60px;
+        font-size: 22px;
+        border-radius: 10px;
+    }
+
+    .reset {
+        padding: 12px 16px;
+        font-size: 26px;
+        border-radius: 10px;
+        border: 6px #eee double;
+        color: #F5F5F5;
+        background-color: #D32F2F;
+        transition: all;
+        text-transform: uppercase;
+        box-shadow: 5px 5px 5px gray;
+        margin-bottom: 32px;
+    }
+
+    .input {
+        width: 85%;
+        border-radius: 12px;
+        box-shadow: 5px 5px 5px gray;
+        font-size: 32px;
+        border: 1px solid #757575;
+        padding: 18px 22px;
+        text-align: center;
+        background-color: #424242;
+        color: #eee;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 764px) {
+    .keyboard {
+        width: 80%;
+        gap: 14px;
+        padding: 34px 18px;
+    }
+
+    .btn {
+        width: 80px;
+        height: 55px;
+        font-size: 22px;
+        border-radius: 8px;
+    }
+
+    .reset {
+        padding: 8px 12px;
+        font-size: 24px;
+        border-radius: 8px;
+        border: 4px #eee double;
+        color: #F5F5F5;
+        background-color: #D32F2F;
+        transition: all;
+        text-transform: uppercase;
+        box-shadow: 3px 3px 5px gray;
+        margin-bottom: 32px;
+    }
+
+    .input {
+        width: 85%;
+        border-radius: 12px;
+        box-shadow: 5px 5px 5px gray;
+        font-size: 26px;
+        border: 1px solid #757575;
+        padding: 12px 16px;
+        text-align: center;
+        background-color: #424242;
+        color: #eee;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .keyboard {
+        width: 90%;
+        gap: 12px;
+        padding: 34px 18px;
+    }
+
+    .btn {
+        width: 60px;
+        height: 35px;
+        font-size: 18px;
+        border-radius: 8px;
+    }
+
+    .reset {
+        padding: 8px 12px;
+        font-size: 16px;
+        border-radius: 8px;
+        border: 4px #eee double;
+        color: #F5F5F5;
+        background-color: #D32F2F;
+        transition: all;
+        text-transform: uppercase;
+        box-shadow: 2px 2px 5px gray;
+        margin-bottom: 32px;
+    }
+
+    .input {
+        width: 90%;
+        border-radius: 8px;
+        box-shadow: 3px 3px 5px gray;
+        font-size: 24px;
+        border: 1px solid #757575;
+        padding: 2px 6px;
+        text-align: center;
+        background-color: #424242;
+        color: #eee;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: auto;
+    }
 }
