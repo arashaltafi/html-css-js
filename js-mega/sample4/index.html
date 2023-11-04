@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fa" dir="ltr" translate="no">
+
+<head>
+    <meta name="darkreader-lock" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample 1 MegaJs</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #F8BBD0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 64px;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .h1 {
+            margin: 18px auto;
+            text-align: center;
+            color: white;
+            padding: 50px 20px;
+            background-color: #F44336;
+            width: 50%;
+            border-radius: 20px;
+            font-size: 2rem;
+            border: 2px solid darkslategray;
+            font-style: bold;
+            box-shadow: 4px 3px 10px gray;
+            text-transform: uppercase;
+            font-weight: 1000;
+            transition: all;
+        }
+
+        .h1:hover {
+            background-color: #EF5350;
+            transform: scale(101%);
+        }
+
+        .h1:active {
+            background-color: #E53935;
+            transform: scale(99%);
+        }
+
+        .input {
+            width: 70%;
+            height: 64px;
+            border-radius: 18px;
+            box-shadow: 5px 5px 10px gray;
+            font-size: 32px;
+            border: 2px solid darkslategray;
+            padding: 2px 8px;
+            text-align: center;
+            background-color: #4FC3F7;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+    </style>
+</head>
+
+    <h1 class="h1">sms code :</h1>
+
+    <input class="input" id="input">
+
+    <script src="app.js"></script>
+    </body>
+
+</html>
