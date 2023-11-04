@@ -74,7 +74,13 @@ reset.style.borderRadius = "16px"
 reset.style.cursor = "pointer"
 
 //get counter value from localStorage
-counter.innerHTML = localStorage.getItem('counter')
+const counterStorage = localStorage.getItem('counter')
+console.log(counterStorage)
+if (counterStorage != null) {
+    counter.innerHTML = counterStorage
+} else {
+    counter.innerHTML = "0"
+}
 
 //get counter value
 let num = 0
