@@ -104,3 +104,15 @@ function handler() {
     console.log('event clicked!!!')
     document.getElementById('btn-event').removeEventListener('click', handler)
 }
+
+document.querySelector('#link').addEventListener('click', (e) => {
+    e.preventDefault();
+})
+
+document.querySelector('#input23').addEventListener('keydown', (e) => {
+    e.preventDefault();
+})
+
+document.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+})
