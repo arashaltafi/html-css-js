@@ -1,4 +1,5 @@
 const box = document.getElementById('test2');
+const btnTouch = document.getElementById('btn-touch');
 
 box.addEventListener('click', () => {
     console.log('click')
@@ -84,3 +85,22 @@ input2.addEventListener('keydown', (event) => {
         event.preventDefault();
     }
 });
+
+btnTouch.addEventListener('touchstart', (e) => {
+    document.getElementById('pTouch').append(" *** touch start");
+})
+
+btnTouch.addEventListener('touchend', (e) => {
+    document.getElementById('pTouch').append(" --- touch end");
+})
+
+btnTouch.addEventListener('touchmove', (e) => {
+    document.getElementById('pTouch').append(" +++ touch touchmove");
+})
+
+document.getElementById('btn-event').addEventListener('click', handler)
+
+function handler() {
+    console.log('event clicked!!!')
+    document.getElementById('btn-event').removeEventListener('click', handler)
+}
