@@ -123,3 +123,7 @@ btnStartInterval.addEventListener('click', () => {
 btnStopInterval.addEventListener('click', () => {
     clearInterval(myVar);
 })
+
+document.addEventListener('DOMContentLoaded', () => {
+    alert('dom was loaded complete!!!')
+})
