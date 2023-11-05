@@ -6,6 +6,7 @@ const pClient = document.getElementById("client");
 const pNavigator = document.getElementById("navigator");
 
 const btnAssign = document.getElementById("btn-assign");
+const btnReplace = document.getElementById("btn-replace");
 const btnBack = document.getElementById("btn-back");
 const btnForward = document.getElementById("btn-forward");
 const btnCookieEnabled = document.getElementById("btn-cookie-enabled");
@@ -14,7 +15,8 @@ const btnLanguage = document.getElementById("btn-language");
 const btnOnline = document.getElementById("btn-online");
 const btnAlert = document.getElementById("btn-alert");
 const btnTimeout = document.getElementById("btn-timeout");
-const btnInterval = document.getElementById("btn-interval");
+const btnStartInterval = document.getElementById("btn-start-interval");
+const btnStopInterval = document.getElementById("btn-stop-interval");
 
 getWindowInformation();
 getClientInformation();
@@ -52,6 +54,10 @@ function getWindowLocation() {
 
 btnAssign.addEventListener('click', () => {
     window.location.assign("https://www.arashaltafi.ir")
+})
+
+btnReplace.addEventListener('click', () => {
+    window.location.replace('https://google.com');
 })
 
 btnBack.addEventListener('click', () => {
@@ -105,8 +111,15 @@ btnTimeout.addEventListener('click', () => {
     }, 1000);
 })
 
-btnInterval.addEventListener('click', () => {
-    setInterval(() => {
-        pNavigator.innerHTML = 'after 1 second interval!!!';
-    }, 1000);
+let myVar = setInterval(myTimer, 1000);
+function myTimer() {
+    const d = new Date();
+    pNavigator.innerHTML = d.toLocaleTimeString();
+}
+btnStartInterval.addEventListener('click', () => {
+    
+})
+
+btnStopInterval.addEventListener('click', () => {
+    clearInterval(myVar);
 })
