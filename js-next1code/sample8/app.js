@@ -1,3 +1,5 @@
+const form = document.getElementById('form');
+const phone = document.getElementById('phone');
 const fName = document.getElementById('firstname');
 const lName = document.getElementById('lastname');
 const day = document.getElementById('day');
@@ -44,3 +46,18 @@ month.addEventListener('blur', () => {
 //         month.nextElementSibling.innerHTML = "لطفا ماه را به صورت صحیح 1 تا 12 وارد نمایید"
 //     }
 // })
+
+form.addEventListener('submit', (e) => {
+    if (phone.value.length != 11) {
+        e.preventDefault();
+        phone.nextElementSibling.innerHTML = 'شماره موبایل نامعتبر است'
+    } else {
+
+    }
+})
+
+form.addEventListener('reset', (e) => {
+    e.preventDefault();
+    phone.value = ''
+    phone.previousElementSibling.innerHTML = 'شماره تلفن ریست شد'
+})

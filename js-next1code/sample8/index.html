@@ -52,10 +52,37 @@
         .red {
             color: #F44336;
         }
+
+        .green {
+            color: #4CAF50;
+        }
+
+        .btns {
+            display: flex;
+            flex-direction: row;
+            gap: 32px;
+        }
+
+        button {
+            color: black;
+            font-size: 22px;
+            padding: 12px 18px;
+            border-radius: 8px;
+            border: 1px solid red;
+            background-color: #BDBDBD;
+        }
+
+        button:hover {
+            transform: scale(102%);
+        }
+
+        button:active {
+            transform: scale(105%);
+        }
     </style>
 </head>
 <body>
-    <form>
+    <form id="form">
         <label>First Name:</label>
         <input type="text" id="firstname" value="arash">
         
@@ -69,6 +96,15 @@
         <label>Month:</label>
         <input type="number" id="month">
         <span class="red"></span>
+
+        <span style="margin-top: 64px;" class="green"></span>
+        <input type="number" id="phone" placeholder="09">
+        <span class="red"></span>
+
+        <div class="btns">
+            <button type="submit">submit</button>
+            <button type="reset">reset</button>
+        </div>
     </form>
 
     <script src="app.js"></script>
