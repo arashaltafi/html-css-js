@@ -40,8 +40,13 @@
             font-size: 32px;
             font-weight: bold;
             background-color: #616161;
+            box-shadow: 2px 2px 5px #616161;
             border-radius: 16px;
             padding: 8px 16px;
+        }
+
+        .red {
+            color: #F44336;
         }
     </style>
 </head>
@@ -52,6 +57,14 @@
         
         <labe>Last Name:</labe>
         <input type="text" id="lastname" value="altafi">
+
+        <labe>Day:</labe>
+        <input type="number" id="day">
+        <span class="red"></span>
+
+        <labe>Month:</labe>
+        <input type="number" id="month">
+        <span class="red"></span>
     </form>
 
     <script src="app.js"></script>
