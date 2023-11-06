@@ -26,9 +26,9 @@ btn.addEventListener('click', () => {
         let wrongPercent = (wrong * 100) / all
         resultBox.style.display = "flex";
         resultBox.innerHTML = `
-            درصد تست های درست: ${Math.round(correctPercent).toFixed(2)} 
+            درصد تست های درست: ${(correctPercent).toFixed(2)} 
             ${'<br>'} 
-            درصد تست های غلط: ${Math.round(wrongPercent).toFixed(2)}
+            درصد تست های غلط: ${(wrongPercent).toFixed(2)}
         `;
     }
 })
