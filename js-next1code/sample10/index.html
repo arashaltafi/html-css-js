@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" translate="no">
+
+<head>
+    <meta name="darkreader-lock" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample 9 Next1Code</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: lightblue;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .button {
+            padding: 16px 32px;
+            border-radius: 16px;
+            border: 2px solid red;
+            background-color: darkblue;
+            color: white;
+        }
+
+        .div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="div">
+        <button class="button" id="btn-history-back">History Back</button>
+        <button class="button" id="btn-history-forward">History Forward</button>
+        <button class="button" id="btn-history-go">History Go</button>
+        <button class="button" id="btn-history-length">History Length</button>
+        <button class="button" id="btn-Location-reload">Location Reload</button>
+        <button class="button" id="btn-Location-reload-without-cache">Location Reload Without Cache</button>
+        <button class="button" id="btn-Location-assign">Location Assign</button>
+        <button class="button" id="btn-Location-replace">Location Replace</button>
+        <button class="button" id="btn-Window-open-tab">Window Open Another Tab</button>
+        <button class="button" id="btn-Window-open-current">Window Open Current Tab</button>
+        <button class="button" id="btn-Window-open-window">Window Open Another Window</button>
+        <button class="button" id="btn-Window-close-current">Window Close Current</button>
+        <button class="button" id="btn-Window-close-last">Window Close Last Opened</button>
+        <button class="button" id="btn-alert">Alert</button>
+        <button class="button" id="btn-prompt">Prompt</button>
+        <button class="button" id="btn-confirm">Confirm</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
