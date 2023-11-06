@@ -17,7 +17,7 @@ day.addEventListener('blur', () => {
     if (day.value >= 1 && day.value <= 31) {
         day.nextElementSibling.innerHTML = ""
     } else {
-        day.nextElementSibling.innerHTML = "لطفا روز را به صورت صحیح وارد نمایید"
+        day.nextElementSibling.innerHTML = "لطفا روز را به صورت صحیح 1 تا 31 وارد نمایید"
     }
 })
 
@@ -25,6 +25,6 @@ month.addEventListener('blur', () => {
     if (month.value >= 1 && month.value <= 12) {
         month.nextElementSibling.innerHTML = ""
     } else {
-        month.nextElementSibling.innerHTML = "لطفا ماه را به صورت صحیح وارد نمایید"
+        month.nextElementSibling.innerHTML = "لطفا ماه را به صورت صحیح 1 تا 12 وارد نمایید"
     }
 })
