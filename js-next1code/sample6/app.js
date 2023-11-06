@@ -18,28 +18,50 @@ const btnTimeout = document.getElementById("btn-timeout");
 const btnStartInterval = document.getElementById("btn-start-interval");
 const btnStopInterval = document.getElementById("btn-stop-interval");
 
-getWindowInformation();
+getInnerWindowInformation();
+getOuterWindowInformation();
 getClientInformation();
+getAvailInformation();
 getWindowLocation();
 
 //window info
-function getWindowInformation() {
+function getInnerWindowInformation() {
     pWindowScreen.innerHTML =
         "Browser inner window width: " + window.innerWidth + "px<br>" +
-        "Browser inner window height: " + window.innerHeight + "px";
+        "Browser inner window height: " + window.innerHeight + "px<br>";
 
     window.addEventListener("resize", () => {
         pWindowScreen.innerHTML =
             "Browser inner window width: " + window.innerWidth + "px<br>" +
-            "Browser inner window height: " + window.innerHeight + "px";
+            "Browser inner window height: " + window.innerHeight + "px<br>";
+    })
+}
+
+//window info
+function getOuterWindowInformation() {
+    pWindowScreen.innerHTML +=
+        "Browser outer window width: " + window.outerWidth + "px<br>" +
+        "Browser outer window height: " + window.outerHeight + "px<br>";
+
+    window.addEventListener("resize", () => {
+        pWindowScreen.innerHTML +=
+            "Browser outer window width: " + window.outerWidth + "px<br>" +
+            "Browser outer window height: " + window.outerHeight + "px<br>";
     })
 }
 
 //window info
 function getClientInformation() {
     pClientScreen.innerHTML =
-        "Client inner window width: " + screen.width + "px<br>" +
-        "Client inner window height: " + screen.height + "px";
+        "Client inner window width: " + screen.width + 'px<br>' +
+        "Client inner window height: " + screen.height + "px<br>";
+}
+
+//window info
+function getAvailInformation() {
+    pClientScreen.innerHTML +=
+        "Client inner window availWidth: " + screen.availWidth + 'px<br>' +
+        "Client inner window availHeight: " + screen.availHeight + "px<br>";
 }
 
 function getWindowLocation() {
