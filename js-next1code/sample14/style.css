@@ -42,14 +42,14 @@ body {
 .hour {
     display: flex;
     justify-content: center;
-    width: 230px;
-    height: 230px;
+    height: 250px;
     position: relative;
+    transform: rotateZ(0deg);
 }
 
 .hour::before {
     content: "";
-    width: 2px;
+    width: 4px;
     height: 100px;
     position: absolute;
     background-color: darkorange;
@@ -60,15 +60,15 @@ body {
 .min {
     display: flex;
     justify-content: center;
-    width: 230px;
-    height: 230px;
+    height: 250px;
     position: relative;
+    transform: rotateZ(90deg);
 }
 
 .min::before {
     content: "";
-    width: 2px;
-    height: 130px;
+    width: 3px;
+    height: 100px;
     position: absolute;
     background-color: red;
     border-radius: 6px 6px 0 0;
@@ -78,9 +78,9 @@ body {
 .second {
     display: flex;
     justify-content: center;
-    width: 230px;
-    height: 230px;
+    height: 250px;
     position: relative;
+    transform: rotateZ(45deg);
 }
 
 .second::before {
