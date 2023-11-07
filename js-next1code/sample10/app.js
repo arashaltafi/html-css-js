@@ -138,3 +138,11 @@ window.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('load', () => {
     console.log('load');
 });
+
+window.addEventListener('focus', () => {
+    console.log('focus');
+});
+
+window.addEventListener('blur', () => {
+    console.log('blur');
+});
