@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./tailwindcss/**/*.{html,js}",
+    "./**/**/*.{html,js}",
     "./node_modules/flowbite/**/*.js"
   ],
   darkMode: "class",
@@ -16,6 +16,8 @@ module.exports = {
       "MorabbaLight": "Morabba Light",
       "MorabbaMedium": "Morabba Medium",
       "MorabbaBold": "Morabba Bold",
+      "Orbitron": "Orbitron",
+      "Orbitron-Bold": "Orbitron Bold",
     },
     screens: {
       'xs': '480px',

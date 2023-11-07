@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Orbitron";
+        src: local("Orbitron"), url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap');
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Orbitron Bold";
+        src: local("Orbitron Bold"), url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap'), format("woff2");
+        font-display: swap;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
