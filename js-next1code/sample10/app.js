@@ -146,3 +146,14 @@ window.addEventListener('focus', () => {
 window.addEventListener('blur', () => {
     console.log('blur');
 });
+
+window.addEventListener('beforeunload', (e) => {
+    // e.preventDefault();
+    // e.returnValue = ""
+    // console.log('beforeunload');
+});
+
+window.addEventListener('resize', (e) => {
+    console.log("Browser inner window width: " + window.innerWidth + "px");
+    console.log("Browser inner window height: " + window.innerHeight + "px");
+});
