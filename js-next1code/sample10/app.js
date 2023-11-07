@@ -14,6 +14,9 @@ const windowCloseLast = document.getElementById('btn-window-close-last');
 const btnAlert = document.getElementById('btn-alert');
 const btnPrompt = document.getElementById('btn-prompt');
 const btnConfirm = document.getElementById('btn-confirm');
+const btnNavigatorAppName = document.getElementById('btn-navigator-app-name');
+const btnNavigatorOnline = document.getElementById('btn-navigator-online');
+const btnNavigatorUserAgent = document.getElementById('btn-navigator-user-agent');
 
 historyBack.addEventListener('click', () => {
     window.history.back()
@@ -81,4 +84,19 @@ btnPrompt.addEventListener('click', () => {
 btnConfirm.addEventListener('click', () => {
     const answer = window.confirm('are you sure???')
     alert(answer)
+})
+
+btnNavigatorAppName.addEventListener('click', () => {
+    const appName = window.navigator.appName
+    alert(appName)
+})
+
+btnNavigatorOnline.addEventListener('click', () => {
+    const appName = window.navigator.onLine
+    alert(appName)
+})
+
+btnNavigatorUserAgent.addEventListener('click', () => {
+    const appName = window.navigator.userAgent
+    alert(appName)
 })
