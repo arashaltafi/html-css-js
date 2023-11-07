@@ -130,3 +130,11 @@ btnPlatformDescription.addEventListener('click', () => {
     const answer = platform.description
     alert(answer)
 })
+
+window.addEventListener('DOMContentLoaded', () => {
+    console.log('DOMContentLoaded');
+});
+
+window.addEventListener('load', () => {
+    console.log('load');
+});
