@@ -17,6 +17,11 @@ const btnConfirm = document.getElementById('btn-confirm');
 const btnNavigatorAppName = document.getElementById('btn-navigator-app-name');
 const btnNavigatorOnline = document.getElementById('btn-navigator-online');
 const btnNavigatorUserAgent = document.getElementById('btn-navigator-user-agent');
+const btnPlatformName = document.getElementById('btn-platform-name');
+const btnPlatformVersion = document.getElementById('btn-platform-version');
+const btnPlatformLayout = document.getElementById('btn-platform-layout');
+const btnPlatformOs = document.getElementById('btn-platform-os');
+const btnPlatformDescription = document.getElementById('btn-platform-description');
 
 historyBack.addEventListener('click', () => {
     window.history.back()
@@ -99,4 +104,29 @@ btnNavigatorOnline.addEventListener('click', () => {
 btnNavigatorUserAgent.addEventListener('click', () => {
     const appName = window.navigator.userAgent
     alert(appName)
+})
+
+btnPlatformName.addEventListener('click', () => {
+    const answer = platform.name
+    alert(answer)
+})
+
+btnPlatformVersion.addEventListener('click', () => {
+    const answer = platform.version
+    alert(answer)
+})
+
+btnPlatformLayout.addEventListener('click', () => {
+    const answer = platform.layout
+    alert(answer)
+})
+
+btnPlatformOs.addEventListener('click', () => {
+    const answer = platform.os
+    alert(answer)
+})
+
+btnPlatformDescription.addEventListener('click', () => {
+    const answer = platform.description
+    alert(answer)
 })
