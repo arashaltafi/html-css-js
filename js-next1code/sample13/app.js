@@ -107,3 +107,25 @@ console.log("moment().unix() * 1000", moment18)
 var currentMilliSecond = moment().unix() * 1000;
 const moment19 = moment(currentMilliSecond).format('YYYY-MM-DD');
 console.log("moment(currentMilliSecond).format('YYYY-MM-DD')", moment19)
+
+const moment20 = moment('2023-11-07 18:10:00').fromNow();
+console.log("moment('2023-11-08').fromNow()", moment20)
+
+const time1 = moment('2023-11-07 18:10:00')
+const time2 = moment('2023-11-07 18:05:00')
+const moment21 = time1.from(time2);
+console.log("time1.from(time2)", moment21)
+
+const time3 = moment('2023-11-06 18:10:00')
+const time4 = moment('2023-11-07 15:30:28')
+console.log(time3);
+console.log(time4);
+const moment22 = time4.diff(time3);
+console.log("time4.diff(time3)", moment22)
+
+const time5 = moment(1695367457780)
+const time6 = moment(1699387487790)
+console.log(time5);
+console.log(time6);
+const moment23 = time6.diff(time5);
+console.log("time6.diff(time5)", moment23)
