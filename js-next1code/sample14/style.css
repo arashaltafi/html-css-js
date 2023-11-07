@@ -10,85 +10,50 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #282828;
+    background: #FFF;
 }
 
-.clock {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    height: 350px;
-    box-shadow: inset 10px 10px 15px #202020,
-        inset -10px -10px 15px #202020;
-    border-radius: 50%;
-    background: url(clock1.png);
-    background-position: center;
+#clockContainer {
+    position: relative;
+    margin: auto;
+    height: 40vw;
+    width: 40vw;
+    background: url(clock2.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+    background-size: cover
 }
 
-.clock::before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    background-color: #747474;
+#hour,
+#minute,
+#second {
     position: absolute;
-    border-radius: 50%;
-    z-index: 4;
+    border-radius: 10px;
+    transform-origin: bottom;
 }
 
-.hour {
-    display: flex;
-    justify-content: center;
-    height: 250px;
-    position: relative;
-    transform: rotateZ(0deg);
+#hour {
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;
+    background: #424242;
 }
 
-.hour::before {
-    content: "";
-    width: 4px;
-    height: 100px;
-    position: absolute;
-    background-color: darkorange;
-    border-radius: 6px 6px 0 0;
-    z-index: 3;
+#minute {
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    left: 48.9%;
+    opacity: 0.8;
+    background: #E53935;
 }
 
-.min {
-    display: flex;
-    justify-content: center;
-    height: 250px;
-    position: relative;
-    transform: rotateZ(90deg);
-}
-
-.min::before {
-    content: "";
-    width: 3px;
-    height: 100px;
-    position: absolute;
-    background-color: red;
-    border-radius: 6px 6px 0 0;
-    z-index: 3;
-}
-
-.sec {
-    display: flex;
-    justify-content: center;
-    height: 250px;
-    position: relative;
-    transform: rotateZ(45deg);
-}
-
-.sec::before {
-    content: "";
-    width: 2px;
-    height: 150px;
-    background-color: #17fb02;
-    position: absolute;
-    border-radius: 6px 6px 0 0;
-    z-index: 3;
+#second {
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8;
+    background: #43A047;
 }
