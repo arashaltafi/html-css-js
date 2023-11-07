@@ -48,3 +48,62 @@ console.log("getTime", date17);
 
 const date18 = Date.now()
 console.log("now", date18)
+
+//moment
+const momentInit = moment()
+console.log("moment", momentInit)
+
+const moment2 = momentInit.format('MMMM Do YYYY, h:mm:ss a');
+console.log("format('MMMM Do YYYY, h:mm:ss a')", moment2)
+
+const moment3 = momentInit.format('LT');
+console.log("format('LT')", moment3)
+
+const moment4 = momentInit.format('LTS');
+console.log("format('LTS')", moment4)
+
+const moment5 = momentInit.format('L');
+console.log("format('L')", moment5)
+
+const moment6 = momentInit.format('YYYY');
+console.log("format('YYYY')", moment6)
+
+const moment7 = momentInit.format('YYYY-MM');
+console.log("format('YYYY-MM')", moment7)
+
+const moment8 = momentInit.format('YYYY-MM-DD');
+console.log("format('YYYY-MM-DD')", moment8)
+
+const moment9 = momentInit.format('hh:mm:ss a');
+console.log("format('hh:mm:ss a')", moment9)
+
+const moment10 = momentInit.format('HH:mm:ss');
+console.log("format('HH:mm:ss')", moment10)
+
+const moment11 = moment('2023-11-15').isValid();
+console.log("('2023-11-15').isValid()", moment11)
+
+const moment12 = moment('2023-13-10').isValid();
+console.log("('2023-11-15').isValid()", moment12)
+
+const moment13 = moment('2023-11-31').isValid();
+console.log("('2023-11-15').isValid()", moment13)
+
+const moment14 = momentInit.add('1', 'days').format('YYYY-MM-DD');
+console.log("add('1', 'days').format('YYYY-MM-DD')", moment14)
+
+const moment15 = momentInit.add('1', 'weeks').format('YYYY-MM-DD');
+console.log("add('1', 'weeks').format('YYYY-MM-DD')", moment15)
+
+const moment16 = momentInit.add('1', 'months').format('YYYY-MM-DD');
+console.log("add('1', 'months').format('YYYY-MM-DD')", moment16)
+
+const moment17 = momentInit.subtract('1.5', 'weeks').format('YYYY-MM-DD');
+console.log("subtract('1.5', 'weeks').format('YYYY-MM-DD')", moment17)
+
+const moment18 = moment().unix() * 1000;
+console.log("moment().unix() * 1000", moment18)
+
+var currentMilliSecond = moment().unix() * 1000;
+const moment19 = moment(currentMilliSecond).format('YYYY-MM-DD');
+console.log("moment(currentMilliSecond).format('YYYY-MM-DD')", moment19)
