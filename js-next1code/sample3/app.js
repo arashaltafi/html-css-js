@@ -17,6 +17,16 @@ const reset = document.querySelector("#reset");
 const buttons = document.querySelector(".buttons");
 const container = document.querySelector(".container");
 
+//create element
+const test = document.createElement('h2')
+test.style.color = "#111";
+test.style.backgroundColor = "#bbb";
+test.style.padding = "20px 40px";
+test.style.borderRadius = "20px 30px";
+test.style.marginTop = "64px"
+test.innerText = "This is Test For Create Element";
+container.appendChild(test);
+
 //body style
 document.body.style.backgroundColor = "#EEE"
 document.body.style.direction = "ltr";
