@@ -194,3 +194,6 @@ console.log("new persianDate().format('HH:mm:SS')", persianDate9)
 
 const persianDate10 = new persianDate().format('HH:mm:ss');
 console.log("new persianDate().format('HH:mm:SS')", persianDate10)
+
+const persianDate11 = new persianDate().toLocale('en').format();
+console.log("new persianDate().toLocale('en').format()", persianDate11)
