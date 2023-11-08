@@ -185,3 +185,12 @@ console.log("new persianDate().unix(1695466992).format()", persianDate6)
 
 const persianDate7 = new persianDate(1695466992000).format();
 console.log("new persianDate(1695466992000).format()", persianDate7)
+
+const persianDate8 = new persianDate().format('YYYY/MM/DD');
+console.log("new persianDate().format('YYYY/MM/DD')", persianDate8)
+
+const persianDate9 = new persianDate().format('h:m:s');
+console.log("new persianDate().format('HH:mm:SS')", persianDate9)
+
+const persianDate10 = new persianDate().format('HH:mm:ss');
+console.log("new persianDate().format('HH:mm:SS')", persianDate10)
