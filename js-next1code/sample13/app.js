@@ -161,3 +161,27 @@ console.log(time5);
 console.log(time6);
 const moment23 = time6.diff(time5);
 console.log("time6.diff(time5)", moment23)
+
+const persianDate0 = new persianDate().format();
+console.log("new persianDate().format()", persianDate0)
+
+const persianDate1 = new persianDate();
+console.log("new persianDate()", persianDate1)
+
+const persianDate2 = new persianDate().format('YYYY');
+console.log("new persianDate().format('YYYY')", persianDate2)
+
+const persianDate3 = new persianDate().format('MMMM');
+console.log("new persianDate().format('MMMM')", persianDate3)
+
+const persianDate4 = new persianDate().format('dddd');
+console.log("new persianDate().format('dddd')", persianDate4)
+
+const persianDate5 = new persianDate().unix();
+console.log("new persianDate().unix()", persianDate5)
+
+const persianDate6 = new persianDate().unix(1695466992).format();
+console.log("new persianDate().unix(1695466992).format()", persianDate6)
+
+const persianDate7 = new persianDate(1695466992000).format();
+console.log("new persianDate(1695466992000).format()", persianDate7)
