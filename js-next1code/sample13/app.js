@@ -49,6 +49,38 @@ console.log("getTime", date17);
 const date18 = Date.now()
 console.log("now", date18)
 
+const ChangeTime = {
+    Add: 'add',
+    Subtract: 'subtract'
+}
+
+changeTime(ChangeTime.Add, 2, 'months')
+
+function changeTime(calculate, count, type) {
+    let finalTime;
+    if (type == 'years') {
+        finalTime = count * 12 * 30 * 24 * 60 * 60 * 1000
+    } else if (type == 'months') {
+        finalTime = count * 30 * 24 * 60 * 60 * 1000
+    } else if (type == 'days') {
+        finalTime = count * 24 * 60 * 60 * 1000
+    } else if (type == 'hours') {
+        finalTime = count * 60 * 60 * 1000
+    } else if (type == 'minutes') {
+        finalTime = count * 60 * 1000
+    } else {
+        finalTime = count * 1000
+    }
+    console.log(finalTime);
+    if (calculate == ChangeTime.Add) {
+        finalTime = Date.now() + finalTime
+    } else if (ChangeTime.Subtract) {
+        finalTime = Date.now() - finalTime
+    }
+    console.log(`before ${calculate}`, new Date())
+    console.log(`after ${calculate}`, new Date(finalTime))
+}
+
 //moment
 const momentInit = moment()
 console.log("moment", momentInit)
