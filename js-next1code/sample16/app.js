@@ -119,7 +119,8 @@ btnSetCookie.addEventListener('click', () => {
         alert('please first fill key and value inputs')
         clearInputs()
     } else {
-        document.cookie = `${key}= ${value}; expires=Thu, 20 Nov 2030 12:00:00 UTC`
+        // document.cookie = `${key}= ${value}; expires=Thu, 20 Nov 2030 12:00:00 UTC`
+        setCookie(value, key, 365)
         clearInputs()
         inputValue.value = 'new cookie added'
         result.innerHTML = 'new cookie added'
@@ -127,7 +128,15 @@ btnSetCookie.addEventListener('click', () => {
 })
 
 btnGetCookie.addEventListener('click', () => {
-    result.innerHTML = document.cookie
+    let key = inputKey.value
+    if (key == "") {
+        alert('please first fill key inputs')
+        clearInputs()
+    } else {
+        clearInputs()
+        result.innerHTML = getCookie(key)
+        // document.cookie
+    }
 })
 
 btnDeleteCookie.addEventListener('click', () => {
@@ -143,6 +152,40 @@ btnDeleteCookie.addEventListener('click', () => {
         result.innerHTML = 'new cookie added'
     }
 })
+
+function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    let expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    let name = cname + "=";
+    let ca = document.cookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+function checkCookie() {
+    let user = getCookie("username");
+    if (user != "") {
+        alert("Welcome again " + user);
+    } else {
+        user = prompt("Please enter your name:", "");
+        if (user != "" && user != null) {
+            setCookie("username", user, 365);
+        }
+    }
+}
 
 function clearInputs() {
     inputKey.value = ""
