@@ -1,14 +1,68 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl" translate="no">
+<html lang="fa" dir="ltr" translate="no">
 
 <head>
     <meta name="darkreader-lock" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample 17 Next1Code</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #212121, #424242);
+            color: #F5F5F5;
+        }
+
+        #result {
+            width: 50%;
+            font-size: 32px;
+            text-align: center;
+            padding: 64px;
+            background-color: #F5F5F5;
+            color: #212121;
+            border-radius: 32px;
+            border: 4px dashed #212121;
+        }
+
+        .btn-controllers {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        button {
+            font-size: 18px;
+            padding: 16px 22px;
+            background-color: #F5F5F5;
+            color: #212121;
+            border-radius: 22px;
+            border: 2px double palevioletred;
+            transition: all;
+        }
+
+        button:hover {
+            background-color: #212121;
+            color: #F5F5F5;
+            transform: scale(103%);
+        }
+    </style>
 </head>
 
 <body>
+    <p id="result"></p>
+    <div class="btn-controllers">
+        <button id="btn-send-xml">Send Request With XMLHttpRequest</button>
+        <button id="btn-send">Send Request With </button>
+        <button id="btn-send">Send Request With </button>
+    </div>
 
     <script src="app.js"></script>
 </body>
