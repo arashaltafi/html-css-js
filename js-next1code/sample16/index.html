@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fa" dir="ltr" translate="no">
+
+<head>
+    <meta name="darkreader-lock" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample 16 Next1Code</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #212121, #424242);
+            color: #F5F5F5;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 32px;
+        }
+
+        .inputs {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 32px;
+        }
+
+        .input {
+            padding: 28px 64px;
+            border-radius: 32px;
+            border: 2px solid #BDBDBD;
+            text-align: center;
+            font-size: 32px;
+        }
+
+        .controllers {
+            margin: 64px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 32px;
+        }
+
+        .div-controllers {
+            margin-top: 64px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        p {
+            font-size: 36px;
+            text-align: center;
+        }
+
+        button {
+            padding: 18px 32px;
+            border-radius: 24px;
+            border: 2px solid #BDBDBD;
+            text-align: center;
+            font-size: 18px;
+            background-color: #F44336;
+            color: #F5F5F5;
+            transition: all;
+        }
+
+        button:hover {
+            background-color: #E53935;
+            color: #F5F5F5;
+            transform: scale(102%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="inputs">
+            <input type="text" class="input" id="input-key" placeholder="key">
+            <input type="text" class="input" id="input-value" placeholder="value">
+        </div>
+
+        <div class="controllers">
+            <div class="div-controllers">
+                <button id="btn-set-localstorage">set local storage</button>
+                <button id="btn-get-localstorage">get local storage</button>
+                <button id="btn-remove-localstorage">remove local storage</button>
+                <button id="btn-clear-localstorage">clear local storage</button>
+            </div>
+
+            <div class="div-controllers">
+                <button id="btn-set-sessionstorage">set session storage</button>
+                <button id="btn-get-sessionstorage">get session storage</button>
+                <button id="btn-remove-sessionstorage">remove session storage</button>
+                <button id="btn-clear-sessionstorage">clear session storage</button>
+            </div>
+
+            <div class="div-controllers">
+                <button id="btn-set-cookie">set cookie</button>
+                <button id="btn-get-cookie">get cookie</button>
+                <button id="btn-delete-cookie">delete storage</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
