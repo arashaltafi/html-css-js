@@ -10,15 +10,15 @@ btnSendXml0.addEventListener('click', () => {
     xhr.setRequestHeader('test', 'arash')
     xhr.onload = function () {
         if (this.status >= 200 && this.status < 400) {
-            const status = xhr.status
-            const headers = xhr.getAllResponseHeaders();
-            const data = JSON.parse(xhr.responseText);
+            const status = this.status
+            const headers = this.getAllResponseHeaders();
+            const data = JSON.parse(this.responseText);
             console.log('Response Status:', status);
             console.log('Response Headers:', headers);
             console.log('Response Data:', data);
             result.textContent = data.title
         } else {
-            console.log(Error(`Request failed with status ${xhr.status}`));
+            console.log(Error(`Request failed with status ${this.status}`));
             result.textContent = 'Request failed'
         }
     }
@@ -68,12 +68,12 @@ function callApiXmlHTTPRequest(url) {
         xhr.setRequestHeader('test', 'arash')
         xhr.onload = function () {
             if (this.status >= 200 && this.status < 400) {
-                const status = xhr.status
-                const headers = xhr.getAllResponseHeaders();
-                const data = JSON.parse(xhr.responseText);
+                const status = this.status
+                const headers = this.getAllResponseHeaders();
+                const data = JSON.parse(this.responseText);
                 resolve({ status, headers, data });
             } else {
-                reject(new Error(`Request failed with status ${xhr.status}`));
+                reject(new Error(`Request failed with status ${this.status}`));
             }
         }
         xhr.onprogress = function (evt) {
@@ -83,7 +83,7 @@ function callApiXmlHTTPRequest(url) {
             }
         }
         xhr.onerror = function () {
-            reject(new Error(`Request failed with status ${xhr.status}`));
+            reject(new Error(`Request failed with status ${this.status}`));
         }
         xhr.send();
     })
