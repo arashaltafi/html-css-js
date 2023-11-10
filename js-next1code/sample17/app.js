@@ -103,8 +103,8 @@ btnSendFetch0.addEventListener('click', () => {
             console.log("response", response);
             return response.json()
         } else {
-            console.log("error", 'Request failed 123');
-            result.textContent = 'Request failed 123'
+            result.textContent = 'There was a problem ...'
+            throw new Error('There was a problem ...')
         }
     }).then((json) => {
         result.textContent = json.title
@@ -117,10 +117,18 @@ btnSendFetch0.addEventListener('click', () => {
 btnSendFetch1.addEventListener('click', async () => {
     try {
         const response = await fetch('https://jsonplaceholder.typicode.com/posts/1')
-        console.log("response", response);
-        const json = await response.json()
-        console.log("json", json);
-        result.textContent = json.title
+        console.log("response status", response.status);
+        console.log("response ok", response.ok);
+        console.log("response url", response.url);
+        if (response.ok) {
+            console.log("response", response);
+            const json = await response.json()
+            result.textContent = json.title
+            console.log("json", json);
+        } else {
+            result.textContent = 'There was a problem ...'
+            throw new Error('There was a problem ...')
+        }
     } catch (error) {
         console.log("error", error);
         result.textContent = 'Request failed'
