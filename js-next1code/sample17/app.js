@@ -3,6 +3,7 @@ const btnSendXml0 = document.getElementById('btn-send-xml0')
 const btnSendXml1 = document.getElementById('btn-send-xml1')
 const btnSendXml2 = document.getElementById('btn-send-xml2')
 const btnSendFetch0 = document.getElementById('btn-send-fetch0')
+const btnSendFetch1 = document.getElementById('btn-send-fetch1')
 
 btnSendXml0.addEventListener('click', () => {
     let xhr = new XMLHttpRequest();
@@ -111,4 +112,17 @@ btnSendFetch0.addEventListener('click', () => {
         console.log("error", error);
         result.textContent = 'Request failed'
     })
+})
+
+btnSendFetch1.addEventListener('click', async () => {
+    try {
+        const response = await fetch('https://jsonplaceholder.typicode.com/posts/1')
+        console.log("response", response);
+        const json = await response.json()
+        console.log("json", json);
+        result.textContent = json.title
+    } catch (error) {
+        console.log("error", error);
+        result.textContent = 'Request failed'
+    }
 })
