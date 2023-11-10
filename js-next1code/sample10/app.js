@@ -1,3 +1,4 @@
+const internetChecker = document.getElementById('btn-internet-checker');
 const historyBack = document.getElementById('btn-history-back');
 const historyForward = document.getElementById('btn-history-forward');
 const historyGo = document.getElementById('btn-history-go');
@@ -22,6 +23,25 @@ const btnPlatformVersion = document.getElementById('btn-platform-version');
 const btnPlatformLayout = document.getElementById('btn-platform-layout');
 const btnPlatformOs = document.getElementById('btn-platform-os');
 const btnPlatformDescription = document.getElementById('btn-platform-description');
+
+function updateStatus() {
+    if (navigator.onLine) {
+        internetChecker.textContent = 'Online';
+        internetChecker.style.color = 'green';
+    } else {
+        internetChecker.textContent = 'Offline';
+        internetChecker.style.color = 'red';
+    }
+}
+updateStatus();
+
+// Event listeners for online and offline events
+window.addEventListener('online', updateStatus);
+window.addEventListener('offline', updateStatus);
+
+internetChecker.addEventListener('click', () => {
+    alert(`onLine = ${window.navigator.onLine}`)
+})
 
 historyBack.addEventListener('click', () => {
     window.history.back()
