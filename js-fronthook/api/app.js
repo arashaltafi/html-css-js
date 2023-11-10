@@ -116,6 +116,9 @@ function axiosData1(url, method) {
         .then(response => {
             console.log(response.data)
         })
+        .catch((error) => {
+            console.error('Error:', error)
+        })
 }
 
 async function axiosData2(url, method) {
