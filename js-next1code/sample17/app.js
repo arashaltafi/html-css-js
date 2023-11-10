@@ -26,6 +26,8 @@ btnSendXml0.addEventListener('click', () => {
         if (evt.lengthComputable) {
             console.log("evt.loaded", evt.loaded);
             console.log("evt.total", evt.total);
+            const percentComplete = (evt.loaded / evt.total) * 100;
+            console.log(`Progress: ${percentComplete}%`);
         }
     }
     xhr.onerror = function (error) {
