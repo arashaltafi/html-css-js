@@ -4,6 +4,8 @@ const btnSendXml1 = document.getElementById('btn-send-xml1')
 const btnSendXml2 = document.getElementById('btn-send-xml2')
 const btnSendFetch0 = document.getElementById('btn-send-fetch0')
 const btnSendFetch1 = document.getElementById('btn-send-fetch1')
+const btnSendAxios0 = document.getElementById('btn-send-axios0')
+const btnSendAxios1 = document.getElementById('btn-send-axios1')
 
 btnSendXml0.addEventListener('click', () => {
     let xhr = new XMLHttpRequest();
@@ -94,7 +96,25 @@ function callApiXmlHTTPRequest(url) {
 }
 
 btnSendFetch0.addEventListener('click', () => {
-    let p = fetch('https://jsonplaceholder.typicode.com/posts/1')
+    const userData = {
+        id: 1,
+        name: "arash",
+        username: "arashaltafi",
+        phone: "+989187677641",
+        email: "arashaltafi1377@gmail.com",
+        website: "arashaltafi.ir"
+    }
+
+    const header = {
+        'Content-type': 'application/json; charset=UTF-8',
+        "authorization": '123'
+    }
+
+    let p = fetch('https://jsonplaceholder.typicode.com/posts/1',{
+        method: 'GET',
+        // body: JSON.stringify(userData),
+        // headers: header
+    })
     p.then((response) => {
         console.log("response status", response.status);
         console.log("response ok", response.ok);
@@ -115,8 +135,26 @@ btnSendFetch0.addEventListener('click', () => {
 })
 
 btnSendFetch1.addEventListener('click', async () => {
+    const userData = {
+        id: 1,
+        name: "arash",
+        username: "arashaltafi",
+        phone: "+989187677641",
+        email: "arashaltafi1377@gmail.com",
+        website: "arashaltafi.ir"
+    }
+
+    const header = {
+        'Content-type': 'application/json; charset=UTF-8',
+        "authorization": '123'
+    }
+
     try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/posts/1')
+        const response = await fetch('https://jsonplaceholder.typicode.com/posts/1', {
+            method: "GET",
+            // body: JSON.stringify(userData),
+        // headers: header
+        })
         console.log("response status", response.status);
         console.log("response ok", response.ok);
         console.log("response url", response.url);
@@ -130,6 +168,59 @@ btnSendFetch1.addEventListener('click', async () => {
             throw new Error('There was a problem ...')
         }
     } catch (error) {
+        console.log("error", error);
+        result.textContent = 'Request failed'
+    }
+})
+
+btnSendAxios0.addEventListener('click', () => {
+    const userData = {
+        id: 1,
+        name: "arash",
+        username: "arashaltafi",
+        phone: "+989187677641",
+        email: "arashaltafi1377@gmail.com",
+        website: "arashaltafi.ir"
+    }
+
+    const header = {
+        'Content-type': 'application/json; charset=UTF-8',
+        "authorization": '123'
+    }
+
+    // axios.post(url, userData, header)
+    let p = axios.get('https://jsonplaceholder.typicode.com/posts/1')
+    p.then((response) => {
+        console.log(response);
+        if (response.status === 200) {
+            console.log("response.status", response.status);
+            console.log("response.headers", response.headers);
+            console.log("response.data", response.data);
+            result.textContent = response.data.title
+        } else {
+            result.textContent = 'There was a problem ...'
+            throw new Error('There was a problem ...')
+        }
+    })
+    .catch((error) => {
+        console.log("error", error);
+        result.textContent = 'Request failed'
+    })
+})
+
+btnSendAxios1.addEventListener('click', async () => {
+    try {
+        let response = await axios.get('https://jsonplaceholder.typicode.com/posts/1')
+        if (response.status === 200) {
+            console.log("response.status", response.status);
+            console.log("response.headers", response.headers);
+            console.log("response.data", response.data);
+            result.textContent = response.data.title
+        } else {
+            result.textContent = 'There was a problem ...'
+            throw new Error('There was a problem ...')
+        }
+    } catch {
         console.log("error", error);
         result.textContent = 'Request failed'
     }

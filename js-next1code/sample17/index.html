@@ -30,6 +30,15 @@
         }
 
         .btn-controllers {
+            margin-top: 64px;
+            display: flex;
+            flex-direction: column;
+            gap: 64px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .div-seprator {
             display: flex;
             flex-direction: row;
             gap: 16px;
@@ -59,13 +68,22 @@
 <body>
     <p id="result"></p>
     <div class="btn-controllers">
-        <button id="btn-send-xml0">Send Request With XMLHttpRequest</button>
-        <button id="btn-send-xml1">Send Request With XMLHttpRequest Async Await</button>
-        <button id="btn-send-xml2">Send Request With XMLHttpRequest Then Catch</button>
-        <button id="btn-send-fetch0">Send Request With Fetch Then Catch</button>
-        <button id="btn-send-fetch1">Send Request With Fetch Async Await</button>
+        <div class="div-seprator">
+            <button id="btn-send-xml0">Send Request With XMLHttpRequest</button>
+            <button id="btn-send-xml1">Send Request With XMLHttpRequest Async Await</button>
+            <button id="btn-send-xml2">Send Request With XMLHttpRequest Then Catch</button>
+        </div>
+        <div class="div-seprator">
+            <button id="btn-send-fetch0">Send Request With Fetch Then Catch</button>
+            <button id="btn-send-fetch1">Send Request With Fetch Async Await</button>
+        </div>
+        <div class="div-seprator">
+            <button id="btn-send-axios0">Send Request With Axios Then Catch</button>
+            <button id="btn-send-axios1">Send Request With Axios Async Await</button>
+        </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="app.js"></script>
 </body>
 
