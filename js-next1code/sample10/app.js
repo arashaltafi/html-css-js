@@ -1,3 +1,27 @@
+const client = new ClientJS();
+console.log("client.getBrowserData()", client.getBrowserData());
+console.log("client.isChrome()", client.isChrome());
+console.log("client.isFirefox()", client.isFirefox());
+console.log("client.isIE()", client.isIE());
+console.log("client.isSafari()", client.isSafari());
+console.log("client.isOpera()", client.isOpera());
+console.log("client.isMobileSafari()", client.isMobileSafari());
+console.log("client.getOS()", client.getOS());
+console.log("client.getOSVersion()", client.getOSVersion());
+console.log("client.isWindows()", client.isWindows());
+console.log("client.isMac()", client.isMac());
+console.log("client.isLinux()", client.isLinux());
+console.log("client.isUbuntu()", client.isUbuntu());
+console.log("client.isSolaris()", client.isSolaris());
+console.log("client.isMobile()", client.isMobile());
+console.log("client.isMobileAndroid()", client.isMobileAndroid());
+console.log("client.isIphone()", client.isIphone());
+console.log("client.getFonts()", client.getFonts());
+console.log("client.getTimeZone()", client.getTimeZone());
+console.log("client.getLanguage()", client.getLanguage());
+console.log("client.getSystemLanguage()", client.getSystemLanguage());
+
+
 const internetChecker = document.getElementById('btn-internet-checker');
 const historyBack = document.getElementById('btn-history-back');
 const historyForward = document.getElementById('btn-history-forward');
