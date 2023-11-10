@@ -95,8 +95,16 @@ function callApiXmlHTTPRequest(url) {
 btnSendFetch0.addEventListener('click', () => {
     let p = fetch('https://jsonplaceholder.typicode.com/posts/1')
     p.then((response) => {
-        console.log("response", response);
-        return response.json()
+        console.log("response status", response.status);
+        console.log("response ok", response.ok);
+        console.log("response url", response.url);
+        if (response.ok) {
+            console.log("response", response);
+            return response.json()
+        } else {
+            console.log("error", 'Request failed 123');
+            result.textContent = 'Request failed 123'
+        }
     }).then((json) => {
         result.textContent = json.title
     }).catch((error) => {
