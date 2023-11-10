@@ -2,6 +2,7 @@ const result = document.getElementById('result')
 const btnSendXml0 = document.getElementById('btn-send-xml0')
 const btnSendXml1 = document.getElementById('btn-send-xml1')
 const btnSendXml2 = document.getElementById('btn-send-xml2')
+const btnSendFetch0 = document.getElementById('btn-send-fetch0')
 
 btnSendXml0.addEventListener('click', () => {
     let xhr = new XMLHttpRequest();
@@ -90,3 +91,16 @@ function callApiXmlHTTPRequest(url) {
         xhr.send();
     })
 }
+
+btnSendFetch0.addEventListener('click', () => {
+    let p = fetch('https://jsonplaceholder.typicode.com/posts/1')
+    p.then((response) => {
+        console.log("response", response);
+        return response.json()
+    }).then((json) => {
+        result.textContent = json.title
+    }).catch((error) => {
+        console.log("error", error);
+        result.textContent = 'Request failed'
+    })
+})
