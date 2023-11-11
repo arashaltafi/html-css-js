@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl" translate="no">
+<html lang="fa" dir="ltr" translate="no">
 
 <head>
     <meta name="darkreader-lock" />
@@ -16,10 +16,33 @@
         <a class="w-1/2 px-4 py-2 text-center rounded-lg bg-sky-500 cursor-pointer"
             href="https://github.com/tameemsafi/typewriterjs" target="_blank">Type Writer Github</a>
         <a class="w-1/2 px-4 py-2 text-center rounded-lg bg-sky-500 cursor-pointer"
-            href="https://ryanjairam.github.io/typewriter/" target="_blank">Type Writer Samples</a>
+            href="https://ryanjairam.github.io/typewriter/" target="_blank">Type Writer Samples 1</a>
+            <a class="w-1/2 px-4 py-2 text-center rounded-lg bg-sky-500 cursor-pointer"
+            href="https://safi.me.uk/typewriterjs/" target="_blank">Type Writer Samples 2</a>
     </div>
-    
 
+    <div id="app"
+        class="bg-rose-400 text-white text-center py-16 px-32 mt-48 mx-28 rounded-2xl shadow-2xl text-3xl font-bold">
+    </div>
+
+    <script src="/node_modules/typewriter-effect/dist/core.js"></script>
+    <script>
+        var app = document.getElementById('app');
+
+        var typewriter = new Typewriter(app, {
+            loop: true
+        });
+
+        typewriter.typeString('Hello World!')
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString('Strings can be removed')
+            .pauseFor(2500)
+            .deleteChars(7)
+            .typeString('<i>altered!</i>')
+            .pauseFor(3500)
+            .start();
+    </script>
 </body>
 
 </html>

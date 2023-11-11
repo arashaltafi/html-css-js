@@ -46,6 +46,7 @@
     "moment": "^2.29.4",
     "particles.js": "^2.0.0",
     "sass": "^1.69.0",
+    "typewriter-effect": "^2.21.0",
     "wowjs": "^1.1.3"
   },
   "devDependencies": {
