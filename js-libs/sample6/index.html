@@ -19,13 +19,167 @@
             href="https://sweetalert.js.org/guides/" target="_blank">Sweet Alert 1 Samples</a>
     </div>
 
-    <div class="flex flex-row gap-16 mt-32 mx-48 items-center justify-center text-white text-2xl">
-        <button id="btn-test1" class="px-8 py-4 bg-amber-500 rounded-lg shadow-xl">Test 1</button>
-        <button id="btn-test2" class="px-8 py-4 bg-violet-500 rounded-lg shadow-xl">Test 2</button>
+    <div class="flex flex-row flex-wrap gap-8 mt-32 mx-48 items-center justify-center text-white text-2xl">
+        <button id="btn-test1" class="px-8 py-6 bg-amber-500 rounded-lg shadow-xl">Test 1</button>
+        <button id="btn-test2" class="px-8 py-6 bg-violet-500 rounded-lg shadow-xl">Test 2</button>
+        <button id="btn-test3" class="px-8 py-6 bg-rose-500 rounded-lg shadow-xl">Test 3</button>
+        <button id="btn-test4" class="px-8 py-6 bg-teal-500 rounded-lg shadow-xl">Test 4</button>
+        <button id="btn-test5" class="px-8 py-6 bg-slate-500 rounded-lg shadow-xl">Test 5</button>
+        <button id="btn-test6" class="px-8 py-6 bg-yellow-500 rounded-lg shadow-xl">Test 6</button>
+        <button id="btn-test7" class="px-8 py-6 bg-lime-500 rounded-lg shadow-xl">Test 7</button>
+        <button id="btn-test8" class="px-8 py-6 bg-cyan-500 rounded-lg shadow-xl">Test 8</button>
+
+        <button id="btn-test9" class="px-8 py-6 bg-red-500 rounded-lg shadow-xl">Test 9</button>
+        <button id="btn-test10" class="px-8 py-6 bg-green-700 rounded-lg shadow-xl">Test 10</button>
+        <button id="btn-test11" class="px-8 py-6 bg-fuchsia-700 rounded-lg shadow-xl">Test 11</button>
+        <button id="btn-test12" class="px-8 py-6 bg-orange-500 rounded-lg shadow-xl">Test 12</button>
     </div>
 
     <script src="/node_modules/sweetalert/dist/sweetalert.min.js"></script>
     <script>
+        document.getElementById('btn-test1').addEventListener('click', () => {
+            swal("Hello world!");
+        })
+
+        document.getElementById('btn-test2').addEventListener('click', () => {
+            swal("Here's the title!", "...and here's the text!");
+        })
+
+        document.getElementById('btn-test3').addEventListener('click', () => {
+            swal("Good job!", "You clicked the button!", "success");
+        })
+
+        document.getElementById('btn-test4').addEventListener('click', () => {
+            swal({
+                title: "Good job!",
+                text: "You clicked the button!",
+                icon: "warning",
+            });
+        })
+
+        document.getElementById('btn-test5').addEventListener('click', () => {
+            swal({
+                title: "Oops!",
+                text: "You clicked the button!",
+                icon: "error",
+                button: "Aww yiss!",
+            });
+        })
+
+        document.getElementById('btn-test6').addEventListener('click', () => {
+            swal("Good job!", "You clicked the button!", "success", {
+                button: "Aww yiss!",
+            });
+        })
+
+        document.getElementById('btn-test7').addEventListener('click', () => {
+            swal("Click on either the button or outside the modal.")
+                .then((value) => {
+                    swal(`The returned value is: ${value}`);
+                });
+        })
+
+        document.getElementById('btn-test8').addEventListener('click', () => {
+            swal({
+                title: "Are you sure?",
+                text: "Once deleted, you will not be able to recover this imaginary file!",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+                .then((willDelete) => {
+                    if (willDelete) {
+                        swal("Poof! Your imaginary file has been deleted!", {
+                            icon: "success",
+                        });
+                    } else {
+                        swal("Your imaginary file is safe!");
+                    }
+                });
+        })
+
+        document.getElementById('btn-test9').addEventListener('click', () => {
+            swal("Are you sure you want to do this?", {
+                buttons: ["Oh noez!", "Aww yiss!"],
+            });
+        })
+
+        document.getElementById('btn-test10').addEventListener('click', () => {
+            swal("Are you sure you want to do this?", {
+                buttons: ["Oh noez!", true],
+            });
+        })
+
+        document.getElementById('btn-test11').addEventListener('click', () => {
+            swal("A wild Pikachu appeared! What do you want to do?", {
+                buttons: {
+                    cancel: "Run away!",
+                    catch: {
+                        text: "Throw Pokéball!",
+                        value: "catch",
+                    },
+                    defeat: true,
+                },
+            })
+                .then((value) => {
+                    switch (value) {
+
+                        case "defeat":
+                            swal("Pikachu fainted! You gained 500 XP!");
+                            break;
+
+                        case "catch":
+                            swal("Gotcha!", "Pikachu was caught!", "success");
+                            break;
+
+                        default:
+                            swal("Got away safely!");
+                    }
+                });
+        })
+
+        document.getElementById('btn-test12').addEventListener('click', () => {
+            swal({
+                text: 'Search for a movie. e.g. "La La Land".',
+                content: "input",
+                button: {
+                    text: "Search!",
+                    closeModal: false,
+                },
+            })
+                .then(name => {
+                    if (!name) throw null;
+
+                    return fetch(`https://itunes.apple.com/search?term=${name}&entity=movie`);
+                })
+                .then(results => {
+                    return results.json();
+                })
+                .then(json => {
+                    const movie = json.results[0];
+
+                    if (!movie) {
+                        return swal("No movie was found!");
+                    }
+
+                    const name = movie.trackName;
+                    const imageURL = movie.artworkUrl100;
+
+                    swal({
+                        title: "Top result:",
+                        text: name,
+                        icon: imageURL,
+                    });
+                })
+                .catch(err => {
+                    if (err) {
+                        swal("Oh noes!", "The AJAX request failed!", "error");
+                    } else {
+                        swal.stopLoading();
+                        swal.close();
+                    }
+                });
+        })
 
     </script>
 
