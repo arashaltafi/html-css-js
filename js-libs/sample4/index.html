@@ -1,16 +1,31 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl" translate="no">
+<html lang="fa" dir="ltr" translate="no">
 
 <head>
     <meta name="darkreader-lock" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample 4 JS Libraries SabzLearn</title>
+    <title>Sample Particles JS Libraries</title>
 
+    <link rel="stylesheet" href="final.css">
 </head>
 
-<body>
-    
+<body id="particles-js" class="w-full h-full bg-red-500">
+    <div class="py-8 flex flex-col gap-8 text-white items-center justify-center text-2xl bg-sky-200">
+        <a class="w-2/3 px-4 py-2 text-center rounded-lg bg-rose-500 cursor-pointer"
+            href="https://vincentgarreau.com/particles.js/" target="_blank">Particles JS</a>
+        <a class="w-2/3 px-4 py-2 text-center rounded-lg bg-emerald-500 cursor-pointer"
+            href="https://github.com/VincentGarreau/particles.js/" target="_blank">Particles Github</a>
+    </div>
+
+    <script src="/node_modules/particles.js/particles.js"></script>
+    <script src="/node_modules/particles.js/demo/js/app.js"></script>
+    <script>
+        /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+        particlesJS.load('particles-js', 'particles.json', () => {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
 </body>
 
 </html>
