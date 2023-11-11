@@ -5,22 +5,13 @@
     <meta name="darkreader-lock" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Particles JS 3 Libraries</title>
+    <title>Sample Particles JS 1 Libraries</title>
 
     <link rel="stylesheet" href="../final.css">
-
-    <style>
-        body {
-            background: linear-gradient(45deg, #e91e63, #ff9800);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-        }
-    </style>
 </head>
 
-<body id="particles-js" class="w-full h-screen">
-    
+<body id="particles-js" class="w-full h-screen bg-red-500">
+
     <script src="/node_modules/particles.js/particles.js"></script>
     <script>
         // particlesJS.load('particles-js', 'particles.json', () => {
@@ -30,7 +21,7 @@
             {
                 "particles": {
                     "number": {
-                        "value": 5,
+                        "value": 180,
                         "density": {
                             "enable": true,
                             "value_area": 800
@@ -40,22 +31,22 @@
                         "value": "#fff"
                     },
                     "shape": {
-                        "type": "polygon",
+                        "type": "circle",
                         "stroke": {
                             "width": 0,
                             "color": "#000"
                         },
                         "polygon": {
-                            "nb_sides": 6
+                            "nb_sides": 5
                         },
                         "image": {
-                            "src": "https://arashaltafi.ir/arash.jpg",
+                            "src": "img/github.svg",
                             "width": 100,
                             "height": 100
                         }
                     },
                     "opacity": {
-                        "value": 0.1,
+                        "value": 0.5,
                         "random": false,
                         "anim": {
                             "enable": true,
@@ -65,17 +56,17 @@
                         }
                     },
                     "size": {
-                        "value": 120,
+                        "value": 10,
                         "random": true,
                         "anim": {
                             "enable": true,
-                            "speed": 20,
-                            "size_min": 60,
+                            "speed": 40,
+                            "size_min": 0.1,
                             "sync": false
                         }
                     },
                     "line_linked": {
-                        "enable": false,
+                        "enable": true,
                         "distance": 150,
                         "color": "#fff",
                         "opacity": 0.4,
@@ -99,11 +90,11 @@
                     "detect_on": "canvas",
                     "events": {
                         "onhover": {
-                            "enable": false,
+                            "enable": true,
                             "mode": "repulse"
                         },
                         "onclick": {
-                            "enable": false,
+                            "enable": true,
                             "mode": "push"
                         },
                         "resize": true
