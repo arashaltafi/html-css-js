@@ -23,7 +23,8 @@
     "convertTailwindTimer": "npx tailwindcss -i ./js-next1code/sample12/style.css -o ./js-next1code/sample12/final.css --watch",
     "convertTailwindLibs1": "npx tailwindcss -i ./js-libs/tailwind.css -o ./js-libs/sample1/final.css --watch",
     "convertTailwindLibs2": "npx tailwindcss -i ./js-libs/tailwind.css -o ./js-libs/sample2/final.css --watch",
-    "convertTailwindLibs4": "npx tailwindcss -i ./js-libs/tailwind.css -o ./js-libs/sample4/final.css --watch"
+    "convertTailwindLibs4": "npx tailwindcss -i ./js-libs/tailwind.css -o ./js-libs/sample4/final.css --watch",
+    "convertTailwindLibs5": "npx tailwindcss -i ./js-libs/tailwind.css -o ./js-libs/sample5/final.css --watch"
   },
   "repository": {
     "type": "git",
