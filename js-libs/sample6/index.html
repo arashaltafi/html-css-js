@@ -141,11 +141,18 @@
         document.getElementById('btn-test12').addEventListener('click', () => {
             swal({
                 text: 'Search for a movie. e.g. "La La Land".',
-                content: "input",
+                content: {
+                    element: "input",
+                    attributes: {
+                        placeholder: "Type your text",
+                        type: "text",
+                    }
+                },
                 button: {
                     text: "Search!",
                     closeModal: false,
                 },
+                timer: 3000
             })
                 .then(name => {
                     if (!name) throw null;
