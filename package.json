@@ -46,6 +46,7 @@
     "moment": "^2.29.4",
     "particles.js": "^2.0.0",
     "sass": "^1.69.0",
+    "sweetalert": "^2.1.2",
     "typewriter-effect": "^2.21.0",
     "wowjs": "^1.1.3"
   },
