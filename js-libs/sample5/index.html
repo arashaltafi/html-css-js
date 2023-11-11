@@ -17,10 +17,14 @@
             href="https://github.com/tameemsafi/typewriterjs" target="_blank">Type Writer Github</a>
         <a class="w-1/2 px-4 py-2 text-center rounded-lg bg-sky-500 cursor-pointer"
             href="https://ryanjairam.github.io/typewriter/" target="_blank">Type Writer Samples 1</a>
-            <a class="w-1/2 px-4 py-2 text-center rounded-lg bg-sky-500 cursor-pointer"
+        <a class="w-1/2 px-4 py-2 text-center rounded-lg bg-sky-500 cursor-pointer"
             href="https://safi.me.uk/typewriterjs/" target="_blank">Type Writer Samples 2</a>
     </div>
 
+    <div class="flex flex-row gap-16 mt-32 mx-48 items-center justify-center text-white text-2xl">
+        <button id="btn-start" class="px-16 py-8 bg-amber-500 rounded-lg shadow-xl">Start</button>
+        <button id="btn-stop" class="px-16 py-8 bg-violet-500 rounded-lg shadow-xl">Stop</button>
+    </div>
     <div id="app"
         class="bg-rose-400 text-white text-center py-16 px-32 mt-48 mx-28 rounded-2xl shadow-2xl text-3xl font-bold">
     </div>
@@ -28,9 +32,12 @@
     <script src="/node_modules/typewriter-effect/dist/core.js"></script>
     <script>
         var app = document.getElementById('app');
+        var btnStart = document.getElementById('btn-start');
+        var btnStop = document.getElementById('btn-stop');
 
         var typewriter = new Typewriter(app, {
-            loop: true
+            loop: true,
+            cursor: "*"
         });
 
         typewriter.typeString('Hello World!')
@@ -42,6 +49,14 @@
             .typeString('<i>altered!</i>')
             .pauseFor(3500)
             .start();
+
+        btnStart.addEventListener('click', () => {
+            typewriter.start();
+        })
+
+        btnStop.addEventListener('click', () => {
+            typewriter.stop();
+        })
     </script>
 </body>
 
