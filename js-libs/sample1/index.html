@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl" translate="no">
+<html lang="fa" dir="ltr" translate="no">
 
 <head>
     <meta name="darkreader-lock" />
@@ -7,11 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample WOW And Animate JS Libraries</title>
 
+    <link rel="stylesheet" href="final.css">
     <link rel="stylesheet" href="/node_modules/wowjs/css/libs/animate.css">
     <link rel="stylesheet" href="/node_modules/animate.css/animate.min.css">
 </head>
 
-<body class="wow rollIn" data-wow-delay="0.5s">
+<body class="bg-zinc-300 animate__animated animate__fadeIn">
+
+    <div class="wow flip mt-8 flex flex-col gap-8 text-white items-center justify-center text-2xl">
+        <a class="w-1/2 px-4 py-2 text-center rounded-lg bg-sky-500 cursor-pointer" href="https://animate.style/" target="_blank">Animate STYLE</a>
+        <a class="w-1/2 px-4 py-2 text-center rounded-lg bg-sky-500 cursor-pointer" href="https://www.delac.io/WOW/docs.html" target="_blank">WOW JS</a>
+        <a class="w-1/2 px-4 py-2 text-center rounded-lg bg-sky-500 cursor-pointer" href="https://victorw999.github.io/demo_1/builds/development/scrollanimation/animate001.html" target="_blank">Sample Animation</a>
+    </div>
+
+    <div class="container grid grid-cols-4 my-20 gap-8 text-white text-2xl font-bold select-none">
+        <div data-wow-delay="0.5s" data-wow-iteration="3" class="wow rollIn rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-red-500">BOX 1</div>
+        <div data-wow-delay="0.5s" data-wow-iteration="3" class="animate__animated animate__flash rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-green-500">BOX 2</div>
+        <div data-wow-delay="0.5s" data-wow-iteration="3" class="animate__animated animate__bounce rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-purple-500">BOX 3</div>
+        <div data-wow-delay="0.5s" data-wow-iteration="3" class="wow bounce infinite rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-yellow-500">BOX 4</div>
+        <div data-wow-delay="0.5s" data-wow-iteration="3" class="wow flash infinite rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-blue-500">BOX 5</div>
+        <div data-wow-delay="0.5s" data-wow-iteration="3" class="wow rubberBand infinite rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-teal-500">BOX 6</div>
+        <div data-wow-delay="0.5s" data-wow-iteration="3" class="wow shake infinite rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-orange-500">BOX 7</div>
+        <div data-wow-delay="0.5s" data-wow-iteration="3" class="wow headShake infinite rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-fuchsia-500">BOX 8</div>
+        <div data-wow-delay="0.5s" data-wow-iteration="3" class="wow tada infinite rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-zinc-500">BOX 9</div>
+        <div data-wow-delay="0.5s" data-wow-iteration="3" class="animate__animated animate__shakeY rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-rose-500">BOX 10</div>
+        <div data-wow-delay="0.5s" data-wow-iteration="3" class="animate__animated animate__rotateInDownLeft rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-amber-500">BOX 11</div>
+        <div data-wow-delay="0.5s" data-wow-iteration="3" class="animate__animated animate__rotateIn rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-sky-500">BOX 12</div>
+        <div data-wow-delay="0.5s" data-wow-iteration="3" class="animate__animated animate__jackInTheBox rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-red-500">BOX 13</div>
+        <div data-wow-delay="0.5s" data-wow-iteration="3" class="animate__animated animate__bounceInDown rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-green-500">BOX 14</div>
+        <div data-wow-delay="0.5s" data-wow-iteration="3" class="animate__animated animate__bounceIn rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-purple-500">BOX 15</div>
+        <div data-wow-delay="0.5s" data-wow-iteration="3" class="animate__animated animate__backInDown rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-yellow-500">BOX 16</div>
+        <div data-wow-delay="0.5s" data-wow-iteration="3" class="animate__animated animate__backInUp rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-blue-500">BOX 17</div>
+        <div data-wow-delay="0.5s" data-wow-iteration="3" class="animate__animated animate__backInRight rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-teal-500">BOX 18</div>
+        <div data-wow-delay="0.5s" data-wow-iteration="3" class="animate__animated animate__backInLeft rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-orange-500">BOX 19</div>
+        <div data-wow-delay="0.5s" data-wow-iteration="3" class="animate__animated animate__headShake rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-fuchsia-500">BOX 20</div>
+        <div data-wow-delay="0.5s" data-wow-iteration="3" class="animate__animated animate__swing rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-zinc-500">BOX 21</div>
+        <div data-wow-delay="0.5s" data-wow-iteration="3" class="animate__animated animate__wobble rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-rose-500">BOX 22</div>
+        <div data-wow-delay="0.5s" data-wow-iteration="3" class="animate__animated animate__jello rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-amber-500">BOX 23</div>
+        <div data-wow-delay="0.5s" data-wow-iteration="3" class="animate__animated animate__heartBeat animate__repeat-5 animate-duration-2s rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-sky-500">BOX 24</div>
+    </div>
     
     <script src="/node_modules/wowjs/dist/wow.min.js"></script>
     <script>
