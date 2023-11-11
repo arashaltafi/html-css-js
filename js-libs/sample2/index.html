@@ -5,12 +5,103 @@
     <meta name="darkreader-lock" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample 2 JS Libraries SabzLearn</title>
-
+    <title>Sample AOS JS Libraries SabzLearn</title>
+    <link rel="stylesheet" href="/node_modules/aos/dist/aos.css" />
+    <link rel="stylesheet" href="final.css">
 </head>
 
-<body>
-    
+<body style="margin-top: 150px;" class="bg-zinc-300 animate__animated animate__fadeIn">
+
+    <div class="wow flip mt-8 flex flex-col gap-8 text-white items-center justify-center text-2xl">
+        <a class="w-1/2 px-4 py-2 text-center rounded-lg bg-sky-500 cursor-pointer"
+            href="https://github.com/michalsnik/aos" target="_blank">AOS Github</a>
+        <a class="w-1/2 px-4 py-2 text-center rounded-lg bg-sky-500 cursor-pointer"
+            href="https://michalsnik.github.io/aos/" target="_blank">AOS Samples</a>
+    </div>
+
+    <div class="container grid grid-cols-4 my-20 gap-[64px] text-white text-2xl font-bold select-none" data-aos="fade-up"
+        data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+        data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
+        <div class="lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-red-500">
+            BOX 1</div>
+        <div data-aos="fade-up"
+            class="rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-green-500">
+            BOX 2</div>
+        <div data-aos="fade-down"
+            class="rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-purple-500">
+            BOX 3</div>
+        <div data-aos="fade-right"
+            class="rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-yellow-500">
+            BOX 4</div>
+        <div data-aos="fade-left"
+            class="rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-blue-500">
+            BOX 5</div>
+        <div data-aos="fade-up-right"
+            class="rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-teal-500">
+            BOX 6</div>
+        <div data-aos="fade-up-left"
+            class="rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-orange-500">
+            BOX 7</div>
+        <div data-aos="fade-down-right"
+            class="rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-fuchsia-500">
+            BOX 8</div>
+        <div data-aos="fade-down-left"
+            class="rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-zinc-500">
+            BOX 9</div>
+        <div data-aos="flip-left"
+            class="rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-rose-500">
+            BOX 10</div>
+        <div data-aos="flip-right"
+            class="rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-amber-500">
+            BOX 11</div>
+        <div data-aos="flip-up"
+            class="rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-sky-500">
+            BOX 12</div>
+        <div data-aos="flip-down"
+            class="rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-red-500">
+            BOX 13</div>
+        <div data-aos="zoom-in"
+            class="rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-green-500">
+            BOX 14</div>
+        <div data-aos="zoom-in-up"
+            class="rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-purple-500">
+            BOX 15</div>
+        <div data-aos="zoom-in-down"
+            class="rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-yellow-500">
+            BOX 16</div>
+        <div data-aos="zoom-in-left"
+            class="rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-blue-500">
+            BOX 17</div>
+        <div data-aos="zoom-in-right"
+            class="rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-teal-500">
+            BOX 18</div>
+        <div data-aos="zoom-out"
+            class="rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-orange-500">
+            BOX 19</div>
+        <div data-aos="zoom-out-up"
+            class="rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-fuchsia-500">
+            BOX 20</div>
+        <div data-aos="zoom-out-down"
+            class="rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-zinc-500">
+            BOX 21</div>
+        <div data-aos="zoom-out-right"
+            class="rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-rose-500">
+            BOX 22</div>
+        <div data-aos="zoom-out-left"
+            class="rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-amber-500">
+            BOX 23</div>
+        <div data-aos="fade-up" data-aos-duration="3000"
+            class="animate__repeat-5 animate-duration-2s rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-sky-500">
+            BOX 24</div>
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"
+            class="animate__repeat-5 animate-duration-2s rounded-lg shadow-lg text-center flex items-center justify-center col-1 h-32 bg-sky-500">
+            BOX 25</div>
+    </div>
+
+    <script src="/node_modules/aos/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
