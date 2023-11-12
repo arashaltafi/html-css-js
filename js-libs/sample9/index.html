@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fa" dir="ltr" translate="no">
+
+<head>
+    <meta name="darkreader-lock" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Plyr JS Libraries SabzLearn</title>
+
+    <link rel="stylesheet" href="/node_modules/plyr/dist/plyr.css" />
+    <link rel="stylesheet" href="final.css">
+</head>
+
+<body style="margin-top: 150px;" class="bg-zinc-300 animate__animated animate__fadeIn">
+
+    <div class="wow flip mt-8 mb-16 flex flex-col gap-8 text-white items-center justify-center text-2xl">
+        <a class="w-1/2 px-4 py-2 text-center rounded-lg bg-sky-500 cursor-pointer"
+            href="https://github.com/sampotts/plyr" target="_blank">Plyr JS Github</a>
+        <a class="w-1/2 px-4 py-2 text-center rounded-lg bg-sky-500 cursor-pointer" href="https://plyr.io/"
+            target="_blank">Plyr JS Sample</a>
+        <a class="w-1/2 px-4 py-2 text-center rounded-lg bg-sky-500 cursor-pointer"
+            href="https://www.npmjs.com/package/plyr" target="_blank">Plyr JS Npm</a>
+    </div>
+
+    <video id="player" playsinline controls data-poster="https://arashaltafi.ir/arash.jpg">
+        <source src="https://arashaltafi.ir/url_sample/mp4.mp4" type="video/mp4" />
+
+        <!-- Captions are optional -->
+        <track kind="captions" label="English captions" src="/path/to/captions.vtt" srclang="en" default />
+    </video>
+
+    <audio id="player" controls class="my-16">
+        <source src="https://arashaltafi.ir/url_sample/mp3.mp3" type="audio/mp3" />
+    </audio>
+
+
+    <!-- <div class="plyr__video-embed" id="player">
+        <iframe
+            src="https://www.youtube.com/embed/bTqVqk7FSmY?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+            allowfullscreen allowtransparency allow="autoplay"></iframe>
+    </div> -->
+
+    <script src="/node_modules/plyr/dist/plyr.min.js"></script>
+    <script>
+        const player = new Plyr('#player');
+    </script>
+</body>
+
+</html>

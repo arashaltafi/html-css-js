@@ -27,7 +27,8 @@
     "convertTailwindLibs5": "npx tailwindcss -i ./js-libs/tailwind.css -o ./js-libs/sample5/final.css --watch",
     "convertTailwindLibs6": "npx tailwindcss -i ./js-libs/tailwind.css -o ./js-libs/sample6/final.css --watch",
     "convertTailwindLibs7": "npx tailwindcss -i ./js-libs/tailwind.css -o ./js-libs/sample7/final.css --watch",
-    "convertTailwindLibs8": "npx tailwindcss -i ./js-libs/tailwind.css -o ./js-libs/sample8/final.css --watch"
+    "convertTailwindLibs8": "npx tailwindcss -i ./js-libs/tailwind.css -o ./js-libs/sample8/final.css --watch",
+    "convertTailwindLibs9": "npx tailwindcss -i ./js-libs/tailwind.css -o ./js-libs/sample9/final.css --watch"
   },
   "repository": {
     "type": "git",
@@ -48,6 +49,7 @@
     "flowbite": "^1.8.1",
     "moment": "^2.29.4",
     "particles.js": "^2.0.0",
+    "plyr": "^3.7.8",
     "sass": "^1.69.0",
     "sweetalert": "^2.1.2",
     "sweetalert2": "^11.9.0",
