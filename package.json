@@ -47,6 +47,7 @@
     "clientjs": "^0.2.1",
     "cross-env": "^7.0.3",
     "flowbite": "^1.8.1",
+    "izitoast": "^1.4.0",
     "moment": "^2.29.4",
     "particles.js": "^2.0.0",
     "plyr": "^3.7.8",
