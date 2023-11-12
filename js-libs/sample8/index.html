@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fa" dir="ltr" translate="no">
+
+<head>
+    <meta name="darkreader-lock" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Video JS Libraries SabzLearn</title>
+
+    <link href="/node_modules/video.js/dist/video-js.css" rel="stylesheet">
+    <link rel="stylesheet" href="final.css">
+
+    <style>
+        .vjs-watermark {
+            position: absolute;
+            display: inline;
+            width: 70px;
+            height: 70px;
+            z-index: 2000;
+        }
+    </style>
+</head>
+
+<body style="margin-top: 150px;" class="bg-zinc-300 animate__animated animate__fadeIn">
+
+    <div class="wow flip mt-8 flex flex-col gap-8 text-white items-center justify-center text-2xl">
+        <a class="w-1/2 px-4 py-2 text-center rounded-lg bg-sky-500 cursor-pointer"
+            href="https://github.com/videojs/video.js" target="_blank">Video JS Github</a>
+        <a class="w-1/2 px-4 py-2 text-center rounded-lg bg-sky-500 cursor-pointer"
+            href="https://github.com/ctd1500/videojs-hotkeys" target="_blank">Video JS HotKey Github</a>
+        <a class="w-1/2 px-4 py-2 text-center rounded-lg bg-sky-500 cursor-pointer"
+            href="https://github.com/videojs/videojs-playlist" target="_blank">Video JS PlayList Github</a>
+        <a class="w-1/2 px-4 py-2 text-center rounded-lg bg-sky-500 cursor-pointer"
+            href="https://github.com/xbgmsharp/videojs-rotatezoom" target="_blank">Video JS Zoom Rotate Github</a>
+        <a class="w-1/2 px-4 py-2 text-center rounded-lg bg-sky-500 cursor-pointer"
+            href="https://github.com/xbgmsharp/videojs-watermark" target="_blank">Video JS WaterMark Github</a>
+        <a class="w-1/2 px-4 py-2 text-center rounded-lg bg-sky-500 cursor-pointer"
+            href="https://videojs.com/getting-started/" target="_blank">Video JS Samples</a>
+    </div>
+
+    <video id="my-player"
+        class="video-js vjs-big-play-centered my-28 rounded-2xl shadow-2xl flex items-center justify-center mx-auto"
+        controls preload="auto" poster="https://arashaltafi.ir/arash.jpg" data-setup='{}' width="640" height="350">
+        <source src="https://arashaltafi.ir/url_sample/mp4.mp4" type="video/mp4">
+        </source>
+        <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading to a
+            web browser that
+            <a href="https://videojs.com/html5-video-support/" target="_blank">
+                supports HTML5 video
+            </a>
+        </p>
+    </video>
+
+    <script src="/node_modules/video.js/dist/video.min.js"></script>
+    <script src="/node_modules/videojs-hotkeys/videojs.hotkeys.min.js"></script>
+    <script src="videojs.watermark.js"></script>
+    <script src="videojs.zoomrotate.js"></script>
+
+    <script>
+        const video = videojs('my-player', {
+            controls: true,
+
+            plugins: {
+                hotkeys: {
+                    volumeStep: 0.1,
+                    seekStep: 5,
+                    enableModifiersForNumbers: false,
+                    enableMute: true,
+                    enableFullscreen: true,
+                    enableNumbers: true,
+                    enableVolumeScroll: true
+                },
+            }
+        });
+
+        video.watermark({
+            file: "https://arashaltafi.ir/arash.jpg",
+            xpos: 100,
+            ypos: 100,
+            xrepeat: 0,
+            opacity: 0.5,
+            clickable: true,
+            text: false,
+            className: 'vjs-watermark',
+            url: 'https://arashaltafi.ir'
+        })
+
+        video.zoomrotate({
+            zoom: 1
+        })
+    </script>
+</body>
+
+</html>
