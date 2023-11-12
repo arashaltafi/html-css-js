@@ -28,7 +28,8 @@
     "convertTailwindLibs6": "npx tailwindcss -i ./js-libs/tailwind.css -o ./js-libs/sample6/final.css --watch",
     "convertTailwindLibs7": "npx tailwindcss -i ./js-libs/tailwind.css -o ./js-libs/sample7/final.css --watch",
     "convertTailwindLibs8": "npx tailwindcss -i ./js-libs/tailwind.css -o ./js-libs/sample8/final.css --watch",
-    "convertTailwindLibs9": "npx tailwindcss -i ./js-libs/tailwind.css -o ./js-libs/sample9/final.css --watch"
+    "convertTailwindLibs9": "npx tailwindcss -i ./js-libs/tailwind.css -o ./js-libs/sample9/final.css --watch",
+    "convertTailwindLibs12": "npx tailwindcss -i ./js-libs/tailwind.css -o ./js-libs/sample12/final.css --watch"
   },
   "repository": {
     "type": "git",

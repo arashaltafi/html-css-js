@@ -1453,6 +1453,11 @@ input:checked + .toggle-bg {
   margin-bottom: 32px;
 }
 
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .-mb-2 {
   margin-bottom: -0.5rem;
 }
@@ -1471,6 +1476,10 @@ input:checked + .toggle-bg {
 
 .mb-14 {
   margin-bottom: 3.5rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
 }
 
 .mb-2 {
@@ -1649,10 +1658,6 @@ input:checked + .toggle-bg {
   margin-top: auto;
 }
 
-.mb-16 {
-  margin-bottom: 4rem;
-}
-
 .box-border {
   box-sizing: border-box;
 }
@@ -1751,6 +1756,10 @@ input:checked + .toggle-bg {
 
 .flow-root {
   display: flow-root;
+}
+
+.\!grid {
+  display: grid !important;
 }
 
 .grid {
