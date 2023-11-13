@@ -1,23 +1,60 @@
 <!DOCTYPE html>
-<html lang="fa" dir="ltr" translate="no">
+<html lang="en">
 
 <head>
-    <meta name="darkreader-lock" />
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Parallax JS Libraries SabzLearn</title>
-
-    <link rel="stylesheet" href="final.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Parallax Js | Project</title>
 </head>
 
-<body style="margin-top: 150px;" class="bg-zinc-100 animate__animated animate__fadeIn">
+<body>
 
-    <div class="wow flip mt-8 mb-16 flex flex-col gap-8 text-white items-center justify-center text-2xl">
+    <!-- <div class="wow flip mt-8 mb-16 flex flex-col gap-8 text-white items-center justify-center text-2xl">
         <a class="w-1/2 px-4 py-2 text-center rounded-lg bg-sky-500 cursor-pointer"
             href="https://github.com/wagerfield/parallax" target="_blank">Parallax JS Github</a>
         <a class="w-1/2 px-4 py-2 text-center rounded-lg bg-sky-500 cursor-pointer"
             href="https://matthew.wagerfield.com/parallax/" target="_blank">Parallax JS Sample</a>
-    </div>
+    </div> -->
+
+    <nav>
+        <div class="logo">ArashAltafi</div>
+        <div class="nav-links">
+            <ul>
+                <li><img src="images/linkedin.png" alt="Logo"></li>
+                <li><img src="images/facebook.png" alt="Logo"></li>
+                <li><img src="images/instagram-logo.png" alt="Logo"></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="screen">
+        <div class="parallax-container">
+            <div class="bg" data-depth="0.1">
+                <img src="images/background.png" alt="BG" />
+            </div>
+            <div class="rock-one" data-depth="0.2">
+                <img src="images/rock.png" alt="Rock-Img" />
+            </div>
+            <div class="earth" data-depth="1.2">
+                <img src="images/earth.png" alt="Earth" />
+            </div>
+            <div class="text" data-depth="0.1">
+                <h1>Arash</h1>
+            </div>
+            <div class="mid" data-depth="0.4">
+                <img src="images/mid.png" alt="Bottom" />
+            </div>
+            <div class="fore" data-depth="0.2">
+                <img src="images/foreground.png" alt="Fore" />
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/parallax.min.js"></script>
+    <script src="js/app.js"></script>
 
 </body>
 
