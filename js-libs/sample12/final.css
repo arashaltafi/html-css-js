@@ -1181,8 +1181,16 @@ input:checked + .toggle-bg {
   left: 0px;
 }
 
+.left-2 {
+  left: 0.5rem;
+}
+
 .left-5 {
   left: 1.25rem;
+}
+
+.left-8 {
+  left: 2rem;
 }
 
 .right-0 {
@@ -1219,6 +1227,10 @@ input:checked + .toggle-bg {
 
 .top-12 {
   top: 3rem;
+}
+
+.top-2 {
+  top: 0.5rem;
 }
 
 .top-9 {
@@ -1451,11 +1463,6 @@ input:checked + .toggle-bg {
 .my-small {
   margin-top: 32px;
   margin-bottom: 32px;
-}
-
-.my-12 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
 }
 
 .-mb-2 {
@@ -5346,6 +5353,11 @@ input:checked + .toggle-bg {
 .grayscale {
   --tw-grayscale: grayscale(100%);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.\!invert {
+  --tw-invert: invert(100%) !important;
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
 }
 
 .invert {
