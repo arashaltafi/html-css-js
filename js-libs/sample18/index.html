@@ -7,14 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample Swiper JS Libraries SabzLearn</title>
 
-    <link rel="stylesheet" href="/node_modules/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="final.css">
-    <style>
-        .swiper {
-            width: 600px;
-            height: 300px;
-        }
-    </style>
 </head>
 
 <body style="margin-top: 150px;" class="bg-zinc-100 animate__animated animate__fadeIn">
@@ -23,54 +16,25 @@
         <a class="w-1/2 px-4 py-2 text-center rounded-lg bg-sky-500 cursor-pointer"
             href="https://github.com/nolimits4web/swiper" target="_blank">Swiper JS Github</a>
         <a class="w-1/2 px-4 py-2 text-center rounded-lg bg-sky-500 cursor-pointer" href="https://swiperjs.com/"
-            target="_blank">Swiper JS Sample</a>
+            target="_blank">Swiper JS Sample 1</a>
+        <a class="w-1/2 px-4 py-2 text-center rounded-lg bg-sky-500 cursor-pointer" href="https://swiperjs.com/demos"
+            target="_blank">Swiper JS Sample 2</a>
     </div>
 
-    <!-- Slider main container -->
-    <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            ...
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
+    <div class="flex flex-row flex-wrap gap-8 mt-32 mx-48 items-center justify-center text-white text-2xl">
+        <a href="sample1/index.html" id="btn-sample1" class="px-8 py-6 bg-amber-500 rounded-lg shadow-xl">Sample 1</a>
+        <a href="sample2/index.html" id="btn-sample2" class="px-8 py-6 bg-violet-500 rounded-lg shadow-xl">Sample 2</a>
+        <a href="sample3/index.html" id="btn-sample3" class="px-8 py-6 bg-rose-500 rounded-lg shadow-xl">Sample 3</a>
+        <a href="sample4/index.html" id="btn-sample4" class="px-8 py-6 bg-teal-500 rounded-lg shadow-xl">Sample 4</a>
+        <a href="sample5/index.html" id="btn-sample5" class="px-8 py-6 bg-slate-500 rounded-lg shadow-xl">Sample 5</a>
+        <a href="sample6/index.html" id="btn-sample6" class="px-8 py-6 bg-yellow-500 rounded-lg shadow-xl">Sample 6</a>
+        <a href="sample7/index.html" id="btn-sample7" class="px-8 py-6 bg-lime-500 rounded-lg shadow-xl">Sample 7</a>
+        <a href="sample8/index.html" id="btn-sample8" class="px-8 py-6 bg-cyan-500 rounded-lg shadow-xl">Sample 8</a>
+        <a href="sample9/index.html" id="btn-sample9" class="px-8 py-6 bg-red-500 rounded-lg shadow-xl">Sample 9</a>
+        <a href="sample10/index.html" id="btn-sample10" class="px-8 py-6 bg-yellow-400 rounded-lg shadow-xl">Sample 10</a>
+        <a href="sample11/index.html" id="btn-sample10" class="px-8 py-6 bg-purple-500 rounded-lg shadow-xl">Sample 11</a>
     </div>
 
-    <script src="/node_modules/swiper/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-            // Optional parameters
-            direction: 'vertical',
-            loop: true,
-
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-            },
-
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-
-            // And if we need scrollbar
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
-        });
-    </script>
 
 </body>
 
