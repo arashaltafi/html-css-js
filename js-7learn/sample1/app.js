@@ -69,3 +69,19 @@ function add(name, ...nums) {
   })
   return { final, name }
 }
+
+///////////
+
+const p = new Promise((resolve, reject) => {
+  setTimeout(() => {
+      console.log('time out');
+      resolve('ok')
+  }, 1000);
+})
+
+p.then((success) => {
+  console.log(success);
+})
+.catch((error) => {
+  console.log('error');
+})
