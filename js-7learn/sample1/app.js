@@ -5,7 +5,7 @@ console.log("max", Math.max(...nums));
 
 console.log(nums);
 nums.forEach(e => {
-    console.log(e);
+  console.log(e);
 })
 console.log(...nums);
 
@@ -20,3 +20,15 @@ function addLeadingZero(number) {
 }
 
 console.log(`${h} : ${m} : ${s}`)
+
+
+////////////
+
+
+function getRandomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+var randomNumber = getRandomNumber(1, 100);
+
+console.log("random between 1, 100 = ", randomNumber);
