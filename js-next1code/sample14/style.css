@@ -57,3 +57,9 @@ body {
     opacity: 0.8;
     background: #43A047;
 }
+
+#timer {
+    font-size: 32px;
+    color: black;
+    filter: drop-shadow(3px 3px 6px #000000aa);
+}
