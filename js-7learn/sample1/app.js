@@ -8,3 +8,15 @@ nums.forEach(e => {
     console.log(e);
 })
 console.log(...nums);
+
+
+var d = new Date();
+var h = addLeadingZero(d.getHours());
+var m = addLeadingZero(d.getMinutes());
+var s = addLeadingZero(d.getSeconds());
+
+function addLeadingZero(number) {
+  return (number < 10 ? "0" : "") + number;
+}
+
+console.log(`${h} : ${m} : ${s}`)
