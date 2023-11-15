@@ -15,6 +15,7 @@ const btnLanguage = document.getElementById("btn-language");
 const btnOnline = document.getElementById("btn-online");
 const btnAlert = document.getElementById("btn-alert");
 const btnTimeout = document.getElementById("btn-timeout");
+const btnStopTimeout = document.getElementById("btn-stop-timeout");
 const btnStartInterval = document.getElementById("btn-start-interval");
 const btnStopInterval = document.getElementById("btn-stop-interval");
 
@@ -131,6 +132,13 @@ btnTimeout.addEventListener('click', () => {
     setTimeout(() => {
         pNavigator.innerHTML = 'after 1 second timeout!!!';
     }, 1000);
+})
+
+btnStopTimeout.addEventListener('click', () => {
+    const timeout = setTimeout(() => {
+        console.log('clear time out');
+    }, 1000);
+    clearTimeout(timeout)
 })
 
 let myVar = setInterval(myTimer, 1000);
