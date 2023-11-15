@@ -32,3 +32,22 @@ function getRandomNumber(min, max) {
 var randomNumber = getRandomNumber(1, 100);
 
 console.log("random between 1, 100 = ", randomNumber);
+
+
+////////////
+
+const num1 = [1, 2, 3, 4, 5]
+let num2 = []
+let num3 = []
+
+for (var i = 0; i < num1.length; i++) {
+  num2[i] = num1[i]
+}
+
+//or
+
+num3 = [...num1]
+
+console.log("num1", num1);
+console.log("num2", num2);
+console.log("num3", num3);
