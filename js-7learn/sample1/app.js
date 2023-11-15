@@ -57,3 +57,15 @@ console.log("num1", num1);
 console.log("num2", num2);
 console.log("num3", num3);
 console.log("num4", num4);
+
+
+console.log("add 3, 5, 6", add('arash', 3, 5, 6).final);
+console.log("add 3, 5, 6", add('arash', 3, 5, 6).name);
+
+function add(name, ...nums) {
+  var final = 0;
+  nums.forEach(e => {
+    final = final + e
+  })
+  return { final, name }
+}
