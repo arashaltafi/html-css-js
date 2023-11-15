@@ -39,6 +39,7 @@ console.log("random between 1, 100 = ", randomNumber);
 const num1 = [1, 2, 3, 4, 5]
 let num2 = []
 let num3 = []
+let num4 = []
 
 for (var i = 0; i < num1.length; i++) {
   num2[i] = num1[i]
@@ -46,8 +47,13 @@ for (var i = 0; i < num1.length; i++) {
 
 //or
 
-num3 = [...num1]
+num3 = Array.from(num1);
+
+//or
+
+num4 = [...num1]
 
 console.log("num1", num1);
 console.log("num2", num2);
 console.log("num3", num3);
+console.log("num4", num4);
