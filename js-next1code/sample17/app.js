@@ -9,18 +9,17 @@ const btnSendAxios1 = document.getElementById('btn-send-axios1')
 
 btnSendXml0.addEventListener('click', () => {
     let xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts/1', true);
-    xhr.withCredentials = true;
-    xhr.setRequestHeader('test', 'arash')
+    xhr.open('GET', 'https://arashaltafi.ir/englishTeacher/v1/search.php?s=apple&page_number=1&page_size=3', true);
+    xhr.withCredentials = false;
     xhr.onload = function () {
-        if (this.status >= 200 && this.status < 400) {
+        if (this.status >= 200 && this.status < 401) {
             const status = this.status
             const headers = this.getAllResponseHeaders();
             const data = JSON.parse(this.responseText);
             console.log('Response Status:', status);
             console.log('Response Headers:', headers);
             console.log('Response Data:', data);
-            result.textContent = data.title
+            result.textContent = data.description
         } else {
             console.log(Error(`Request failed with status ${this.status}`));
             result.textContent = 'Request failed'
