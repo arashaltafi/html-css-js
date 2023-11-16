@@ -46,3 +46,23 @@ function animateCircle2() {
 
 animateCircle1()
 animateCircle2()
+
+function sum(...nums) {
+    let final = 0;
+
+    for (let i = 0; i < nums.length; i++) {
+        final = final + nums[i]
+    }
+
+    return final
+}
+
+console.log(sum(1,2,3,4,5));
+
+
+let a = [1,2,3,4,5]
+let b = [6,7,8,9]
+
+let c = [...a, ...b]
+
+console.log(c);
