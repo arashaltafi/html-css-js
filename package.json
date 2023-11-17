@@ -31,7 +31,9 @@
     "convertTailwindLibs9": "npx tailwindcss -i ./js-libs/tailwind.css -o ./js-libs/sample9/final.css --watch",
     "convertTailwindLibs12": "npx tailwindcss -i ./js-libs/tailwind.css -o ./js-libs/sample12/final.css --watch",
     "convertTailwindLibs16": "npx tailwindcss -i ./js-libs/tailwind.css -o ./js-libs/sample16/final.css --watch",
-    "convertTailwindLibs17": "npx tailwindcss -i ./js-libs/tailwind.css -o ./js-libs/sample17/final.css --watch"
+    "convertTailwindLibs17": "npx tailwindcss -i ./js-libs/tailwind.css -o ./js-libs/sample17/final.css --watch",
+    "node-0": "node ./node-js/sample0/server.js && echo bye bye!!!",
+    "git": "git add . && git commit -m \"a\" && git push"
   },
   "repository": {
     "type": "git",
