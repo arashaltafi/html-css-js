@@ -667,6 +667,13 @@ cowsay@^1.5.0:
     strip-final-newline "2.0.0"
     yargs "15.4.1"
 
+cowsay2@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.npmjs.org/cowsay2/-/cowsay2-2.0.4.tgz"
+  integrity sha512-q8iyB0HMF+HSoYeE5Pk4vNdk0mBDFakIzoFPmi1u5ZhcetvUogz2bdKM2pgF+Drn5oYoFr1a7OHwUq54A1HXlw==
+  dependencies:
+    string-width "^4"
+
 cross-env@^7.0.3:
   version "7.0.3"
   resolved "https://registry.npmjs.org/cross-env/-/cross-env-7.0.3.tgz"
@@ -1563,6 +1570,15 @@ source-map-js@^1.0.2, "source-map-js@>=0.6.2 <2.0.0":
   version "1.0.2"
   resolved "https://registry.npmjs.org/source-map-js/-/source-map-js-1.0.2.tgz"
   integrity sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==
+
+string-width@^4:
+  version "4.2.3"
+  resolved "https://registry.npmjs.org/string-width/-/string-width-4.2.3.tgz"
+  integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
+  dependencies:
+    emoji-regex "^8.0.0"
+    is-fullwidth-code-point "^3.0.0"
+    strip-ansi "^6.0.1"
 
 string-width@^4.1.0:
   version "4.2.3"
