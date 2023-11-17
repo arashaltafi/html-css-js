@@ -1,0 +1,22 @@
+{
+  "name": "npmsample-arash",
+  "version": "1.0.1",
+  "description": "This Package is Test For Publish in NPM",
+  "main": "cow.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "cowsay2"
+  ],
+  "author": {
+    "name": "Arash Altafi",
+    "email": "arashaltafi1377@gmail.com",
+    "url": "https://arshaltafi.ir"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "cowsay2": "^2.0.4"
+  }
+}

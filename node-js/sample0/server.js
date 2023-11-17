@@ -2,6 +2,7 @@ const cow = require("cowsay");
 const cow2 = require('cowsay2');
 const whale = require('cowsay2/cows/whale');
 const usa = require('cowsay2/cows/USA');
+const npmCowSayLog = require('npmsample-arash/cow')
 
 console.log(
     cow.think({
@@ -24,3 +25,5 @@ console.log(
         cow: usa
     })
 );
+
+npmCowSayLog.logWithCow('this is test!')
