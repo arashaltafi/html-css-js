@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fa" dir="ltr" translate="no">
+
+<head>
+    <meta name="darkreader-lock" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample 7Learn JS Project 5</title>
+</head>
+
+<body>
+    <script src="app.js"></script>
+    <script>
+        let sum = (a, b, ...nums) => {
+            let s = a + b;
+            let n = 0;
+            nums.forEach((num) => {
+                n = n + num
+            })
+            console.log('sum', s + n);
+        }
+        sum(1, 2, 3, 4, 5);
+
+
+        let plus = (a, b, c) => console.log('plus', a + b + c); 
+        plus(1, 2, 3)
+    </script>
+</body>
+
+</html>
