@@ -91,7 +91,7 @@ for (const color of colors) {
 
 console.log('----------------');
 
-let nums5 = [1,2,3,4]
+let nums5 = [1, 2, 3, 4]
 nums5.push(5)
 nums5.push(6)
 nums5.unshift(0)
@@ -99,3 +99,26 @@ nums5.unshift(0)
 nums5.pop()
 nums5.shift()
 console.log(nums5);
+
+('----------------');
+
+let nums6 = [1, 4, 2, 3, 5, 6]
+let find = nums6.find((e) => {
+    return e % 2 === 0
+})
+console.log("find", find);
+
+('----------------');
+
+let nums7 = [1, 4, 2, 3, 5, 6]
+let filter = nums7.filter((e) => {
+    return e % 2 === 0
+})
+console.log("filter", filter);
+
+('----------------');
+
+let nums8 = [1, 2, 3]
+nums8.forEach((e) => {
+    console.log("forEach", e);
+})
