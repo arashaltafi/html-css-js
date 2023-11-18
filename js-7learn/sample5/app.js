@@ -64,3 +64,16 @@ function clearInput() {
     inputKey.value = ''
     inputValue.value = ''
 }
+
+console.log('----------------');
+
+let numbers = [12123, 1, 3, 15, 4, 65, 31, 46]
+for (i in numbers) {
+    console.log(numbers[i]);
+}
+
+console.log('----------------');
+
+for (i of numbers) {
+    console.log(i);
+}
