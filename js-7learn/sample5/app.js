@@ -90,3 +90,12 @@ for (const color of colors) {
 }
 
 console.log('----------------');
+
+let nums5 = [1,2,3,4]
+nums5.push(5)
+nums5.push(6)
+nums5.unshift(0)
+
+nums5.pop()
+nums5.shift()
+console.log(nums5);
