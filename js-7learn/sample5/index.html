@@ -6,9 +6,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample 7Learn JS Project 5</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #F8BBD0;
+            display: flex;
+            height: 100vh;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+        }
+
+        button {
+            width: 150px;
+            height: 70px;
+            background-color: aqua;
+            border-radius: 32px;
+            border: 1px solid lightcoral;
+        }
+
+        button:hover {
+            background-color: lightcoral;
+        }
+
+        .input-div {
+            display: flex;
+            flex-direction: row;
+            gap: 32px;
+        }
+        
+        input {
+            width: 300px;
+            height: 120px;
+            border-radius: 16px;
+            border: 2px solid black;
+            padding: 8px 16px;
+            font-size: 32px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
+
+    <div class="div">
+        <div class="input-div">
+            <input type="text" id="input-key" placeholder="key">
+            <input type="text" id="input-value" placeholder="value">
+        </div>
+
+        <button id="btn-set">Set in Map</button>
+        <button id="btn-get">Get in Map</button>
+        <button id="btn-keys">Keys in Map</button>
+        <button id="btn-has">Has in Map</button>
+        <button id="btn-delete">Delete in Map</button>
+        <button id="btn-clear">Clear in Map</button>
+    </div>
+
     <script src="app.js"></script>
     <script>
         let sum = (a, b, ...nums) => {
@@ -22,8 +91,61 @@
         sum(1, 2, 3, 4, 5);
 
 
-        let plus = (a, b, c) => console.log('plus', a + b + c); 
-        plus(1, 2, 3)
+        let plus = (a, b, c) => console.log('plus', a + b + c);
+        plus(1, 2, 3);
+
+
+        const btnSet = document.getElementById('btn-set')
+        const btnGet = document.getElementById('btn-get')
+        const btnKeys = document.getElementById('btn-keys')
+        const btnHas = document.getElementById('btn-has')
+        const btnDelete = document.getElementById('btn-delete')
+        const btnClear = document.getElementById('btn-clear')
+        const inputKey = document.getElementById('input-key')
+        const inputValue = document.getElementById('input-value')
+
+        let map1 = new Map();
+
+        btnSet.addEventListener('click', () => {
+            map1.set(inputKey.value, inputValue.value)
+            console.log('set value Success!');
+            clearInput()
+        })
+
+        btnGet.addEventListener('click', () => {
+            let value = map1.get(inputKey.value)
+            console.log(value);
+            clearInput()
+        })
+
+        btnKeys.addEventListener('click', () => {
+            let keys = map1.keys()
+            console.log(keys);
+            clearInput()
+        })
+
+        btnHas.addEventListener('click', () => {
+            let hasValue = map1.has(inputKey.value)
+            console.log(hasValue);
+            clearInput()
+        })
+
+        btnDelete.addEventListener('click', () => {
+            let deleteValue = map1.delete(inputKey.value)
+            console.log(deleteValue);
+            clearInput()
+        })
+
+        btnClear.addEventListener('click', () => {
+            map1.clear()
+            console.log('cleared Success!');
+            clearInput()
+        })
+
+        function clearInput() {
+            inputKey.value = ''
+            inputValue.value = ''
+        }
     </script>
 </body>
 
