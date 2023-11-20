@@ -1,6 +1,6 @@
 const http = require('http');
 const fs = require('fs');
-const port = 8094;
+const port = 8076;
 
 const mimeTypes = {
     'html': "text/html",
@@ -17,24 +17,39 @@ const server = http.createServer((req, res) => {
     console.log("dirname", __dirname)
     console.log("req url", req.url)
 
-    fs.readFile(__dirname + req.url, (err, data) => {
-        if (err) {
-            res.statusCode = 404;
-            res.end(JSON.stringify(err));
-            return;
-        }
-    })
+    fs.readFile('./test.html', (err, data) => {
+        res.writeHead(200, {'Content-Type': mimeTypes.html});
+        res.write(data);
+        return res.end();
+    });
 
-    var mimeType = mimeTypes[req.url.split('.').pop()];
-    console.log(mimeType);
+    fs.appendFile('./mynewfile1.txt', 'Hello content!', (err) => {
+        console.log('Saved!');
+    });
 
-    if (!mimeType) {
-        mimeType = 'text/plain';
-    }
+    fs.open('./mynewfile2.txt', 'w', (err, file) => {
+        console.log('open!');
+        console.log("file", file)
+    });
 
-    res.writeHead(200, { "Content-Type": mimeType });
-    res.write(data, "binary");
-    res.end();
+    // fs.readFile(__dirname + req.url, (err, data) => {
+    //     if (err) {
+    //         res.statusCode = 404;
+    //         res.end(JSON.stringify(err));
+    //         return;
+    //     }
+    // })
+
+    // var mimeType = mimeTypes[req.url.split('.').pop()];
+    // console.log(mimeType);
+
+    // if (!mimeType) {
+    //     mimeType = 'text/plain';
+    // }
+
+    // res.writeHead(200, { "Content-Type": mimeType });
+    // res.write(data, "binary");
+    // res.end();
 })
 
 server.listen(port, () => {
