@@ -1,24 +1,39 @@
 const http = require('http');
 const fs = require('fs');
-const port = 8090;
+const port = 8094;
+
+const mimeTypes = {
+    'html': "text/html",
+    'jpeg': "text/jpeg",
+    'jpg': "text/jpg",
+    'png': "text/png",
+    'svg': "text/svg+xml",
+    'json': "application/json",
+    'js': "text/javascript",
+    'css': "text/css",
+}
 
 const server = http.createServer((req, res) => {
-    console.log(__dirname)
-    console.log(req.url)
+    console.log("dirname", __dirname)
+    console.log("req url", req.url)
 
     fs.readFile(__dirname + req.url, (err, data) => {
         if (err) {
-            res.writeHead(404);
+            res.statusCode = 404;
             res.end(JSON.stringify(err));
             return;
         }
-        var mimeType;
     })
 
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/html');
-    res.write('test 3');
-    res.write('<h1>Tag H1</h1>');
+    var mimeType = mimeTypes[req.url.split('.').pop()];
+    console.log(mimeType);
+
+    if (!mimeType) {
+        mimeType = 'text/plain';
+    }
+
+    res.writeHead(200, { "Content-Type": mimeType });
+    res.write(data, "binary");
     res.end();
 })
 
