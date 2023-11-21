@@ -57,6 +57,7 @@
     "cowsay": "^1.5.0",
     "cowsay2": "^2.0.4",
     "cross-env": "^7.0.3",
+    "express": "^4.18.2",
     "flowbite": "^1.8.1",
     "izitoast": "^1.4.0",
     "moment": "^2.29.4",
