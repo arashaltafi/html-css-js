@@ -1,10 +1,13 @@
 const http = require('http');
 const url = require('url');
 const fs = require('fs');
+const path = require('path');
 const port = 8080;
 const dirName = __dirname;
 const newFileName = 'test4.txt'
 const newFileName2 = 'test5.txt'
+
+console.log("path", path.resolve('test.txt'));
 
 //Create Server
 const server = http.createServer((req, res) => {
@@ -44,7 +47,7 @@ const server = http.createServer((req, res) => {
             res.writeHead(404, { 'Content-Type': 'text/*' });
             return res.end(`Can Not OpenFile ${newFileName} with This Error: ${err.toString()} in ${dirName}`);
         }
-        
+
         console.log('openFile', `${newFileName} File is: ${file}`);
         res.writeHead(200, { 'Content-Type': 'text/*' })
         return res.end(`${newFileName} File is: ${file}`);
