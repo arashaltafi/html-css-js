@@ -22,6 +22,17 @@ app.get('/test', (req, res) => {
     })
 })
 
+// GET method route From Test
+app.get('/profile/:userId', (req, res) => {
+    // res.sendStatus(200)
+    // res.send('GET request to the homepage')
+    res.send({
+        status: true,
+        message: 'Hello From Express Profile',
+        userId: `user id is = ${req.params.userId}`
+    })
+})
+
 
 // POST method route
 app.post('/', (req, res) => {
