@@ -81,6 +81,7 @@
     "tippy.js": "^6.3.7",
     "typewriter-effect": "^2.21.0",
     "upper-case": "^3.0.0",
+    "uuid": "^9.0.1",
     "validator": "^13.11.0",
     "video.js": "^8.6.1",
     "videojs-hotkeys": "^0.2.28",
