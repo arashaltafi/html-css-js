@@ -17,3 +17,17 @@ app.use('/auth', authRouter)  // "/login" => "auth/login"
 app.listen(port, () => {
     console.log(`server is running at port ${port} ...`)
 })
+
+app.get('/', (req, res) => {
+    try {
+        throw new Error('error in application');
+        res.send({
+            message: "Login Form"
+        });
+    } catch(error) {
+        res.send({
+            message: `You Have an Error = ${error}`
+        });
+        console.log(error);
+    }
+})
