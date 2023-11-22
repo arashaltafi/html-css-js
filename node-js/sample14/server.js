@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const express = require('express');
 const http = require('http');
 const path = require('path');
@@ -67,4 +69,15 @@ app.get('/cookie', (req, res) => {
 
     //get cookies
     console.log(req.cookies);
+})
+
+app.get('/env', (req, res) => {
+    res.send({
+        env: process.env
+    });
+
+    console.log("MYSQL_HOST", process.env.MYSQL_HOST);
+    console.log("MYSQL_USER", process.env.MYSQL_USER);
+    console.log("MYSQL_PORT", process.env.MYSQL_PORT);
+    console.log("MYSQL_DATABASE", process.env.MYSQL_DATABASE);
 })
