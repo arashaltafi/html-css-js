@@ -7,6 +7,7 @@ const logger = (req, res, next) => {
         })
     }
 
+    console.log(req.body);
     console.log(`request with path : ${req.path}`);
     next();
 }
