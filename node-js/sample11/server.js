@@ -6,7 +6,7 @@ const port = 8080;
 app.get('/', (req, res) => {
     // res.sendStatus(200)
     // res.send('GET request to the homepage')
-    res.send({
+    res.status(400).send({
         status: true,
         message: 'Hello From Express'
     })
