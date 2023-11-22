@@ -19,7 +19,7 @@ app.get('/test', (req, res) => {
     res.send({
         status: true,
         message: 'Hello From Express Test'
-    })
+    }) 
 })
 
 // GET method route From Test
@@ -33,6 +33,28 @@ app.get('/profile/:userId', (req, res) => {
     })
 })
 
+// GET method route From Test
+app.get('/request', (req, res) => {
+    res.send({
+        status: true,
+        message: 'Hello From Express Request',
+        protocol: req.protocol,
+        hostname: req.hostname,
+        subdomains: req.subdomains,
+        body: req.body,
+        cookies: req.cookies,
+        headers: req.headers,
+        header: req.header('user-agent'),
+        ip: req.ip,
+        method: req.method,
+        url: req.url,
+        path: req.path,
+        params: req.params,
+        query: req.query,
+        isAjax: req.xhr,
+        isSecure: req.secure,
+    })
+})
 
 // POST method route
 app.post('/', (req, res) => {
