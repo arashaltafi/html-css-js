@@ -39,21 +39,7 @@
         const messageBox = document.querySelector("#messages");
         const textBox = document.querySelector("input");
         const sendButton = document.querySelector("button");
-
-        function createMessage(text, ownMessage = false) {
-            const messageElement = document.createElement("div");
-            messageElement.className = "chat-message";
-            const subMessageElement = document.createElement("div");
-            subMessageElement.className =
-                "px-4 py-4 rounded-lg inline-block rounded-bl-none bg-gray-300 text-gray-600";
-            if (ownMessage) {
-                subMessageElement.className += " float-right bg-blue-800 text-white";
-            }
-            subMessageElement.innerText = text;
-            messageElement.appendChild(subMessageElement);
-
-            messageBox.appendChild(messageElement);
-        }
+        let userName = '';
 
         const socket = io();
 
@@ -61,10 +47,13 @@
             console.log(socket.id);
         });
 
+        createMessage("Welcome to My ChatRoom!!!", undefined, true);
+        createMessage("What's Your Name???", undefined, true);
+
         socket.on("receive-message", ({ message, senderId }) => {
             console.log("message", message);
             console.log("socket", socket);
-            if (senderId !== socket.id) {
+            if (senderId !== socket.id && userName) {
                 createMessage(message);
             }
         });
@@ -73,12 +62,33 @@
             if (textBox.value.trim() != "") {
                 socket.emit("send-message", textBox.value);
                 createMessage(textBox.value, true);
+                if (!userName) {
+                    userName = textBox.value;
+                    createMessage(`Welcome, ${userName}!`, undefined, true);
+                }
                 textBox.value = "";
             }
         });
 
-        createMessage("Welcome to My ChatRoom!!!");
-        createMessage("What's Your Name???", true);
+        function createMessage(text, outcome = false, isSystemic = false) {
+            const messageElement = document.createElement("div");
+            messageElement.className = "chat-message";
+            const subMessageElement = document.createElement("div");
+
+            subMessageElement.className =
+                "px-4 py-4 rounded-lg inline-block rounded-bl-none bg-gray-300 text-gray-600";
+            if (outcome) {
+                subMessageElement.className += " float-right bg-blue-800 text-white";
+            } else if (isSystemic) {
+                subMessageElement.className += " float bg-blue-800 text-white";
+            }
+
+            subMessageElement.innerText = text;
+            messageElement.appendChild(subMessageElement);
+
+            messageBox.appendChild(messageElement);
+        }
+
     </script>
 </body>
 

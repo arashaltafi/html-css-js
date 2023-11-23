@@ -10,3 +10,9 @@ console.log(name, family);
 console.log(fName, LName);
 console.log(utils.name, utils.family);
 console.log("2 + 4 =", utils.sum(2, 4));
+
+function test(name, family = 'altafi', age = 25) {
+    console.log(`name = ${name}, family = ${family}, age = ${age}`)
+}
+
+test('arash', undefined, age = 20)
