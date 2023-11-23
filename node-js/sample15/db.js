@@ -16,3 +16,5 @@ connection.connect(err => {
 
     console.log('mysql server is ok ...');
 });
+
+module.exports = connection;
