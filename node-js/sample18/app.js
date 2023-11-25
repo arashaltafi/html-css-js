@@ -1,11 +1,11 @@
 const express = require('express');
-const connectToMongo = require('./connection');
+const connectToMongoose = require('./connection_mongoose');
 const app = express();
 const port = 8080;
 
 app.get('/api/v1/users', async (req, res) => {
     try {
-        const db = await connectToMongo();
+        const db = await connectToMongoose();
         const collection = db.collection('faker');
         const result = await collection.find({}).skip(0).limit(10).toArray();
         res.status(200).send(result);
