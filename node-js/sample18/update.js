@@ -1,15 +1,16 @@
 const connectToMongo = require('./connection');
 
-
-const insertSample = async () => {
+const updateSample = async () => {
     try {
         const db = await connectToMongo();
         const collection = db.collection('users');
-        const result = await collection.insertOne({
-            name: "jafar",
-            family: "jafari",
-            age: 32,
-            filed: "developer"
+        const result = await collection.updateOne({
+            age: 32
+        }, {
+            $set: {
+                name: "updatedName",
+                family: "updated family"
+            }
         });
         console.log('Query result:', result);
     } catch (error) {
@@ -18,4 +19,4 @@ const insertSample = async () => {
     }
 }
 
-insertSample();
+updateSample();
