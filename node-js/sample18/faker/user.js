@@ -3,9 +3,11 @@ const { faker } = require('@faker-js/faker');
 const connectToMongo = require('../connection');
 
 let counter = 10000;
+let myId = 1;
 const users = [];
 while (counter >= 1) {
     users.push({
+        id: myId,
         avatar: faker.image.avatar(),
         birthday: faker.date.birthdate(),
         email: faker.internet.email(),
@@ -18,6 +20,7 @@ while (counter >= 1) {
         registeredAt: faker.date.past(),
     })
     counter--;
+    myId++;
 }
 
 
