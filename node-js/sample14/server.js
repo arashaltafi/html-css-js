@@ -19,6 +19,7 @@ app.use(session({
     name: "arash_session"
 }));
 app.use(cookieParser());
+//for render url code
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
