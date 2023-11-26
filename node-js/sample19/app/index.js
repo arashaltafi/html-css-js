@@ -3,8 +3,10 @@ const middlewares = require('./middlewares');
 const middlewares404 = require('./middlewares/404');
 const middlewaresException = require('./middlewares/exception');
 const routers = require('./routers');
+const mongo = require('./boot');
 
 const app = express();
+mongo;
 middlewares(app);
 routers(app);
 middlewaresException(app);
