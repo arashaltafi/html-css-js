@@ -19,6 +19,13 @@ const addUser = async (req, res, next) => {
         })
 
         const { first_name, last_name, mobile, email } = req.body;
+        if (first_name == undefined || first_name == "" || last_name == undefined || last_name == "") {
+            return res.status(422).send({
+                error: true,
+                message: 'data input is not valid!'
+            })
+        }
+
         const newUser2 = new UserModel({
             first_name,
             last_name,
@@ -28,10 +35,10 @@ const addUser = async (req, res, next) => {
 
         await newUser.save()
 
-        res.send({
+        res.status(201).send({
             success: true,
             message: 'user added successfully.',
-            newUserID: newUser._id
+            newUser
         })
     } catch (error) {
         next(error)
