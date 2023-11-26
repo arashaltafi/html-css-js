@@ -109,6 +109,34 @@ const removeUser = async (req, res, next) => {
     }
 }
 
+const updateUser = async (req, res, next) => {
+    try {
+        const { id } = req.params
+        if (id) {
+            const { n, nModified } = await UserModel.updateOne({ _id: id }, { ...req.body })
+            if (n === 0 || nModified === 0) {
+                throw new Error("update user has error")
+            } else {
+                
+            }
+            res.status(200).send({
+                success: true,
+                message: 'user updated successfully',
+                data: {
+                    updateUserResult
+                }
+            });
+        } else {
+            res.status(404).send({
+                error: true,
+                message: 'user not found!'
+            });
+        }
+    } catch (error) {
+        next(error)
+    }
+}
+
 module.exports = {
-    usersList, addUser, getUser, removeUser
+    usersList, addUser, getUser, removeUser, updateUser
 };
