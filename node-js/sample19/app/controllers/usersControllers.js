@@ -1,9 +1,13 @@
 const UserModel = require('../models/UserModel')
 
-const usersList = (req, res, next) => {
+const usersList = async (req, res, next) => {
+    const users = await UserModel.find({});
     res.send({
         success: true,
-        message: 'users list successfully created!!!'
+        message: 'users list successfully created!!!',
+        data: {
+            users
+        }
     });
 }
 
@@ -19,7 +23,7 @@ const addUser = async (req, res, next) => {
         })
 
         const { first_name, last_name, mobile, email } = req.body;
-        if (first_name == undefined || first_name == "" || last_name == undefined || last_name == "") {
+        if (first_name == undefined || first_name == "" || last_name == undefined || last_name == "") { 
             return res.status(422).send({
                 error: true,
                 message: 'data input is not valid!'
