@@ -117,15 +117,14 @@ const updateUser = async (req, res, next) => {
             if (n === 0 || nModified === 0) {
                 throw new Error("update user has error")
             } else {
-                
+                res.status(200).send({
+                    success: true,
+                    message: 'user updated successfully',
+                    data: {
+                        updateUserResult
+                    }
+                });
             }
-            res.status(200).send({
-                success: true,
-                message: 'user updated successfully',
-                data: {
-                    updateUserResult
-                }
-            });
         } else {
             res.status(404).send({
                 error: true,
