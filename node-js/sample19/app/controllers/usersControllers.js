@@ -2,7 +2,7 @@ const UserModel = require('../models/UserModel')
 
 const usersList = async (req, res, next) => {
     const users = await UserModel.find({});
-    res.send({
+    res.status(200).send({
         success: true,
         message: 'users list successfully created!!!',
         data: {
