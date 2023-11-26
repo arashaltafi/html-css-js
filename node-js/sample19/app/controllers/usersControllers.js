@@ -9,12 +9,24 @@ const usersList = async (req, res, next) => {
             }, {})
         }
 
-        const users = await UserModel.find({}, projection);
+        const perPage = req.query.perPage || 10;
+        const page = req.query.page || 1;
+        const offset = (page - 1) * perPage;
+
+        const usersCount = await UserModel.find({}).countDocuments();
+        const totalPage = Math.ceil(usersCount / perPage);
+
+        const users = await UserModel.find({}, projection).skip(offset).limit(perPage);
         res.status(200).send({
             success: true,
             message: 'users list successfully created!!!',
             data: {
                 users
+            },
+            meta: {
+                totalCount: usersCount,
+                pages: totalPage,
+                next: `${process.env.APP_URL}/api/v1/users?page=${Number(page) + 1}`
             }
         });
     } catch (error) {
