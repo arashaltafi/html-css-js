@@ -1,8 +1,8 @@
 const { faker } = require('@faker-js/faker');
 
-const connectToMongo = require('../connection');
+const connectToMongo = require('../connection_server');
 
-let counter = 10000;
+let counter = 100;
 let myId = 1;
 const users = [];
 while (counter >= 1) {
