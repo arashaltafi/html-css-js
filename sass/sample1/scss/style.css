@@ -1,0 +1,77 @@
+h1 {
+  color: pink;
+}
+
+body {
+  background-color: white;
+}
+
+p {
+  color: black;
+  font-size: 1rem;
+}
+
+.footer p, .banner p {
+  color: black;
+  background-color: whitesmoke;
+  font-size: 1rem;
+}
+
+.nav {
+  background-color: #ffb733;
+  padding: 5px 10px;
+}
+.nav ul li {
+  color: red;
+}
+.nav ul li a {
+  color: royalBlue;
+  text-decoration: none;
+}
+.nav ul li a:hover {
+  color: blue;
+  font-size: 1rem;
+}
+
+.banner h1 {
+  color: red;
+  text-align: center;
+  font-size: 2rem;
+  color: #cc0000;
+}
+.banner p:hover {
+  color: royalBlue;
+  transition: color 1s;
+}
+
+.footer h3 {
+  color: red;
+  text-align: center;
+  font-size: 1rem;
+  font-size: 20px;
+  color: rgba(0, 0, 255, 0.7);
+}
+.footer h3:hover {
+  color: orange;
+  background-color: royalBlue;
+  transition: color 2s, background-color 3s;
+}
+.footer p:hover {
+  color: orange;
+  transition: color 1s;
+}
+
+.banner p, .footer p {
+  color: green;
+}
+
+.banner h1 {
+  box-sizing: border-box;
+  border: 2px solid black;
+  color: royalBlue;
+  background-color: pink;
+}
+
+.banner h1 {
+  background-color: purple;
+}/*# sourceMappingURL=style.css.map */
