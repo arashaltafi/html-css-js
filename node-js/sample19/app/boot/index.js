@@ -1,3 +1,5 @@
-const startMongo = require('./mongo')
+const startMongo = require('./mongo');
+const startMysql = require('./mysql');
 
-startMongo()
+startMongo();
+startMysql;
