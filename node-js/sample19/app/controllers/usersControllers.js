@@ -60,12 +60,12 @@ const addUser = async (req, res, next) => {
             email
         })
 
-        await newUser.save()
+        await newUser2.save()
 
         res.status(201).send({
             success: true,
             message: 'user added successfully.',
-            newUser
+            newUser2
         })
     } catch (error) {
         next(error)
