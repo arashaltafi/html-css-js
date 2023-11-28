@@ -94,7 +94,7 @@ module.exports = (socket, io) => {
                 message: 'user deleted successfully'
             });
         } else {
-            io.emit('update', {
+            io.emit('delete', {
                 code: 404,
                 error: true,
                 message: 'user not found!'
