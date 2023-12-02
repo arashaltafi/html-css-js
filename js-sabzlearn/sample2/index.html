@@ -1,13 +1,60 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl" translate="no">
+<html lang="fa" dir="ltr" translate="no">
+
 <head>
     <meta name="darkreader-lock" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample js sabzLearn 2</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <h2>IndexedDB Example</h2>
+
+    <label for="dbName">Enter Database Name:</label>
+    <input type="text" id="dbName" placeholder="Enter Database Name">
+    <button onclick="createDatabase()">Create Database</button>
+
+    <label for="tableName">Enter Table Name:</label>
+    <input type="text" id="tableName" placeholder="Enter Table Name">
+    <button onclick="createTable()">Create Table</button>
+
+    <hr>
+
+    <label for="recordKey">Enter Record Key:</label>
+    <input type="text" id="recordKey" placeholder="Enter Record Key">
+    <label for="recordValue">Enter Record Value:</label>
+    <input type="text" id="recordValue" placeholder="Enter Record Value">
+    <button onclick="addRecord()">Add Record</button>
+
+    <hr>
+
+    <label for="readKey">Enter Record Key to Read:</label>
+    <input type="text" id="readKey" placeholder="Enter Record Key to Read">
+    <button onclick="readRecord()">Read Record</button>
+
+    <hr>
+
+    <label for="updateKey">Enter Record Key to Update:</label>
+    <input type="text" id="updateKey" placeholder="Enter Record Key to Update">
+    <label for="updateValue">Enter Updated Value:</label>
+    <input type="text" id="updateValue" placeholder="Enter Updated Value">
+    <button onclick="updateRecord()">Update Record</button>
+
+    <hr>
+
+    <label for="deleteKey">Enter Record Key to Delete:</label>
+    <input type="text" id="deleteKey" placeholder="Enter Record Key to Delete">
+    <button onclick="deleteRecord()">Delete Record</button>
+
+    <hr>
+
+    <button onclick="deleteTable()">Delete Table</button>
+    <button onclick="deleteDatabase()">Delete Database</button>
+
+    <script src="db.js"></script>
     <script src="app.js"></script>
 </body>
+
 </html>
