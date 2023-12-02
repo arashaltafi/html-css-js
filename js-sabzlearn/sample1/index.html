@@ -43,6 +43,13 @@
         <h1>open console to see logs</h1>
     </div>
 
+    <button id="btn-delete">click me to delete</button>
+    <script>
+        document.querySelector('#btn-delete').addEventListener('click', (e) => {
+            e.target.remove();
+        })
+    </script>
+
     <script src="app.js"></script>
 </body>
 
