@@ -32,6 +32,8 @@ console.log('Math.random() * 10 ===>', Math.floor((Math.random() * 10)));
 
 
 const arraySample = ['arash', 'amir', 'reza', 'ali'];
+console.log('Array.isArray(arraySample) ===>', Array.isArray(arraySample));
+console.log('arraySample.indexOf(reza) ===>', arraySample.indexOf('reza'), arraySample);
 console.log('arraySample.length ===>', arraySample.length);
 console.log('arraySample[0] ===>', arraySample[0]);
 console.log('arraySample push ===>', arraySample.push('test push'), arraySample);
@@ -39,4 +41,27 @@ console.log('arraySample pop ===>', arraySample.pop(), arraySample);
 console.log('arraySample shift ===>', arraySample.shift(), arraySample);
 console.log('arraySample unshift ===>', arraySample.unshift('test unshift'), arraySample);
 console.log('arraySample includes(reza) ===>', arraySample.includes('reza'), arraySample);
+console.log('arraySample reverse() ===>', arraySample.reverse());
 console.log('arraySample splice(1, 2) ===>', arraySample.splice(1, 2), arraySample);
+console.log('[1,2,3,4,5] slice(1, 4) ===>', [1, 2, 3, 4, 5].slice(1, 4), [1, 2, 3, 4, 5]);
+
+const arraySample2 = [1, 2, 3, 4, 5];
+const map = arraySample2.map((num) => {
+    return num * 2;
+});
+console.log("map ===>", map);
+
+const filter = arraySample2.filter((num) => {
+    return num % 2 == 0;
+});
+console.log("filter ===>", filter);
+
+arraySample2.forEach((num) => {
+    console.log("foreach ===>", num);
+});
+
+const arraySample3 = [1, 2, 3, 4, 5];
+console.log("console.log(arraySample3.join('/'))", arraySample3.join('/'));
+
+const arraySample4 = '1-2-3-4-5';
+console.log("arraySample4.split('-')", arraySample4.split('-'));
