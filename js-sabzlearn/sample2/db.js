@@ -7,23 +7,33 @@ const btnDeleteTable = document.getElementById('btn-delete-table');
 const btnDeleteDatabase = document.getElementById('btn-delete-database');
 const btnGetAllRecords = document.getElementById('btn-get-all-records');
 const btnGetAllTables = document.getElementById('btn-get-all-tables');
+const btnGetAllUsers = document.getElementById('btn-get-all-users');
+const tableName = document.getElementById('tableName');
 
 let db;
 
 btnCreateDbAndTable.addEventListener('click', () => {
     const dbName = document.getElementById('dbName').value;
-    const request = indexedDB.open(dbName, 3);
+    const request = indexedDB.open(dbName, 1);
 
     request.addEventListener('upgradeneeded', (event) => {
         db = event.target.result;
         console.log(`Database ${dbName} created`);
 
-        const tableName = document.getElementById('tableName').value;
-        const objectStore = db.createObjectStore(tableName, { keyPath: 'key', autoIncrement: true });
-        console.log(`Table ${tableName} created`);
+        if (!db.objectStoreNames.contains(tableName.value)) {
+            const objectStore = db.createObjectStore(tableName.value, { keyPath: 'id', autoIncrement: true });
 
-        // You can create indexes here if needed
-        // const index = objectStore.createIndex('indexName', 'property');
+            objectStore.add({ name: 'John', family: 'Doe', age: 25 });
+            objectStore.add({ name: 'Jane', family: 'Smith', age: 30 });
+            objectStore.add({ name: 'arash', family: 'altafi', age: 35 });
+            console.log(`Table ${tableName.value} created`);
+
+            if (!objectStore.indexNames.contains('ageIndex')) {
+                objectStore.createIndex('ageIndex', 'age', { unique: false });
+            }
+        } else {
+            console.log(`Table ${tableName.value} exists`);
+        }
     })
 
     request.addEventListener('success', (event) => {
@@ -37,12 +47,11 @@ btnCreateDbAndTable.addEventListener('click', () => {
 });
 
 btnAddRecord.addEventListener('click', () => {
-    const tableName = document.getElementById('tableName').value;
     const key = document.getElementById('recordKey').value;
     const value = document.getElementById('recordValue').value;
 
-    const transaction = db.transaction([tableName], 'readwrite');
-    const objectStore = transaction.objectStore(tableName);
+    const transaction = db.transaction([tableName.value], 'readwrite');
+    const objectStore = transaction.objectStore(tableName.value);
     const request = objectStore.add({ key, value });
 
     request.onsuccess = function (event) {
@@ -55,11 +64,10 @@ btnAddRecord.addEventListener('click', () => {
 });
 
 btnReadRecord.addEventListener('click', () => {
-    const tableName = document.getElementById('tableName').value;
     const key = document.getElementById('readKey').value;
 
-    const transaction = db.transaction([tableName], 'readonly');
-    const objectStore = transaction.objectStore(tableName);
+    const transaction = db.transaction([tableName.value], 'readonly');
+    const objectStore = transaction.objectStore(tableName.value);
     const request = objectStore.get(key);
 
     request.onsuccess = function (event) {
@@ -77,12 +85,11 @@ btnReadRecord.addEventListener('click', () => {
 });
 
 btnUpdateRecord.addEventListener('click', () => {
-    const tableName = document.getElementById('tableName').value;
     const key = document.getElementById('updateKey').value;
     const updatedValue = document.getElementById('updateValue').value;
 
-    const transaction = db.transaction([tableName], 'readwrite');
-    const objectStore = transaction.objectStore(tableName);
+    const transaction = db.transaction([tableName.value], 'readwrite');
+    const objectStore = transaction.objectStore(tableName.value);
     const request = objectStore.put({ key, value: updatedValue });
 
     request.onsuccess = function (event) {
@@ -95,11 +102,10 @@ btnUpdateRecord.addEventListener('click', () => {
 });
 
 btnDeleteRecord.addEventListener('click', () => {
-    const tableName = document.getElementById('tableName').value;
     const key = document.getElementById('deleteKey').value;
 
-    const transaction = db.transaction([tableName], 'readwrite');
-    const objectStore = transaction.objectStore(tableName);
+    const transaction = db.transaction([tableName.value], 'readwrite');
+    const objectStore = transaction.objectStore(tableName.value);
     const request = objectStore.delete(key);
 
     request.onsuccess = function (event) {
@@ -125,13 +131,11 @@ btnDeleteDatabase.addEventListener('click', () => {
 });
 
 btnGetAllRecords.addEventListener('click', () => {
-    const tableName = document.getElementById('tableName').value;
-
     // Create a transaction
-    const transaction = db.transaction(tableName, 'readonly');
+    const transaction = db.transaction(tableName.value, 'readonly');
 
     // Open the object store
-    const objectStore = transaction.objectStore(tableName);
+    const objectStore = transaction.objectStore(tableName.value);
 
     // Get all records
     const getAllRequest = objectStore.getAll();
@@ -153,14 +157,34 @@ btnGetAllTables.addEventListener('click', () => {
 });
 
 btnDeleteTable.addEventListener('click', () => {
-    const tableName = document.getElementById('tableName').value;
-    const request = indexedDB.deleteDatabase(tableName);
+    const request = indexedDB.deleteDatabase(tableName.value);
 
     request.onsuccess = function (event) {
-        console.log(`Table ${tableName} deleted successfully`);
+        console.log(`Table ${tableName.value} deleted successfully`);
     };
 
     request.onerror = function (event) {
         console.error('Error deleting table:', event.target.error);
+    };
+})
+
+btnGetAllUsers.addEventListener('click', () => {
+    const transaction = db.transaction(tableName.value, 'readonly');
+    const objectStore = transaction.objectStore(tableName.value);
+    const index = objectStore.index('ageIndex');
+    const ageGreaterThan20Request = index.openCursor(IDBKeyRange.upperBound(30));
+
+    ageGreaterThan20Request.onsuccess = function (event) {
+        const cursor = event.target.result;
+
+        if (cursor) {
+            // Print the name and family for records where age > 20
+            console.log('Name:', cursor.value.name, 'Family:', cursor.value.family);
+            cursor.continue();
+        }
+    };
+
+    ageGreaterThan20Request.onerror = function (event) {
+        console.error('Error getting records:', event.target.errorCode);
     };
 })
