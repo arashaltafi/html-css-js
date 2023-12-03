@@ -69,6 +69,7 @@
     "express-handlebars": "^7.1.2",
     "express-session": "^1.17.3",
     "flowbite": "^1.8.1",
+    "http-server": "^14.1.1",
     "izitoast": "^1.4.0",
     "jsonwebtoken": "^9.0.2",
     "moment": "^2.29.4",
