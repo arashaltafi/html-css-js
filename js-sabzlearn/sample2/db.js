@@ -1,10 +1,20 @@
+const btnCreateDbAndTable = document.getElementById('btn-create-db-table');
+const btnAddRecord = document.getElementById('btn-add-record');
+const btnReadRecord = document.getElementById('btn-read-record');
+const btnUpdateRecord = document.getElementById('btn-update-record');
+const btnDeleteRecord = document.getElementById('btn-delete-record');
+const btnDeleteTable = document.getElementById('btn-delete-table');
+const btnDeleteDatabase = document.getElementById('btn-delete-database');
+const btnGetAllRecords = document.getElementById('btn-get-all-records');
+const btnGetAllTables = document.getElementById('btn-get-all-tables');
+
 let db;
 
-function createDatabase() {
+btnCreateDbAndTable.addEventListener('click', () => {
     const dbName = document.getElementById('dbName').value;
-    const request = indexedDB.open(dbName, 1);
+    const request = indexedDB.open(dbName, 3);
 
-    request.onupgradeneeded = function (event) {
+    request.addEventListener('upgradeneeded', (event) => {
         db = event.target.result;
         console.log(`Database ${dbName} created`);
 
@@ -14,24 +24,19 @@ function createDatabase() {
 
         // You can create indexes here if needed
         // const index = objectStore.createIndex('indexName', 'property');
-    };
+    })
 
-    request.onsuccess = function (event) {
+    request.addEventListener('success', (event) => {
         db = event.target.result;
         console.log(`Connected to ${dbName}`);
-    };
+    })
 
-    request.onerror = function (event) {
+    request.addEventListener('error', (event) => {
         console.error('Error creating database:', event.target.error);
-    };
-}
+    })
+});
 
-function createTable() {
-    // This is handled in the onupgradeneeded event when creating the database
-    console.log('Table creation is handled during database creation');
-}
-
-function addRecord() {
+btnAddRecord.addEventListener('click', () => {
     const tableName = document.getElementById('tableName').value;
     const key = document.getElementById('recordKey').value;
     const value = document.getElementById('recordValue').value;
@@ -47,9 +52,9 @@ function addRecord() {
     request.onerror = function (event) {
         console.error('Error adding record:', event.target.error);
     };
-}
+});
 
-function readRecord() {
+btnReadRecord.addEventListener('click', () => {
     const tableName = document.getElementById('tableName').value;
     const key = document.getElementById('readKey').value;
 
@@ -69,9 +74,9 @@ function readRecord() {
     request.onerror = function (event) {
         console.error('Error reading record:', event.target.error);
     };
-}
+});
 
-function updateRecord() {
+btnUpdateRecord.addEventListener('click', () => {
     const tableName = document.getElementById('tableName').value;
     const key = document.getElementById('updateKey').value;
     const updatedValue = document.getElementById('updateValue').value;
@@ -87,9 +92,9 @@ function updateRecord() {
     request.onerror = function (event) {
         console.error('Error updating record:', event.target.error);
     };
-}
+});
 
-function deleteRecord() {
+btnDeleteRecord.addEventListener('click', () => {
     const tableName = document.getElementById('tableName').value;
     const key = document.getElementById('deleteKey').value;
 
@@ -104,22 +109,9 @@ function deleteRecord() {
     request.onerror = function (event) {
         console.error('Error deleting record:', event.target.error);
     };
-}
+})
 
-function deleteTable() {
-    const tableName = document.getElementById('tableName').value;
-    const request = indexedDB.deleteDatabase(tableName);
-
-    request.onsuccess = function (event) {
-        console.log(`Table ${tableName} deleted successfully`);
-    };
-
-    request.onerror = function (event) {
-        console.error('Error deleting table:', event.target.error);
-    };
-}
-
-function deleteDatabase() {
+btnDeleteDatabase.addEventListener('click', () => {
     const dbName = document.getElementById('dbName').value;
     const request = indexedDB.deleteDatabase(dbName);
 
@@ -130,4 +122,45 @@ function deleteDatabase() {
     request.onerror = function (event) {
         console.error('Error deleting database:', event.target.error);
     };
-}
+});
+
+btnGetAllRecords.addEventListener('click', () => {
+    const tableName = document.getElementById('tableName').value;
+
+    // Create a transaction
+    const transaction = db.transaction(tableName, 'readonly');
+
+    // Open the object store
+    const objectStore = transaction.objectStore(tableName);
+
+    // Get all records
+    const getAllRequest = objectStore.getAll();
+
+    getAllRequest.onsuccess = function (event) {
+        const allRecords = event.target.result;
+        console.log(allRecords);
+    };
+
+    getAllRequest.onerror = function (event) {
+        console.error('Error getting all records: ' + event.target.errorCode);
+    };
+});
+
+btnGetAllTables.addEventListener('click', () => {
+    const objectStoreNames = db.objectStoreNames;
+    const objectStoreNamesArray = Array.from(objectStoreNames);
+    console.log(objectStoreNamesArray);
+});
+
+btnDeleteTable.addEventListener('click', () => {
+    const tableName = document.getElementById('tableName').value;
+    const request = indexedDB.deleteDatabase(tableName);
+
+    request.onsuccess = function (event) {
+        console.log(`Table ${tableName} deleted successfully`);
+    };
+
+    request.onerror = function (event) {
+        console.error('Error deleting table:', event.target.error);
+    };
+})

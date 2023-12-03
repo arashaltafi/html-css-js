@@ -12,46 +12,81 @@
 <body>
     <h2>IndexedDB Example</h2>
 
-    <label for="dbName">Enter Database Name:</label>
-    <input type="text" id="dbName" placeholder="Enter Database Name">
-    <button onclick="createDatabase()">Create Database</button>
+    <span class="divider"></span>
 
-    <label for="tableName">Enter Table Name:</label>
-    <input type="text" id="tableName" placeholder="Enter Table Name">
-    <button onclick="createTable()">Create Table</button>
+    <div>
+        <div class="flex-row">
+            <label for="dbName">Enter Database Name:</label>
+            <input type="text" id="dbName" placeholder="Enter Database Name">
+        </div>
 
-    <hr>
+        <div class="flex-row">
+            <label for="tableName">Enter Table Name:</label>
+            <input type="text" id="tableName" placeholder="Enter Table Name">
+        </div>
 
-    <label for="recordKey">Enter Record Key:</label>
-    <input type="text" id="recordKey" placeholder="Enter Record Key">
-    <label for="recordValue">Enter Record Value:</label>
-    <input type="text" id="recordValue" placeholder="Enter Record Value">
-    <button onclick="addRecord()">Add Record</button>
-
-    <hr>
-
-    <label for="readKey">Enter Record Key to Read:</label>
-    <input type="text" id="readKey" placeholder="Enter Record Key to Read">
-    <button onclick="readRecord()">Read Record</button>
+        <button id="btn-create-db-table">Create Database And Table</button>
+    </div>
 
     <hr>
 
-    <label for="updateKey">Enter Record Key to Update:</label>
-    <input type="text" id="updateKey" placeholder="Enter Record Key to Update">
-    <label for="updateValue">Enter Updated Value:</label>
-    <input type="text" id="updateValue" placeholder="Enter Updated Value">
-    <button onclick="updateRecord()">Update Record</button>
+    <div>
+        <div class="flex-row">
+            <label for="recordKey">Enter Record Key:</label>
+            <input type="text" id="recordKey" placeholder="Enter Record Key">
+        </div>
+        <div class="flex-row">
+            <label for="recordValue">Enter Record Value:</label>
+            <input type="text" id="recordValue" placeholder="Enter Record Value">
+        </div>
+        <button id="btn-add-record">Add Record</button>
+    </div>
 
     <hr>
 
-    <label for="deleteKey">Enter Record Key to Delete:</label>
-    <input type="text" id="deleteKey" placeholder="Enter Record Key to Delete">
-    <button onclick="deleteRecord()">Delete Record</button>
+    <div>
+        <div class="flex-row">
+            <label for="readKey">Enter Record Key to Read:</label>
+            <input type="text" id="readKey" placeholder="Enter Record Key to Read">
+        </div>
+        <button id="btn-read-record">Read Record</button>
+    </div>
 
     <hr>
 
-    <button onclick="deleteTable()">Delete Table</button>
-    <button onclick="deleteDatabase()">Delete Database</button>
+    <div>
+        <div class="flex-row">
+            <label for="updateKey">Enter Record Key to Update:</label>
+            <input type="text" id="updateKey" placeholder="Enter Record Key to Update">
+        </div>
+        <div class="flex-row">
+            <label for="updateValue">Enter Updated Value:</label>
+            <input type="text" id="updateValue" placeholder="Enter Updated Value">
+        </div>
+        <button id="btn-update-record">Update Record</button>
+    </div>
+
+    <hr>
+
+    <div>
+        <div class="flex-row">
+            <label for="deleteKey">Enter Record Key to Delete:</label>
+            <input type="text" id="deleteKey" placeholder="Enter Record Key to Delete">
+        </div>
+        <button id="btn-delete-record">Delete Record</button>
+    </div>
+
+    <hr>
+
+    <div>
+        <div class="flex-row">
+            <button id="btn-delete-table">Delete Table</button>
+            <button id="btn-delete-database">Delete Database</button>
+            <button id="btn-get-all-records">Get All Records From Table</button>
+            <button id="btn-get-all-tables">Get All Tables From DB</button>
+        </div>
+    </div>
+
 
     <script src="db.js"></script>
     <script src="app.js"></script>
