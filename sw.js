@@ -1,6 +1,6 @@
 // caches => open(select cache category for add, delete, match, ...), addAll(add multi address for cache), put(add req and res for cache), keys(see all caches), delete (delete caches), match (get cache file)
 
-const cacheVersion = 35;
+const cacheVersion = 39;
 const activeCache = {
     static: `static-v${cacheVersion}`,
     dynamic: `dynamic-v${cacheVersion}`
@@ -43,27 +43,27 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
     console.log('service worker fetch successful');
     //1. first cache second network
-    event.respondWith(
-        caches.match(event.request).then((res) => {
-            if (res) {
-                return res
-            } else {
-                return fetch(event.request).then(res => {
-                    return caches.open(activeCache.dynamic).then((cache) => {
-                        console.log('cache dynamic open successful');
-                        cache.put(event.request, res.clone());
-                        // limitCache(activeCache.dynamic, 10)
-                        return res;
-                    })
-                }).catch(err => {
-                    //when user open page and haven't save in cache
-                    return caches.match('/fallBack.html')
-                })
-            }
-        }).catch((err) => {
-            return fetch(event.request)
-        })
-    )
+    // event.respondWith(
+    //     caches.match(event.request).then((res) => {
+    //         if (res) {
+    //             return res
+    //         } else {
+    //             return fetch(event.request).then(res => {
+    //                 return caches.open(activeCache.dynamic).then((cache) => {
+    //                     console.log('cache dynamic open successful');
+    //                     cache.put(event.request, res.clone());
+    //                     // limitCache(activeCache.dynamic, 10)
+    //                     return res;
+    //                 })
+    //             }).catch(err => {
+    //                 //when user open page and haven't save in cache
+    //                 return caches.match('/fallBack.html')
+    //             })
+    //         }
+    //     }).catch((err) => {
+    //         return fetch(event.request)
+    //     })
+    // )
 
     //2. Cache Only
     // event.respondWith(caches.match(event.request));
@@ -83,6 +83,39 @@ self.addEventListener('fetch', (event) => {
     //         return caches.match(event.request)
     //     })
     // )
+
+    //5. some data from network, some data from cache
+    const urls = ['https://fakestoreapi.com/products?limit=4'];
+
+    if (urls.includes(event.request.url)) {
+        event.respondWith(
+            fetch(event.request).then(res => {
+                return res;
+            })
+        )
+    } else {
+        event.respondWith(
+            caches.match(event.request).then((res) => {
+                if (res) {
+                    return res
+                } else {
+                    return fetch(event.request).then(res => {
+                        return caches.open(activeCache.dynamic).then((cache) => {
+                            console.log('cache dynamic open successful');
+                            cache.put(event.request, res.clone());
+                            // limitCache(activeCache.dynamic, 10)
+                            return res;
+                        })
+                    }).catch(err => {
+                        //when user open page and haven't save in cache
+                        return caches.match('/fallBack.html')
+                    })
+                }
+            }).catch((err) => {
+                return fetch(event.request)
+            })
+        )
+    }
 })
 
 caches.keys().then((cacheNames) => {
