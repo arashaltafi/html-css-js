@@ -1,6 +1,6 @@
-// caches => open(save cache), keys(see all caches), delete (delete caches), match (get cache file)
+// caches => open(select cache category for add, delete, match, ...), addAll(add multi address for cache), put(add req and res for cache), keys(see all caches), delete (delete caches), match (get cache file)
 
-const cacheVersion = 21;
+const cacheVersion = 24;
 const activeCache = {
     static: `static-v${cacheVersion}`,
     dynamic: `dynamic-v${cacheVersion}`
@@ -52,6 +52,7 @@ self.addEventListener('fetch', (event) => {
                     caches.open(activeCache.dynamic).then((cache) => {
                         console.log('cache dynamic open successful');
                         cache.put(event.request, res.clone());
+                        limitCache(activeCache.dynamic, 10)
                         return res;
                     })
                 }).catch(err => {
@@ -89,3 +90,22 @@ caches.keys().then((cacheNames) => {
         console.log("cache match", caches.match(element));
     })
 });
+
+//limit size for cache
+const limitCache = (key, size) => {
+    caches.open(key).then((cache) => {
+        cache.keys().then((keys) => {
+            if (keys.length > size) {
+                cache.delete(keys[0]).then((deleted) => {
+                    if (deleted) {
+                        console.log("Oldest entry deleted successfully");
+                    } else {
+                        console.error("Failed to delete the oldest entry");
+                    }
+                }).catch((error) => {
+                    console.error("Error deleting entry:", error);
+                });
+            }
+        });
+    });
+}
