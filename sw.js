@@ -1,6 +1,9 @@
+importScripts('/node_modules/dexie/dist/dexie.min.js')
+importScripts('/db.js')
+
 // caches => open(select cache category for add, delete, match, ...), addAll(add multi address for cache), put(add req and res for cache), keys(see all caches), delete (delete caches), match (get cache file)
 
-const cacheVersion = 39;
+const cacheVersion = 42;
 const activeCache = {
     static: `static-v${cacheVersion}`,
     dynamic: `dynamic-v${cacheVersion}`
@@ -90,6 +93,12 @@ self.addEventListener('fetch', (event) => {
     if (urls.includes(event.request.url)) {
         event.respondWith(
             fetch(event.request).then(res => {
+                const cloneRes = res.clone();
+                cloneRes.json().then(data => {
+                    for (let i in data) {
+                        db.users.put(data[i])
+                    }
+                })
                 return res;
             })
         )
