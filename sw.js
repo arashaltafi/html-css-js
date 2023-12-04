@@ -3,7 +3,7 @@ importScripts('/db.js')
 
 // caches => open(select cache category for add, delete, match, ...), addAll(add multi address for cache), put(add req and res for cache), keys(see all caches), delete (delete caches), match (get cache file)
 
-const cacheVersion = 42;
+const cacheVersion = 6;
 const activeCache = {
     static: `static-v${cacheVersion}`,
     dynamic: `dynamic-v${cacheVersion}`
@@ -151,3 +151,19 @@ const limitCache = (key, size) => {
         });
     });
 }
+
+self.addEventListener('notificationclick', (event) => {
+    const action = event.action
+    const notification = event.notification
+    if (action === 'action1') {
+        alert('action1')
+    } else if (action === 'action2') {
+        alert('action2')
+    }
+    console.log('Notification clicked: ', event);
+    notification.close();
+})
+
+self.addEventListener('notificationclose', (event) => {
+    console.log('Notification closed: ', event);
+})

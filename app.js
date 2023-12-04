@@ -40,7 +40,97 @@ const createUi = (items) => {
     })
 }
 
+const getNotificationPermission = () => {
+    //way 1
+    Notification.requestPermission().then(result => {
+        console.log('Notification Permission', result);
+        if (result === 'granted') {
+            showNotification('Notification Title', 'Notification Body');
+        } else {
+            console.log('Notification Permission Denied');
+        }
+    }).catch(error => {
+        console.log('Notification Permission', error);
+    })
+
+    //way 2
+    const notificationPermission = Notification.permission;
+    if (notificationPermission === 'granted') {
+        showNotification('Notification Title', 'Notification Body');
+    } else {
+        console.log('Notification Permission Denied');
+    }
+}
+
+const showNotification = (title, body) => {
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.ready.then(sw => {
+            sw.showNotification(
+                title, {
+                body: body,
+                dir: 'ltr',
+                icon: '/assets/icons/icon-128x128.png',
+                image: 'https://arashaltafi.ir/arash.jpg',
+                badge: '/assets/icons/icon-128x128.png',
+                tag: 'hw1',
+                data: {
+                    url: "https://arashaltafi.ir"
+                },
+                renotify: true,
+                requireInteraction: true,
+                silent: false,
+                vibrate: [200, 100, 200],
+                actions: [
+                    {
+                        action: 'action1',
+                        title: 'Action 1',
+                        icon: '/assets/icons/icon-128x128.png',
+                    }, {
+                        action: 'action2',
+                        title: 'Action 2',
+                        icon: '/assets/icons/icon-128x128.png',
+                    },
+                ]
+            }
+            )
+        })
+    } else {
+        alert('no access')
+    }
+
+
+    // new Notification(title, {
+    //     body: body,
+    //     dir: 'ltr',
+    //     icon: './assets/icons/icon-128x128.png',
+    //     image: 'https://arashaltafi.ir/arash.jpg',
+    //     badge: '/assets/icons/icon-128x128.png',
+    //     tag: 'hw1',
+    //     data: {
+    //         url: "https://arashaltafi.ir"
+    //     },
+    //     renotify: true,
+    //     requireInteraction: true,
+    //     silent: false,
+    //     vibrate: [200, 100, 200],
+    //     actions: [
+    //         {
+    //             action: 'action1',
+    //             title: 'Action 1',
+    //             icon: '/assets/icons/icon-128x128.png',
+    //         }, {
+    //             action: 'action2',
+    //             title: 'Action 2',
+    //             icon: '/assets/icons/icon-128x128.png',
+    //         },
+    //     ]
+    // })
+}
+
 window.addEventListener('load', async () => {
     const courses = await fetchCourse();
-    createUi(courses)
+    createUi(courses);
+    if ("Notification" in window) {
+        getNotificationPermission();
+    }
 })
