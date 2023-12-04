@@ -42,7 +42,7 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
     console.log('service worker fetch successful');
-    //1. first cache second network
+    ////1. first cache second network
     // event.respondWith(
     //     caches.match(event.request).then((res) => {
     //         if (res) {
@@ -65,13 +65,13 @@ self.addEventListener('fetch', (event) => {
     //     })
     // )
 
-    //2. Cache Only
+    ////2. Cache Only
     // event.respondWith(caches.match(event.request));
 
-    //3. Network Only
+    ////3. Network Only
     // event.respondWith(fetch(event.request));
 
-    //4. first network second cache
+    ////4. first network second cache
     // event.respondWith(
     //     fetch(event.request).then((res) => {
     //         return caches.open(activeCache.dynamic).then((cache) => {
@@ -84,7 +84,7 @@ self.addEventListener('fetch', (event) => {
     //     })
     // )
 
-    //5. some data from network, some data from cache
+    ////5. some data from network, some data from cache
     const urls = ['https://fakestoreapi.com/products?limit=4'];
 
     if (urls.includes(event.request.url)) {
