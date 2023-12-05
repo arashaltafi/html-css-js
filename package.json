@@ -69,6 +69,7 @@
     "express-generator": "^4.16.1",
     "express-handlebars": "^7.1.2",
     "express-session": "^1.17.3",
+    "firebase": "^10.7.0",
     "flowbite": "^1.8.1",
     "http-server": "^14.1.1",
     "idb": "^8.0.0",
