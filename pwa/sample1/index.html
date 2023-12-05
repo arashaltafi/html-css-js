@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fa" dir="ltr" translate="no">
+
+<head>
+    <meta name="darkreader-lock" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample PWA 1</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 32px;
+            text-align: center;
+        }
+
+        .div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 5px solid red;
+            border-radius: 32px;
+            width: 90%;
+            margin: 8px;
+            padding: 32px;
+            gap: 16px;
+        }
+
+        .p {
+            width: 100%;
+            font-size: 18px;
+        }
+
+        .canvas {
+            display: none;
+        }
+
+        button {
+            padding: 16px 32px;
+            border-radius: 16px;
+            background-color: blueviolet;
+            color: white;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div">
+        <video autoplay class="video"></video>
+        <canvas class="canvas" width="700px" height="700px"></canvas>
+        <button class="take-photo">Take a photo</button>
+    </div>
+
+    <div class="div">
+        <button class="geolocation">get geolocation</button>
+        <p class="p">geolocation</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
