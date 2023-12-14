@@ -48,3 +48,8 @@ var add3 = function (num1, num2, num3) {
     return num1 + num2 + num3;
 };
 add3(12, 11);
+var form = document.getElementById('form');
+form === null || form === void 0 ? void 0 : form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    console.log(e.target);
+});

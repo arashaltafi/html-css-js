@@ -65,3 +65,10 @@ add2(12, 11);
 
 const add3 = (num1: number, num2: number, num3: number = 0): number => num1 + num2 + num3
 add3(12, 11);
+
+
+const form = document.getElementById('form');
+form?.addEventListener('submit', (e: Event) => {
+    e.preventDefault();
+    console.log(e.target);
+})
