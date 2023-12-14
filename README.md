@@ -1,7 +1,3 @@
-# html-css-js
-
-
-
 # Sample Code in:
 -  Html
 -  Css
